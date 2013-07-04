@@ -1,0 +1,504 @@
+.. module:: PySide.QtGui
+
+PySide.QtGui
+************
+
+.. container:: pysidetoc
+
+    +-------------------------------------------------+---------------------------------------+-----------------------------------+-----------------------------------+
+    |**A**                                            |* :doc:`QGraphicsLineItem`             |* :doc:`QPaintEngineState`         |* :doc:`QStyleOptionToolButton`    |
+    |                                                 |* :doc:`QGraphicsLinearLayout`         |* :doc:`QPaintEvent`               |* :doc:`QStyleOptionViewItem`      |
+    |* :doc:`QAbstractButton`                         |* :doc:`QGraphicsObject`               |* :doc:`QPainter`                  |* :doc:`QStyleOptionViewItemV2`    |
+    |* :doc:`QAbstractGraphicsShapeItem`              |* :doc:`QGraphicsOpacityEffect`        |* :doc:`QPainter.PixmapFragment`   |* :doc:`QStyleOptionViewItemV3`    |
+    |* :doc:`QAbstractItemDelegate`                   |* :doc:`QGraphicsPathItem`             |* :doc:`QPainterPath`              |* :doc:`QStyleOptionViewItemV4`    |
+    |* :doc:`QAbstractItemView`                       |* :doc:`QGraphicsPixmapItem`           |* :doc:`QPainterPath.Element`      |* :doc:`QStylePainter`             |
+    |* :doc:`QAbstractPageSetupDialog`                |* :doc:`QGraphicsPolygonItem`          |* :doc:`QPainterPathStroker`       |* :doc:`QStyledItemDelegate`       |
+    |* :doc:`QAbstractPrintDialog`                    |* :doc:`QGraphicsProxyWidget`          |* :doc:`QPalette`                  |* :doc:`QSwipeGesture`             |
+    |* :doc:`QAbstractProxyModel`                     |* :doc:`QGraphicsRectItem`             |* :doc:`QPanGesture`               |* :doc:`QSyntaxHighlighter`        |
+    |* :doc:`QAbstractScrollArea`                     |* :doc:`QGraphicsRotation`             |* :doc:`QPen`                      |* :doc:`QSystemTrayIcon`           |
+    |* :doc:`QAbstractSlider`                         |* :doc:`QGraphicsScale`                |* :doc:`QPicture`                  |                                   |
+    |* :doc:`QAbstractSpinBox`                        |* :doc:`QGraphicsScene`                |* :doc:`QPictureIO`                |**T**                              |
+    |* :doc:`QAbstractTextDocumentLayout`             |* :doc:`QGraphicsSceneContextMenuEvent`|* :doc:`QPinchGesture`             |                                   |
+    |* :doc:`QAbstractTextDocumentLayout.PaintContext`|* :doc:`QGraphicsSceneDragDropEvent`   |* :doc:`QPixmap`                   |* :doc:`QTabBar`                   |
+    |* :doc:`QAbstractTextDocumentLayout.Selection`   |* :doc:`QGraphicsSceneEvent`           |* :doc:`QPixmapCache`              |* :doc:`QTabWidget`                |
+    |* :doc:`QAccessibleEvent`                        |* :doc:`QGraphicsSceneHelpEvent`       |* :doc:`QPixmapCache.Key`          |* :doc:`QTableView`                |
+    |* :doc:`QAction`                                 |* :doc:`QGraphicsSceneHoverEvent`      |* :doc:`QPlainTextDocumentLayout`  |* :doc:`QTableWidget`              |
+    |* :doc:`QActionEvent`                            |* :doc:`QGraphicsSceneMouseEvent`      |* :doc:`QPlainTextEdit`            |* :doc:`QTableWidgetItem`          |
+    |* :doc:`QActionGroup`                            |* :doc:`QGraphicsSceneMoveEvent`       |* :doc:`QPlastiqueStyle`           |* :doc:`QTableWidgetSelectionRange`|
+    |* :doc:`QApplication`                            |* :doc:`QGraphicsSceneResizeEvent`     |* :doc:`QPolygon`                  |* :doc:`QTabletEvent`              |
+    |                                                 |* :doc:`QGraphicsSceneWheelEvent`      |* :doc:`QPolygonF`                 |* :doc:`QTapAndHoldGesture`        |
+    |**B**                                            |* :doc:`QGraphicsSimpleTextItem`       |* :doc:`QPrintDialog`              |* :doc:`QTapGesture`               |
+    |                                                 |* :doc:`QGraphicsTextItem`             |* :doc:`QPrintEngine`              |* :doc:`QTextBlock`                |
+    |* :doc:`QBitmap`                                 |* :doc:`QGraphicsTransform`            |* :doc:`QPrintPreviewDialog`       |* :doc:`QTextBlock.iterator`       |
+    |* :doc:`QBoxLayout`                              |* :doc:`QGraphicsView`                 |* :doc:`QPrintPreviewWidget`       |* :doc:`QTextBlockFormat`          |
+    |* :doc:`QBrush`                                  |* :doc:`QGraphicsWidget`               |* :doc:`QPrinter`                  |* :doc:`QTextBlockGroup`           |
+    |* :doc:`QButtonGroup`                            |* :doc:`QGridLayout`                   |* :doc:`QPrinterInfo`              |* :doc:`QTextBlockUserData`        |
+    |                                                 |* :doc:`QGroupBox`                     |* :doc:`QProgressBar`              |* :doc:`QTextBrowser`              |
+    |**C**                                            |* :doc:`QGtkStyle`                     |* :doc:`QProgressDialog`           |* :doc:`QTextCharFormat`           |
+    |                                                 |                                       |* :doc:`QProxyModel`               |* :doc:`QTextCursor`               |
+    |* :doc:`QCDEStyle`                               |**H**                                  |* :doc:`QPushButton`               |* :doc:`QTextDocument`             |
+    |* :doc:`QCalendarWidget`                         |                                       |* :doc:`QPyTextObject`             |* :doc:`QTextDocumentFragment`     |
+    |* :doc:`QCheckBox`                               |* :doc:`QHBoxLayout`                   |                                   |* :doc:`QTextEdit`                 |
+    |* :doc:`QCleanlooksStyle`                        |* :doc:`QHeaderView`                   |**Q**                              |* :doc:`QTextEdit.ExtraSelection`  |
+    |* :doc:`QClipboard`                              |* :doc:`QHelpEvent`                    |                                   |* :doc:`QTextFormat`               |
+    |* :doc:`QClipboardEvent`                         |* :doc:`QHideEvent`                    |* :doc:`QQuaternion`               |* :doc:`QTextFragment`             |
+    |* :doc:`QCloseEvent`                             |* :doc:`QHoverEvent`                   |                                   |* :doc:`QTextFrame`                |
+    |* :doc:`QColor`                                  |                                       |**R**                              |* :doc:`QTextFrame.iterator`       |
+    |* :doc:`QColorDialog`                            |**I**                                  |                                   |* :doc:`QTextFrameFormat`          |
+    |* :doc:`QColumnView`                             |                                       |* :doc:`QRadialGradient`           |* :doc:`QTextImageFormat`          |
+    |* :doc:`QComboBox`                               |* :doc:`QIcon`                         |* :doc:`QRadioButton`              |* :doc:`QTextInlineObject`         |
+    |* :doc:`QCommandLinkButton`                      |* :doc:`QIconDragEvent`                |* :doc:`QRegExpValidator`          |* :doc:`QTextItem`                 |
+    |* :doc:`QCommonStyle`                            |* :doc:`QIconEngine`                   |* :doc:`QRegion`                   |* :doc:`QTextLayout`               |
+    |* :doc:`QCompleter`                              |* :doc:`QIconEngineV2`                 |* :doc:`QResizeEvent`              |* :doc:`QTextLayout.FormatRange`   |
+    |* :doc:`QConicalGradient`                        |* :doc:`QImage`                        |* :doc:`QRubberBand`               |* :doc:`QTextLength`               |
+    |* :doc:`QContextMenuEvent`                       |* :doc:`QImageIOHandler`               |                                   |* :doc:`QTextLine`                 |
+    |* :doc:`QCursor`                                 |* :doc:`QImageReader`                  |**S**                              |* :doc:`QTextList`                 |
+    |                                                 |* :doc:`QImageWriter`                  |                                   |* :doc:`QTextListFormat`           |
+    |**D**                                            |* :doc:`QInputContext`                 |* :doc:`QScrollArea`               |* :doc:`QTextObject`               |
+    |                                                 |* :doc:`QInputContextFactory`          |* :doc:`QScrollBar`                |* :doc:`QTextObjectInterface`      |
+    |* :doc:`QDataWidgetMapper`                       |* :doc:`QInputDialog`                  |* :doc:`QSessionManager`           |* :doc:`QTextOption`               |
+    |* :doc:`QDateEdit`                               |* :doc:`QInputEvent`                   |* :doc:`QShortcut`                 |* :doc:`QTextOption.Tab`           |
+    |* :doc:`QDateTimeEdit`                           |* :doc:`QInputMethodEvent`             |* :doc:`QShortcutEvent`            |* :doc:`QTextTable`                |
+    |* :doc:`QDesktopServices`                        |* :doc:`QInputMethodEvent.Attribute`   |* :doc:`QShowEvent`                |* :doc:`QTextTableCell`            |
+    |* :doc:`QDesktopWidget`                          |* :doc:`QIntValidator`                 |* :doc:`QSizeGrip`                 |* :doc:`QTextTableCellFormat`      |
+    |* :doc:`QDial`                                   |* :doc:`QItemDelegate`                 |* :doc:`QSizePolicy`               |* :doc:`QTextTableFormat`          |
+    |* :doc:`QDialog`                                 |* :doc:`QItemEditorCreatorBase`        |* :doc:`QSlider`                   |* :doc:`QTileRules`                |
+    |* :doc:`QDialogButtonBox`                        |* :doc:`QItemEditorFactory`            |* :doc:`QSortFilterProxyModel`     |* :doc:`QTimeEdit`                 |
+    |* :doc:`QDirModel`                               |* :doc:`QItemSelection`                |* :doc:`QSound`                    |* :doc:`QToolBar`                  |
+    |* :doc:`QDockWidget`                             |* :doc:`QItemSelectionModel`           |* :doc:`QSpacerItem`               |* :doc:`QToolBarChangeEvent`       |
+    |* :doc:`QDoubleSpinBox`                          |* :doc:`QItemSelectionRange`           |* :doc:`QSpinBox`                  |* :doc:`QToolBox`                  |
+    |* :doc:`QDoubleValidator`                        |                                       |* :doc:`QSplashScreen`             |* :doc:`QToolButton`               |
+    |* :doc:`QDrag`                                   |**K**                                  |* :doc:`QSplitter`                 |* :doc:`QToolTip`                  |
+    |* :doc:`QDragEnterEvent`                         |                                       |* :doc:`QSplitterHandle`           |* :doc:`QTouchEvent`               |
+    |* :doc:`QDragLeaveEvent`                         |* :doc:`QKeyEvent`                     |* :doc:`QStackedLayout`            |* :doc:`QTouchEvent.TouchPoint`    |
+    |* :doc:`QDragMoveEvent`                          |* :doc:`QKeyEventTransition`           |* :doc:`QStackedWidget`            |* :doc:`QTransform`                |
+    |* :doc:`QDropEvent`                              |* :doc:`QKeySequence`                  |* :doc:`QStandardItem`             |* :doc:`QTreeView`                 |
+    |                                                 |                                       |* :doc:`QStandardItemModel`        |* :doc:`QTreeWidget`               |
+    |**E**                                            |**L**                                  |* :doc:`QStatusBar`                |* :doc:`QTreeWidgetItem`           |
+    |                                                 |                                       |* :doc:`QStatusTipEvent`           |* :doc:`QTreeWidgetItemIterator`   |
+    |* :doc:`QErrorMessage`                           |* :doc:`QLCDNumber`                    |* :doc:`QStringListModel`          |                                   |
+    |                                                 |* :doc:`QLabel`                        |* :doc:`QStyle`                    |**U**                              |
+    |**F**                                            |* :doc:`QLayout`                       |* :doc:`QStyleFactory`             |                                   |
+    |                                                 |* :doc:`QLayoutItem`                   |* :doc:`QStyleHintReturn`          |* :doc:`QUndoCommand`              |
+    |* :doc:`QFileDialog`                             |* :doc:`QLineEdit`                     |* :doc:`QStyleHintReturnMask`      |* :doc:`QUndoGroup`                |
+    |* :doc:`QFileIconProvider`                       |* :doc:`QLinearGradient`               |* :doc:`QStyleHintReturnVariant`   |* :doc:`QUndoStack`                |
+    |* :doc:`QFileOpenEvent`                          |* :doc:`QListView`                     |* :doc:`QStyleOption`              |* :doc:`QUndoView`                 |
+    |* :doc:`QFileSystemModel`                        |* :doc:`QListWidget`                   |* :doc:`QStyleOptionButton`        |                                   |
+    |* :doc:`QFocusEvent`                             |* :doc:`QListWidgetItem`               |* :doc:`QStyleOptionComboBox`      |**V**                              |
+    |* :doc:`QFocusFrame`                             |                                       |* :doc:`QStyleOptionComplex`       |                                   |
+    |* :doc:`QFont`                                   |**M**                                  |* :doc:`QStyleOptionDockWidget`    |* :doc:`QVBoxLayout`               |
+    |* :doc:`QFontComboBox`                           |                                       |* :doc:`QStyleOptionDockWidgetV2`  |* :doc:`QValidator`                |
+    |* :doc:`QFontDatabase`                           |* :doc:`QMainWindow`                   |* :doc:`QStyleOptionFocusRect`     |* :doc:`QVector2D`                 |
+    |* :doc:`QFontDialog`                             |* :doc:`QMatrix`                       |* :doc:`QStyleOptionFrame`         |* :doc:`QVector3D`                 |
+    |* :doc:`QFontInfo`                               |* :doc:`QMatrix2x2`                    |* :doc:`QStyleOptionFrameV2`       |* :doc:`QVector4D`                 |
+    |* :doc:`QFontMetrics`                            |* :doc:`QMatrix2x3`                    |* :doc:`QStyleOptionFrameV3`       |                                   |
+    |* :doc:`QFontMetricsF`                           |* :doc:`QMatrix2x4`                    |* :doc:`QStyleOptionGraphicsItem`  |**W**                              |
+    |* :doc:`QFormLayout`                             |* :doc:`QMatrix3x2`                    |* :doc:`QStyleOptionGroupBox`      |                                   |
+    |* :doc:`QFrame`                                  |* :doc:`QMatrix3x3`                    |* :doc:`QStyleOptionHeader`        |* :doc:`QWhatsThis`                |
+    |                                                 |* :doc:`QMatrix3x4`                    |* :doc:`QStyleOptionMenuItem`      |* :doc:`QWhatsThisClickedEvent`    |
+    |**G**                                            |* :doc:`QMatrix4x2`                    |* :doc:`QStyleOptionProgressBar`   |* :doc:`QWheelEvent`               |
+    |                                                 |* :doc:`QMatrix4x3`                    |* :doc:`QStyleOptionProgressBarV2` |* :doc:`QWidget`                   |
+    |* :doc:`QGesture`                                |* :doc:`QMatrix4x4`                    |* :doc:`QStyleOptionRubberBand`    |* :doc:`QWidgetAction`             |
+    |* :doc:`QGestureEvent`                           |* :doc:`QMdiArea`                      |* :doc:`QStyleOptionSizeGrip`      |* :doc:`QWidgetItem`               |
+    |* :doc:`QGestureRecognizer`                      |* :doc:`QMdiSubWindow`                 |* :doc:`QStyleOptionSlider`        |* :doc:`QWindowStateChangeEvent`   |
+    |* :doc:`QGradient`                               |* :doc:`QMenu`                         |* :doc:`QStyleOptionSpinBox`       |* :doc:`QWindowsStyle`             |
+    |* :doc:`QGraphicsAnchor`                         |* :doc:`QMenuBar`                      |* :doc:`QStyleOptionTab`           |* :doc:`QWizard`                   |
+    |* :doc:`QGraphicsAnchorLayout`                   |* :doc:`QMessageBox`                   |* :doc:`QStyleOptionTabBarBase`    |* :doc:`QWizardPage`               |
+    |* :doc:`QGraphicsBlurEffect`                     |* :doc:`QMotifStyle`                   |* :doc:`QStyleOptionTabBarBaseV2`  |* :doc:`QWorkspace`                |
+    |* :doc:`QGraphicsColorizeEffect`                 |* :doc:`QMouseEvent`                   |* :doc:`QStyleOptionTabV2`         |                                   |
+    |* :doc:`QGraphicsDropShadowEffect`               |* :doc:`QMouseEventTransition`         |* :doc:`QStyleOptionTabV3`         |**X**                              |
+    |* :doc:`QGraphicsEffect`                         |* :doc:`QMoveEvent`                    |* :doc:`QStyleOptionTabWidgetFrame`|                                   |
+    |* :doc:`QGraphicsEllipseItem`                    |* :doc:`QMovie`                        |* :doc:`QStyleOptionTitleBar`      |* :doc:`QX11EmbedContainer`        |
+    |* :doc:`QGraphicsGridLayout`                     |                                       |* :doc:`QStyleOptionToolBar`       |* :doc:`QX11EmbedWidget`           |
+    |* :doc:`QGraphicsItem`                           |**P**                                  |* :doc:`QStyleOptionToolBox`       |* :doc:`QX11Info`                  |
+    |* :doc:`QGraphicsItemAnimation`                  |                                       |* :doc:`QStyleOptionToolBoxV2`     |                                   |
+    |* :doc:`QGraphicsItemGroup`                      |* :doc:`QPageSetupDialog`              |                                   |                                   |
+    |* :doc:`QGraphicsLayout`                         |* :doc:`QPaintDevice`                  |                                   |                                   |
+    |* :doc:`QGraphicsLayoutItem`                     |* :doc:`QPaintEngine`                  |                                   |                                   |
+    |                                                 |                                       |                                   |                                   |
+    +-------------------------------------------------+---------------------------------------+-----------------------------------+-----------------------------------+
+
+    .. container:: hide
+
+        .. toctree::
+            :maxdepth: 1
+
+            QMatrix2x4.rst
+            QMatrix2x3.rst
+            QMatrix2x2.rst
+            QMatrix3x4.rst
+            QMatrix3x3.rst
+            QMatrix3x2.rst
+            QMatrix4x3.rst
+            QMatrix4x2.rst
+            QX11Info.rst
+            QStyleFactory.rst
+            QInputContextFactory.rst
+            QTreeWidgetItem.rst
+            QTreeWidgetItemIterator.rst
+            QTableWidgetItem.rst
+            QTableWidgetSelectionRange.rst
+            QStandardItem.rst
+            QListWidgetItem.rst
+            QItemEditorFactory.rst
+            QItemEditorCreatorBase.rst
+            QFileIconProvider.rst
+            QItemSelection.rst
+            QItemSelectionRange.rst
+            QUndoCommand.rst
+            QDesktopServices.rst
+            QPixmapCache.rst
+            QPixmapCache.Key.rst
+            QPictureIO.rst
+            QImageIOHandler.rst
+            QIconEngine.rst
+            QPrinterInfo.rst
+            QPrintEngine.rst
+            QPaintEngineState.rst
+            QPaintEngine.rst
+            QTextItem.rst
+            QTileRules.rst
+            QVector2D.rst
+            QMatrix4x4.rst
+            QQuaternion.rst
+            QVector4D.rst
+            QVector3D.rst
+            QStyleOption.rst
+            QStyleOptionToolBar.rst
+            QStyleOptionTab.rst
+            QStyleOptionTabV2.rst
+            QStyleOptionTabV3.rst
+            QStyleOptionComplex.rst
+            QStyleOptionTitleBar.rst
+            QStyleOptionToolButton.rst
+            QStyleOptionSpinBox.rst
+            QStyleOptionSlider.rst
+            QStyleOptionSizeGrip.rst
+            QStyleOptionGroupBox.rst
+            QStyleOptionComboBox.rst
+            QStyleOptionButton.rst
+            QStyleOptionRubberBand.rst
+            QStyleOptionHeader.rst
+            QStyleOptionToolBox.rst
+            QStyleOptionToolBoxV2.rst
+            QStyleOptionTabBarBase.rst
+            QStyleOptionTabBarBaseV2.rst
+            QStyleOptionTabWidgetFrame.rst
+            QStyleOptionViewItem.rst
+            QStyleOptionViewItemV2.rst
+            QStyleOptionViewItemV3.rst
+            QStyleOptionViewItemV4.rst
+            QStyleOptionFrame.rst
+            QStyleOptionFrameV2.rst
+            QStyleOptionFrameV3.rst
+            QStyleHintReturn.rst
+            QStyleHintReturnVariant.rst
+            QStyleHintReturnMask.rst
+            QStyleOptionFocusRect.rst
+            QStyleOptionGraphicsItem.rst
+            QStyleOptionDockWidget.rst
+            QStyleOptionDockWidgetV2.rst
+            QStyleOptionMenuItem.rst
+            QStyleOptionProgressBar.rst
+            QStyleOptionProgressBarV2.rst
+            QWhatsThis.rst
+            QToolTip.rst
+            QGestureRecognizer.rst
+            QLayoutItem.rst
+            QWidgetItem.rst
+            QCursor.rst
+            QSizePolicy.rst
+            QSpacerItem.rst
+            QTextTableCell.rst
+            QTextDocumentFragment.rst
+            QTextFragment.rst
+            QTextBlock.rst
+            QTextBlock.iterator.rst
+            QTextBlockUserData.rst
+            QFontMetricsF.rst
+            QFontMetrics.rst
+            QFontInfo.rst
+            QFontDatabase.rst
+            QTextObjectInterface.rst
+            QPalette.rst
+            QTextCursor.rst
+            QTextLine.rst
+            QTextInlineObject.rst
+            QTextFormat.rst
+            QTextFrameFormat.rst
+            QTextTableFormat.rst
+            QTextListFormat.rst
+            QTextBlockFormat.rst
+            QTextLength.rst
+            QTextOption.rst
+            QTextOption.Tab.rst
+            QPen.rst
+            QGradient.rst
+            QConicalGradient.rst
+            QRadialGradient.rst
+            QLinearGradient.rst
+            QBrush.rst
+            QPaintDevice.rst
+            QPrinter.rst
+            QPicture.rst
+            QTransform.rst
+            QPainterPathStroker.rst
+            QMatrix.rst
+            QPainterPath.rst
+            QPainterPath.Element.rst
+            QPolygonF.rst
+            QPolygon.rst
+            QFont.rst
+            QTextCharFormat.rst
+            QTextTableCellFormat.rst
+            QTextImageFormat.rst
+            QKeySequence.rst
+            QColor.rst
+            QTextLayout.rst
+            QTextLayout.FormatRange.rst
+            QPixmap.rst
+            QImage.rst
+            QBitmap.rst
+            QGraphicsLayoutItem.rst
+            QGraphicsLayout.rst
+            QGraphicsGridLayout.rst
+            QGraphicsAnchorLayout.rst
+            QGraphicsLinearLayout.rst
+            QIcon.rst
+            QIconEngineV2.rst
+            QGraphicsItem.rst
+            QGraphicsItemGroup.rst
+            QGraphicsPixmapItem.rst
+            QGraphicsLineItem.rst
+            QAbstractGraphicsShapeItem.rst
+            QGraphicsSimpleTextItem.rst
+            QGraphicsPolygonItem.rst
+            QGraphicsEllipseItem.rst
+            QGraphicsRectItem.rst
+            QGraphicsPathItem.rst
+            QPainter.rst
+            QStylePainter.rst
+            QPainter.PixmapFragment.rst
+            QClipboardEvent.rst
+            QShortcutEvent.rst
+            QToolBarChangeEvent.rst
+            QFileOpenEvent.rst
+            QActionEvent.rst
+            QWhatsThisClickedEvent.rst
+            QStatusTipEvent.rst
+            QHelpEvent.rst
+            QDragLeaveEvent.rst
+            QDropEvent.rst
+            QDragMoveEvent.rst
+            QDragEnterEvent.rst
+            QInputMethodEvent.rst
+            QInputMethodEvent.Attribute.rst
+            QHideEvent.rst
+            QShowEvent.rst
+            QIconDragEvent.rst
+            QCloseEvent.rst
+            QResizeEvent.rst
+            QMoveEvent.rst
+            QPaintEvent.rst
+            QAccessibleEvent.rst
+            QFocusEvent.rst
+            QHoverEvent.rst
+            QGraphicsSceneEvent.rst
+            QGraphicsSceneMoveEvent.rst
+            QGraphicsSceneResizeEvent.rst
+            QGraphicsSceneDragDropEvent.rst
+            QGraphicsSceneHelpEvent.rst
+            QGraphicsSceneHoverEvent.rst
+            QGraphicsSceneContextMenuEvent.rst
+            QGraphicsSceneWheelEvent.rst
+            QGraphicsSceneMouseEvent.rst
+            QInputEvent.rst
+            QTouchEvent.rst
+            QTouchEvent.TouchPoint.rst
+            QContextMenuEvent.rst
+            QKeyEvent.rst
+            QTabletEvent.rst
+            QWheelEvent.rst
+            QMouseEvent.rst
+            QGestureEvent.rst
+            QWindowStateChangeEvent.rst
+            QRegion.rst
+            QGraphicsTransform.rst
+            QGraphicsRotation.rst
+            QGraphicsScale.rst
+            QStyle.rst
+            QCommonStyle.rst
+            QWindowsStyle.rst
+            QPlastiqueStyle.rst
+            QCleanlooksStyle.rst
+            QGtkStyle.rst
+            QMotifStyle.rst
+            QCDEStyle.rst
+            QButtonGroup.rst
+            QDrag.rst
+            QGraphicsScene.rst
+            QValidator.rst
+            QRegExpValidator.rst
+            QDoubleValidator.rst
+            QIntValidator.rst
+            QGraphicsItemAnimation.rst
+            QGraphicsAnchor.rst
+            QSound.rst
+            QShortcut.rst
+            QSessionManager.rst
+            QGesture.rst
+            QTapAndHoldGesture.rst
+            QTapGesture.rst
+            QSwipeGesture.rst
+            QPinchGesture.rst
+            QPanGesture.rst
+            QGraphicsObject.rst
+            QGraphicsTextItem.rst
+            QGraphicsWidget.rst
+            QGraphicsProxyWidget.rst
+            QClipboard.rst
+            QLayout.rst
+            QStackedLayout.rst
+            QGridLayout.rst
+            QFormLayout.rst
+            QBoxLayout.rst
+            QVBoxLayout.rst
+            QHBoxLayout.rst
+            QActionGroup.rst
+            QAction.rst
+            QWidgetAction.rst
+            QWidget.rst
+            QRubberBand.rst
+            QTabWidget.rst
+            QTabBar.rst
+            QCalendarWidget.rst
+            QAbstractSpinBox.rst
+            QAbstractSlider.rst
+            QSlider.rst
+            QFrame.rst
+            QAbstractScrollArea.rst
+            QGraphicsView.rst
+            QAbstractButton.rst
+            QCheckBox.rst
+            QDesktopWidget.rst
+            QX11EmbedContainer.rst
+            QX11EmbedWidget.rst
+            QWorkspace.rst
+            QToolButton.rst
+            QToolBox.rst
+            QToolBar.rst
+            QStatusBar.rst
+            QStackedWidget.rst
+            QSplitterHandle.rst
+            QSplitter.rst
+            QSplashScreen.rst
+            QDoubleSpinBox.rst
+            QSpinBox.rst
+            QSizeGrip.rst
+            QScrollBar.rst
+            QScrollArea.rst
+            QRadioButton.rst
+            QProgressBar.rst
+            QPrintPreviewWidget.rst
+            QPlainTextEdit.rst
+            QTextEdit.rst
+            QTextBrowser.rst
+            QTextEdit.ExtraSelection.rst
+            QMenuBar.rst
+            QMdiSubWindow.rst
+            QMenu.rst
+            QMdiArea.rst
+            QMainWindow.rst
+            QLineEdit.rst
+            QLCDNumber.rst
+            QLabel.rst
+            QGroupBox.rst
+            QFocusFrame.rst
+            QDockWidget.rst
+            QDialogButtonBox.rst
+            QDial.rst
+            QDateTimeEdit.rst
+            QDateEdit.rst
+            QTimeEdit.rst
+            QPushButton.rst
+            QCommandLinkButton.rst
+            QAbstractItemView.rst
+            QHeaderView.rst
+            QTreeView.rst
+            QTreeWidget.rst
+            QListView.rst
+            QUndoView.rst
+            QListWidget.rst
+            QColumnView.rst
+            QTableView.rst
+            QTableWidget.rst
+            QComboBox.rst
+            QFontComboBox.rst
+            QWizardPage.rst
+            QDialog.rst
+            QErrorMessage.rst
+            QColorDialog.rst
+            QAbstractPrintDialog.rst
+            QPrintDialog.rst
+            QAbstractPageSetupDialog.rst
+            QPageSetupDialog.rst
+            QWizard.rst
+            QProgressDialog.rst
+            QPrintPreviewDialog.rst
+            QMessageBox.rst
+            QInputDialog.rst
+            QFontDialog.rst
+            QFileDialog.rst
+            QPyTextObject.rst
+            QSyntaxHighlighter.rst
+            QInputContext.rst
+            QTextObject.rst
+            QTextFrame.rst
+            QTextFrame.iterator.rst
+            QTextTable.rst
+            QTextBlockGroup.rst
+            QTextList.rst
+            QAbstractTextDocumentLayout.rst
+            QPlainTextDocumentLayout.rst
+            QAbstractTextDocumentLayout.Selection.rst
+            QAbstractTextDocumentLayout.PaintContext.rst
+            QMouseEventTransition.rst
+            QKeyEventTransition.rst
+            QDataWidgetMapper.rst
+            QGraphicsEffect.rst
+            QGraphicsOpacityEffect.rst
+            QGraphicsDropShadowEffect.rst
+            QGraphicsBlurEffect.rst
+            QGraphicsColorizeEffect.rst
+            QAbstractItemDelegate.rst
+            QItemDelegate.rst
+            QStyledItemDelegate.rst
+            QItemSelectionModel.rst
+            QUndoStack.rst
+            QUndoGroup.rst
+            QSystemTrayIcon.rst
+            QCompleter.rst
+            QDirModel.rst
+            QStringListModel.rst
+            QAbstractProxyModel.rst
+            QSortFilterProxyModel.rst
+            QStandardItemModel.rst
+            QProxyModel.rst
+            QFileSystemModel.rst
+            QApplication.rst
+            QTextDocument.rst
+            QMovie.rst
+            QImageWriter.rst
+            QImageReader.rst
+
+
+Detailed Description
+--------------------
+
+To include the definitions of modules classes, use the following directive:
+
+::
+
+    import PySide.QtGui
+
+.. seealso:: :mod:`PySide.QtCore`

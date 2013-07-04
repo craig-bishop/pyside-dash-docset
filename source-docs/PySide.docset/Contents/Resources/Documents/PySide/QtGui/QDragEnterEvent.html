@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   QDragEnterEvent — PySide 1.1.0 documentation
+  </title>
+  <link href="../../_static/pysidedocs.css" rel="stylesheet" type="text/css"/>
+  <link href="../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+  </script>
+  <script src="../../_static/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../_static/underscore.js" type="text/javascript">
+  </script>
+  <script src="../../_static/doctools.js" type="text/javascript">
+  </script>
+  <link href="../../index.html" rel="top" title="PySide 1.1.0 documentation"/>
+  <link href="index.html" rel="up" title="PySide.QtGui"/>
+  <link href="QInputMethodEvent.html" rel="next" title="QInputMethodEvent"/>
+  <link href="QDragMoveEvent.html" rel="prev" title="QDragMoveEvent"/>
+ </head>
+ <body>
+  <div id="container">
+   <div class="header">
+    <div class="header_container">
+     <div class="logo">
+      <a href="http://www.pyside.org">
+       <img alt="PySide" height="102" src="../../_static/pysidelogo.png" width="199"/>
+      </a>
+     </div>
+     <div class="related">
+      <ul>
+       <li>
+        <a href="../../index.html">
+         PySide 1.1.0 documentation
+        </a>
+       </li>
+       <li>
+        »
+        <a href="../../modules.html">
+         PySide modules
+        </a>
+       </li>
+       <li>
+        »
+        <a accesskey="U" href="index.html">
+         PySide.QtGui
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="sphinxsidebar">
+    <div class="sphinxsidebarwrapper">
+     <h3>
+      <a href="../../contents.html">
+       Table Of Contents
+      </a>
+     </h3>
+     <ul>
+      <li>
+       <a class="reference internal" href="#">
+        QDragEnterEvent
+       </a>
+       <ul>
+        <li>
+         <a class="reference internal" href="#detailed-description">
+          Detailed Description
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+     <h4>
+      Previous topic
+     </h4>
+     <p class="topless">
+      <a href="QDragMoveEvent.html" title="previous chapter">
+       QDragMoveEvent
+      </a>
+     </p>
+     <h4>
+      Next topic
+     </h4>
+     <p class="topless">
+      <a href="QInputMethodEvent.html" title="next chapter">
+       QInputMethodEvent
+      </a>
+     </p>
+     <div id="searchbox" style="display: none">
+      <h3>
+       Quick search
+      </h3>
+      <form action="../../search.html" class="search" method="get">
+       <input id="q" name="q" size="18" type="text"/>
+       <input id="search_button" type="submit" value="Go"/>
+       <input name="check_keywords" type="hidden" value="yes"/>
+       <input name="area" type="hidden" value="default"/>
+      </form>
+     </div>
+     <script type="text/javascript">
+      $('#searchbox').show(0);
+     </script>
+    </div>
+   </div>
+   <div class="document">
+    <div class="documentwrapper">
+     <div class="bodywrapper">
+      <div class="body">
+       <span class="target" id="module-PySide.QtGui">
+       </span>
+       <div class="section" id="qdragenterevent">
+        <span id="id1">
+        </span>
+        <h1>
+         QDragEnterEvent
+         <a class="headerlink" href="#qdragenterevent" title="Permalink to this headline">
+          ¶
+         </a>
+        </h1>
+        <p class="graphviz">
+         <img alt="Inheritance diagram of QDragEnterEvent" class="inheritance" src="../../_images/inheritance-3737f0936f0bac1b4ba46ecb9221365b0d143cef.png" usemap="#inheritance832192c6a9"/>
+         <map id="inheritance832192c6a9" name="inheritance832192c6a9">
+          <area alt="" coords="579,5,752,33" href="#PySide.QtGui.QDragEnterEvent" id="node1" shape="rect" title="QtGui.QDragEnterEvent">
+          </area>
+          <area alt="" coords="357,5,531,33" href="QDragMoveEvent.html#PySide.QtGui.QDragMoveEvent" id="node2" shape="rect" title="QtGui.QDragMoveEvent">
+          </area>
+          <area alt="" coords="171,5,309,33" href="QDropEvent.html#PySide.QtGui.QDropEvent" id="node4" shape="rect" title="QtGui.QDropEvent">
+          </area>
+          <area alt="" coords="5,5,123,33" href="../QtCore/QEvent.html#PySide.QtCore.QEvent" id="node5" shape="rect" title="QtCore.QEvent">
+          </area>
+         </map>
+        </p>
+        <div class="section" id="detailed-description">
+         <h2>
+          Detailed Description
+          <a class="headerlink" href="#detailed-description" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <blockquote>
+          <div>
+           <p>
+            The
+            <a class="reference internal" href="#PySide.QtGui.QDragEnterEvent" title="PySide.QtGui.QDragEnterEvent">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QDragEnterEvent
+              </span>
+             </tt>
+            </a>
+            class provides an event which is sent to a widget when a drag and drop action enters it.
+           </p>
+           <p>
+            A widget must accept this event in order to receive the
+            <a class="reference internal" href="QDragMoveEvent.html#PySide.QtGui.QDragMoveEvent" title="PySide.QtGui.QDragMoveEvent">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               drag
+              </span>
+              <span class="pre">
+               move
+              </span>
+              <span class="pre">
+               events
+              </span>
+             </tt>
+            </a>
+            that are sent while the drag and drop action is in progress. The drag enter event is always immediately followed by a drag move event.
+           </p>
+           <p>
+            <a class="reference internal" href="#PySide.QtGui.QDragEnterEvent" title="PySide.QtGui.QDragEnterEvent">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QDragEnterEvent
+              </span>
+             </tt>
+            </a>
+            inherits most of its functionality from
+            <a class="reference internal" href="QDragMoveEvent.html#PySide.QtGui.QDragMoveEvent" title="PySide.QtGui.QDragMoveEvent">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QDragMoveEvent
+              </span>
+             </tt>
+            </a>
+            , which in turn inherits most of its functionality from
+            <a class="reference internal" href="QDropEvent.html#PySide.QtGui.QDropEvent" title="PySide.QtGui.QDropEvent">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QDropEvent
+              </span>
+             </tt>
+            </a>
+            .
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="QDragLeaveEvent.html#PySide.QtGui.QDragLeaveEvent" title="PySide.QtGui.QDragLeaveEvent">
+              <tt class="xref py py-class docutils literal">
+               <span class="pre">
+                PySide.QtGui.QDragLeaveEvent
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="QDragMoveEvent.html#PySide.QtGui.QDragMoveEvent" title="PySide.QtGui.QDragMoveEvent">
+              <tt class="xref py py-class docutils literal">
+               <span class="pre">
+                PySide.QtGui.QDragMoveEvent
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="QDropEvent.html#PySide.QtGui.QDropEvent" title="PySide.QtGui.QDropEvent">
+              <tt class="xref py py-class docutils literal">
+               <span class="pre">
+                PySide.QtGui.QDropEvent
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </div>
+         </blockquote>
+         <dl class="class">
+          <dt id="PySide.QtGui.QDragEnterEvent">
+           <em class="property">
+            class
+           </em>
+           <tt class="descclassname">
+            PySide.QtGui.
+           </tt>
+           <tt class="descname">
+            QDragEnterEvent
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            pos
+           </em>
+           ,
+           <em>
+            actions
+           </em>
+           ,
+           <em>
+            data
+           </em>
+           ,
+           <em>
+            buttons
+           </em>
+           ,
+           <em>
+            modifiers
+           </em>
+           <big>
+            )
+           </big>
+           <a class="headerlink" href="#PySide.QtGui.QDragEnterEvent" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <ul class="first last simple">
+                <li>
+                 <strong>
+                  actions
+                 </strong>
+                 –
+                 <tt class="xref py py-class docutils literal">
+                  <span class="pre">
+                   PySide.QtCore.Qt.DropActions
+                  </span>
+                 </tt>
+                </li>
+                <li>
+                 <strong>
+                  modifiers
+                 </strong>
+                 –
+                 <tt class="xref py py-class docutils literal">
+                  <span class="pre">
+                   PySide.QtCore.Qt.KeyboardModifiers
+                  </span>
+                 </tt>
+                </li>
+                <li>
+                 <strong>
+                  data
+                 </strong>
+                 –
+                 <a class="reference internal" href="../QtCore/QMimeData.html#PySide.QtCore.QMimeData" title="PySide.QtCore.QMimeData">
+                  <tt class="xref py py-class docutils literal">
+                   <span class="pre">
+                    PySide.QtCore.QMimeData
+                   </span>
+                  </tt>
+                 </a>
+                </li>
+                <li>
+                 <strong>
+                  pos
+                 </strong>
+                 –
+                 <a class="reference internal" href="../QtCore/QPoint.html#PySide.QtCore.QPoint" title="PySide.QtCore.QPoint">
+                  <tt class="xref py py-class docutils literal">
+                   <span class="pre">
+                    PySide.QtCore.QPoint
+                   </span>
+                  </tt>
+                 </a>
+                </li>
+                <li>
+                 <strong>
+                  buttons
+                 </strong>
+                 –
+                 <tt class="xref py py-class docutils literal">
+                  <span class="pre">
+                   PySide.QtCore.Qt.MouseButtons
+                  </span>
+                 </tt>
+                </li>
+               </ul>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </dd>
+         </dl>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearer">
+    </div>
+   </div>
+   <div class="footer">
+    <a href="http://www.indt.org.br">
+     <img alt="Indt" border="0" src="../../_static/logo_indt.jpg"/>
+    </a>
+    <a href="http://www.openbossa.org">
+     <img alt="Openbossa" border="0" src="../../_static/logo_openbossa.png"/>
+    </a>
+    <a href="http://qt.nokia.com/">
+     <img alt="Qt" border="0" src="../../_static/logo_qt.png"/>
+    </a>
+    <a href="http://www.python.org">
+     <img alt="Python" border="0" src="../../_static/logo_python.jpg"/>
+    </a>
+   </div>
+  </div>
+ </body>
+</html>

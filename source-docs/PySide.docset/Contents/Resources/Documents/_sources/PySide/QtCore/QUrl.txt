@@ -1,0 +1,1512 @@
+.. module:: PySide.QtCore
+.. _QUrl:
+
+QUrl
+****
+
+.. inheritance-diagram:: QUrl
+    :parts: 2
+
+Synopsis
+--------
+
+Functions
+^^^^^^^^^
+.. container:: function_list
+
+*    def :meth:`__eq__<PySide.QtCore.QUrl.__eq__>` (url)
+*    def :meth:`__lt__<PySide.QtCore.QUrl.__lt__>` (url)
+*    def :meth:`__ne__<PySide.QtCore.QUrl.__ne__>` (url)
+*    def :meth:`__reduce__<PySide.QtCore.QUrl.__reduce__>` ()
+*    def :meth:`__repr__<PySide.QtCore.QUrl.__repr__>` ()
+*    def :meth:`addEncodedQueryItem<PySide.QtCore.QUrl.addEncodedQueryItem>` (key, value)
+*    def :meth:`addQueryItem<PySide.QtCore.QUrl.addQueryItem>` (key, value)
+*    def :meth:`allEncodedQueryItemValues<PySide.QtCore.QUrl.allEncodedQueryItemValues>` (key)
+*    def :meth:`allQueryItemValues<PySide.QtCore.QUrl.allQueryItemValues>` (key)
+*    def :meth:`authority<PySide.QtCore.QUrl.authority>` ()
+*    def :meth:`clear<PySide.QtCore.QUrl.clear>` ()
+*    def :meth:`encodedFragment<PySide.QtCore.QUrl.encodedFragment>` ()
+*    def :meth:`encodedHost<PySide.QtCore.QUrl.encodedHost>` ()
+*    def :meth:`encodedPassword<PySide.QtCore.QUrl.encodedPassword>` ()
+*    def :meth:`encodedPath<PySide.QtCore.QUrl.encodedPath>` ()
+*    def :meth:`encodedQuery<PySide.QtCore.QUrl.encodedQuery>` ()
+*    def :meth:`encodedQueryItemValue<PySide.QtCore.QUrl.encodedQueryItemValue>` (key)
+*    def :meth:`encodedQueryItems<PySide.QtCore.QUrl.encodedQueryItems>` ()
+*    def :meth:`encodedUserName<PySide.QtCore.QUrl.encodedUserName>` ()
+*    def :meth:`errorString<PySide.QtCore.QUrl.errorString>` ()
+*    def :meth:`fragment<PySide.QtCore.QUrl.fragment>` ()
+*    def :meth:`hasEncodedQueryItem<PySide.QtCore.QUrl.hasEncodedQueryItem>` (key)
+*    def :meth:`hasFragment<PySide.QtCore.QUrl.hasFragment>` ()
+*    def :meth:`hasQuery<PySide.QtCore.QUrl.hasQuery>` ()
+*    def :meth:`hasQueryItem<PySide.QtCore.QUrl.hasQueryItem>` (key)
+*    def :meth:`host<PySide.QtCore.QUrl.host>` ()
+*    def :meth:`isEmpty<PySide.QtCore.QUrl.isEmpty>` ()
+*    def :meth:`isParentOf<PySide.QtCore.QUrl.isParentOf>` (url)
+*    def :meth:`isRelative<PySide.QtCore.QUrl.isRelative>` ()
+*    def :meth:`isValid<PySide.QtCore.QUrl.isValid>` ()
+*    def :meth:`password<PySide.QtCore.QUrl.password>` ()
+*    def :meth:`path<PySide.QtCore.QUrl.path>` ()
+*    def :meth:`port<PySide.QtCore.QUrl.port>` ()
+*    def :meth:`port<PySide.QtCore.QUrl.port>` (defaultPort)
+*    def :meth:`queryItemValue<PySide.QtCore.QUrl.queryItemValue>` (key)
+*    def :meth:`queryItems<PySide.QtCore.QUrl.queryItems>` ()
+*    def :meth:`queryPairDelimiter<PySide.QtCore.QUrl.queryPairDelimiter>` ()
+*    def :meth:`queryValueDelimiter<PySide.QtCore.QUrl.queryValueDelimiter>` ()
+*    def :meth:`removeAllEncodedQueryItems<PySide.QtCore.QUrl.removeAllEncodedQueryItems>` (key)
+*    def :meth:`removeAllQueryItems<PySide.QtCore.QUrl.removeAllQueryItems>` (key)
+*    def :meth:`removeEncodedQueryItem<PySide.QtCore.QUrl.removeEncodedQueryItem>` (key)
+*    def :meth:`removeQueryItem<PySide.QtCore.QUrl.removeQueryItem>` (key)
+*    def :meth:`resolved<PySide.QtCore.QUrl.resolved>` (relative)
+*    def :meth:`scheme<PySide.QtCore.QUrl.scheme>` ()
+*    def :meth:`setAuthority<PySide.QtCore.QUrl.setAuthority>` (authority)
+*    def :meth:`setEncodedFragment<PySide.QtCore.QUrl.setEncodedFragment>` (fragment)
+*    def :meth:`setEncodedHost<PySide.QtCore.QUrl.setEncodedHost>` (host)
+*    def :meth:`setEncodedPassword<PySide.QtCore.QUrl.setEncodedPassword>` (password)
+*    def :meth:`setEncodedPath<PySide.QtCore.QUrl.setEncodedPath>` (path)
+*    def :meth:`setEncodedQuery<PySide.QtCore.QUrl.setEncodedQuery>` (query)
+*    def :meth:`setEncodedQueryItems<PySide.QtCore.QUrl.setEncodedQueryItems>` (query)
+*    def :meth:`setEncodedUrl<PySide.QtCore.QUrl.setEncodedUrl>` (url)
+*    def :meth:`setEncodedUrl<PySide.QtCore.QUrl.setEncodedUrl>` (url, mode)
+*    def :meth:`setEncodedUserName<PySide.QtCore.QUrl.setEncodedUserName>` (userName)
+*    def :meth:`setFragment<PySide.QtCore.QUrl.setFragment>` (fragment)
+*    def :meth:`setHost<PySide.QtCore.QUrl.setHost>` (host)
+*    def :meth:`setPassword<PySide.QtCore.QUrl.setPassword>` (password)
+*    def :meth:`setPath<PySide.QtCore.QUrl.setPath>` (path)
+*    def :meth:`setPort<PySide.QtCore.QUrl.setPort>` (port)
+*    def :meth:`setQueryDelimiters<PySide.QtCore.QUrl.setQueryDelimiters>` (valueDelimiter, pairDelimiter)
+*    def :meth:`setQueryItems<PySide.QtCore.QUrl.setQueryItems>` (query)
+*    def :meth:`setScheme<PySide.QtCore.QUrl.setScheme>` (scheme)
+*    def :meth:`setUrl<PySide.QtCore.QUrl.setUrl>` (url)
+*    def :meth:`setUrl<PySide.QtCore.QUrl.setUrl>` (url, mode)
+*    def :meth:`setUserInfo<PySide.QtCore.QUrl.setUserInfo>` (userInfo)
+*    def :meth:`setUserName<PySide.QtCore.QUrl.setUserName>` (userName)
+*    def :meth:`toEncoded<PySide.QtCore.QUrl.toEncoded>` ([options=QUrl.None])
+*    def :meth:`toLocalFile<PySide.QtCore.QUrl.toLocalFile>` ()
+*    def :meth:`toString<PySide.QtCore.QUrl.toString>` ([options=QUrl.None])
+*    def :meth:`userInfo<PySide.QtCore.QUrl.userInfo>` ()
+*    def :meth:`userName<PySide.QtCore.QUrl.userName>` ()
+
+
+Static functions
+^^^^^^^^^^^^^^^^
+.. container:: function_list
+
+*    def :meth:`fromAce<PySide.QtCore.QUrl.fromAce>` (arg__1)
+*    def :meth:`fromEncoded<PySide.QtCore.QUrl.fromEncoded>` (url)
+*    def :meth:`fromEncoded<PySide.QtCore.QUrl.fromEncoded>` (url, mode)
+*    def :meth:`fromLocalFile<PySide.QtCore.QUrl.fromLocalFile>` (localfile)
+*    def :meth:`fromPercentEncoding<PySide.QtCore.QUrl.fromPercentEncoding>` (arg__1)
+*    def :meth:`fromPunycode<PySide.QtCore.QUrl.fromPunycode>` (arg__1)
+*    def :meth:`fromUserInput<PySide.QtCore.QUrl.fromUserInput>` (userInput)
+*    def :meth:`idnWhitelist<PySide.QtCore.QUrl.idnWhitelist>` ()
+*    def :meth:`setIdnWhitelist<PySide.QtCore.QUrl.setIdnWhitelist>` (arg__1)
+*    def :meth:`toAce<PySide.QtCore.QUrl.toAce>` (arg__1)
+*    def :meth:`toPercentEncoding<PySide.QtCore.QUrl.toPercentEncoding>` (arg__1[, exclude=QByteArray()[, include=QByteArray()]])
+*    def :meth:`toPunycode<PySide.QtCore.QUrl.toPunycode>` (arg__1)
+
+
+Detailed Description
+--------------------
+
+
+
+    The :class:`PySide.QtCore.QUrl` class provides a convenient interface for working with URLs.
+
+    It can parse and construct URLs in both encoded and unencoded form. :class:`PySide.QtCore.QUrl` also has support for internationalized domain names (IDNs).
+
+    The most common way to use :class:`PySide.QtCore.QUrl` is to initialize it via the constructor by passing a :class:`PySide.QtCore.QString` . Otherwise, :meth:`PySide.QtCore.QUrl.setUrl` and :meth:`PySide.QtCore.QUrl.setEncodedUrl` can also be used.
+
+    URLs can be represented in two forms: encoded or unencoded. The unencoded representation is suitable for showing to users, but the encoded representation is typically what you would send to a web server. For example, the unencoded URL "http://bühler.example.com" would be sent to the server as "http://xn--bhler-kva.example.com/List%20of%20applicants.xml".
+
+    A URL can also be constructed piece by piece by calling :meth:`PySide.QtCore.QUrl.setScheme` , :meth:`PySide.QtCore.QUrl.setUserName` , :meth:`PySide.QtCore.QUrl.setPassword` , :meth:`PySide.QtCore.QUrl.setHost` , :meth:`PySide.QtCore.QUrl.setPort` , :meth:`PySide.QtCore.QUrl.setPath` , :meth:`PySide.QtCore.QUrl.setEncodedQuery` and :meth:`PySide.QtCore.QUrl.setFragment` . Some convenience functions are also available: :meth:`PySide.QtCore.QUrl.setAuthority` sets the user name, password, host and port. :meth:`PySide.QtCore.QUrl.setUserInfo` sets the user name and password at once.
+
+    Call :meth:`PySide.QtCore.QUrl.isValid` to check if the URL is valid. This can be done at any point during the constructing of a URL.
+
+    Constructing a query is particularly convenient through the use of :meth:`PySide.QtCore.QUrl.setQueryItems` , :meth:`PySide.QtCore.QUrl.addQueryItem` and :meth:`PySide.QtCore.QUrl.removeQueryItem` . Use :meth:`PySide.QtCore.QUrl.setQueryDelimiters` to customize the delimiters used for generating the query string.
+
+    For the convenience of generating encoded URL strings or query strings, there are two static functions called :meth:`PySide.QtCore.QUrl.fromPercentEncoding` and :meth:`PySide.QtCore.QUrl.toPercentEncoding` which deal with percent encoding and decoding of QStrings.
+
+    Calling :meth:`PySide.QtCore.QUrl.isRelative` will tell whether or not the URL is relative. A relative URL can be resolved by passing it as argument to :meth:`PySide.QtCore.QUrl.resolved` , which returns an absolute URL. :meth:`PySide.QtCore.QUrl.isParentOf` is used for determining whether one URL is a parent of another.
+
+    :meth:`PySide.QtCore.QUrl.fromLocalFile` constructs a :class:`PySide.QtCore.QUrl` by parsing a local file path. :meth:`PySide.QtCore.QUrl.toLocalFile` converts a URL to a local file path.
+
+    The human readable representation of the URL is fetched with :meth:`PySide.QtCore.QUrl.toString` . This representation is appropriate for displaying a URL to a user in unencoded form. The encoded form however, as returned by :meth:`PySide.QtCore.QUrl.toEncoded` , is for internal use, passing to web servers, mail clients and so on.
+
+    :class:`PySide.QtCore.QUrl` conforms to the URI specification from :ref:`RFC 3986<http://www.rfc-editor.org/rfc/rfc3986.txt>` (Uniform Resource Identifier: Generic Syntax), and includes scheme extensions from :ref:`RFC 1738<http://www.rfc-editor.org/rfc/rfc1738.txt>` (Uniform Resource Locators). Case folding rules in :class:`PySide.QtCore.QUrl` conform to :ref:`RFC 3491<http://www.rfc-editor.org/rfc/rfc3491.txt>` (Nameprep: A Stringprep Profile for Internationalized Domain Names (IDN)).
+
+    .. seealso::  :class:`PySide.QtNetwork.QUrlInfo` 
+
+.. class:: QUrl()
+           QUrl(url)
+           QUrl(url, mode)
+           QUrl(copy)
+
+    :param mode: :attr:`PySide.QtCore.QUrl.ParsingMode`
+    :param copy: :class:`PySide.QtCore.QUrl`
+    :param url: unicode
+
+    Constructs an empty :class:`PySide.QtCore.QUrl` object.
+
+
+    Constructs a URL by parsing ``url`` . ``url`` is assumed to be in human readable representation, with no percent encoding. :class:`PySide.QtCore.QUrl` will automatically percent encode all characters that are not allowed in a URL.
+
+    Example:
+
+    ::
+
+        url = QUrl("http://www.example.com/List of holidays.xml")
+        # url.toEncoded() == "http://www.example.com/List%20of%20holidays.xml"
+
+
+    To construct a URL from an encoded string, call :meth:`PySide.QtCore.QUrl.fromEncoded` :
+
+    ::
+
+        url = QUrl.fromEncoded("http://qtsoftware.com/List%20of%20holidays.xml")
+
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setUrl`  :meth:`PySide.QtCore.QUrl.setEncodedUrl`  :meth:`PySide.QtCore.QUrl.fromEncoded`  :attr:`TolerantMode<QUrl.ParsingMode>` 
+
+    This is an overloaded function.
+
+    Parses the ``url`` using the parser mode ``parsingMode`` .
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setUrl` 
+
+    Constructs a copy of ``other`` .
+
+
+.. attribute:: PySide.QtCore.QUrl.ParsingMode
+
+    The parsing mode controls the way :class:`PySide.QtCore.QUrl` parses strings.
+
+    +-----------------+--------------------------------------------------------------------------------------------------------------------------------------+
+    |Constant         |Description                                                                                                                           |
+    +=================+======================================================================================================================================+
+    |QUrl.TolerantMode|:class:`PySide.QtCore.QUrl` will try to correct some common errors in URLs. This mode is useful when processing URLs entered by users.|
+    +-----------------+--------------------------------------------------------------------------------------------------------------------------------------+
+    |QUrl.StrictMode  |Only valid URLs are accepted. This mode is useful for general URL validation.                                                         |
+    +-----------------+--------------------------------------------------------------------------------------------------------------------------------------+
+
+    In :attr:`TolerantMode<QUrl.ParsingMode>` , the parser corrects the following invalid input:
+
+
+    * Spaces and "%20": If an encoded URL contains a space, this will be replaced with "%20". If a decoded URL contains "%20", this will be replaced with a single space before the URL is parsed.
+    * Single "%" characters: Any occurrences of a percent character "%" not followed by exactly two hexadecimal characters (e.g., "13% coverage.html") will be replaced by "%25".
+    * Reserved and unreserved characters: An encoded URL should only contain a few characters as literals; all other characters should be percent-encoded. In :attr:`TolerantMode<QUrl.ParsingMode>` , these characters will be automatically percent-encoded where they are not allowed: space / double-quote / "<" / ">" / "[" / "" / "]" / "^" / "`" / "{" / "|" / "}"
+
+
+.. attribute:: PySide.QtCore.QUrl.FormattingOption
+
+    The formatting options define how the URL is formatted when written out as text.
+
+    +-----------------------+----------------------------------------------------------------------------------------+
+    |Constant               |Description                                                                             |
+    +=======================+========================================================================================+
+    |QUrl.None              |The format of the URL is unchanged.                                                     |
+    +-----------------------+----------------------------------------------------------------------------------------+
+    |QUrl.RemoveScheme      |The scheme is removed from the URL.                                                     |
+    +-----------------------+----------------------------------------------------------------------------------------+
+    |QUrl.RemovePassword    |Any password in the URL is removed.                                                     |
+    +-----------------------+----------------------------------------------------------------------------------------+
+    |QUrl.RemoveUserInfo    |Any user information in the URL is removed.                                             |
+    +-----------------------+----------------------------------------------------------------------------------------+
+    |QUrl.RemovePort        |Any specified port is removed from the URL.                                             |
+    +-----------------------+----------------------------------------------------------------------------------------+
+    |QUrl.RemoveAuthority   |                                                                                        |
+    +-----------------------+----------------------------------------------------------------------------------------+
+    |QUrl.RemovePath        |The URL's path is removed, leaving only the scheme, host address, and port (if present).|
+    +-----------------------+----------------------------------------------------------------------------------------+
+    |QUrl.RemoveQuery       |The query part of the URL (following a '?' character) is removed.                       |
+    +-----------------------+----------------------------------------------------------------------------------------+
+    |QUrl.RemoveFragment    |                                                                                        |
+    +-----------------------+----------------------------------------------------------------------------------------+
+    |QUrl.StripTrailingSlash|The trailing slash is removed if one is present.                                        |
+    +-----------------------+----------------------------------------------------------------------------------------+
+
+    Note that the case folding rules in :ref:`Nameprep<http://www.rfc-editor.org/rfc/rfc3491.txt>` , which :class:`PySide.QtCore.QUrl` conforms to, require host names to always be converted to lower case, regardless of the Qt::FormattingOptions used.
+
+
+.. method:: PySide.QtCore.QUrl.__reduce__()
+
+
+    :rtype: :class:`PyObject`
+
+
+
+
+
+
+
+.. method:: PySide.QtCore.QUrl.__repr__()
+
+
+    :rtype: :class:`PyObject`
+
+
+
+
+
+
+
+.. method:: PySide.QtCore.QUrl.addEncodedQueryItem(key, value)
+
+
+    :param key: :class:`PySide.QtCore.QByteArray`
+    :param value: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Inserts the pair ``key`` = ``value`` into the query string of the URL.
+
+    Note: this function does not verify that either ``key`` or ``value`` are properly encoded. It is the caller's responsibility to ensure that the query delimiters are properly encoded, if any.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.addQueryItem`  :meth:`PySide.QtCore.QUrl.setQueryDelimiters` 
+
+
+.. method:: PySide.QtCore.QUrl.addQueryItem(key, value)
+
+
+    :param key: unicode
+    :param value: unicode
+
+
+
+
+    Inserts the pair ``key`` = ``value`` into the query string of the URL.
+
+    The key/value pair is encoded before it is added to the query. The pair is converted into separate strings internally. The ``key`` and ``value`` is first encoded into UTF-8 and then delimited by the character returned by valueDelimiter(). Each key/value pair is delimited by the character returned by pairDelimiter().
+
+    .. note::  This method does not encode spaces (ASCII 0x20) as plus (+) signs, like HTML forms do. If you need that kind of encoding, you must encode the value yourself and use QUrl::addEncodedQueryItem.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.addEncodedQueryItem` 
+
+
+.. method:: PySide.QtCore.QUrl.allEncodedQueryItemValues(key)
+
+
+    :param key: :class:`PySide.QtCore.QByteArray`
+    :rtype: 
+
+
+
+
+    Returns the a list of query string values whose key is equal to ``key`` from the URL.
+
+    Note: if the encoded ``key`` does not match the encoded version of the query, this function will not work. That is, if the encoded query of this URL is "search=Qt%20Rules", calling this function with ``key`` = "%73earch" will return an empty list.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.allQueryItemValues`  :meth:`PySide.QtCore.QUrl.queryItemValue`  :meth:`PySide.QtCore.QUrl.encodedQueryItemValue` 
+
+
+.. method:: PySide.QtCore.QUrl.allQueryItemValues(key)
+
+
+    :param key: unicode
+    :rtype: list of strings
+
+
+
+
+    Returns the a list of query string values whose key is equal to ``key`` from the URL.
+
+    .. note::  This method does not decode spaces plus (+) signs as spaces (ASCII 0x20), like HTML forms do. If you need that kind of decoding, you must use QUrl::allEncodedQueryItemValues and decode the data yourself.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.queryItemValue` 
+
+
+.. method:: PySide.QtCore.QUrl.authority()
+
+
+    :rtype: unicode
+
+
+
+
+    Returns the authority of the URL if it is defined; otherwise an empty string is returned.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setAuthority` 
+
+
+.. method:: PySide.QtCore.QUrl.clear()
+
+
+
+
+
+
+    Resets the content of the :class:`PySide.QtCore.QUrl` . After calling this function, the :class:`PySide.QtCore.QUrl` is equal to one that has been constructed with the default empty constructor.
+
+
+
+.. method:: PySide.QtCore.QUrl.encodedFragment()
+
+
+    :rtype: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Returns the fragment of the URL if it is defined; otherwise an empty string is returned. The returned value will have its non-ASCII and other control characters percent-encoded, as in :meth:`PySide.QtCore.QUrl.toEncoded` .
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setEncodedFragment`  :meth:`PySide.QtCore.QUrl.toEncoded` 
+
+
+.. method:: PySide.QtCore.QUrl.encodedHost()
+
+
+    :rtype: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Returns the host part of the URL if it is defined; otherwise an empty string is returned.
+
+    Note: :meth:`PySide.QtCore.QUrl.encodedHost` does not return percent-encoded hostnames. Instead, the ACE-encoded (bare ASCII in Punycode encoding) form will be returned for any non-ASCII hostname.
+
+    This function is equivalent to calling :meth:`QUrl.toAce()<PySide.QtCore.QUrl.toAce>` on the return value of :meth:`PySide.QtCore.QUrl.host` .
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setEncodedHost` 
+
+
+.. method:: PySide.QtCore.QUrl.encodedPassword()
+
+
+    :rtype: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Returns the password of the URL if it is defined; otherwise an empty string is returned. The returned value will have its non-ASCII and other control characters percent-encoded, as in :meth:`PySide.QtCore.QUrl.toEncoded` .
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setEncodedPassword`  :meth:`PySide.QtCore.QUrl.toEncoded` 
+
+
+.. method:: PySide.QtCore.QUrl.encodedPath()
+
+
+    :rtype: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Returns the path of the URL if it is defined; otherwise an empty string is returned. The returned value will have its non-ASCII and other control characters percent-encoded, as in :meth:`PySide.QtCore.QUrl.toEncoded` .
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setEncodedPath`  :meth:`PySide.QtCore.QUrl.toEncoded` 
+
+
+.. method:: PySide.QtCore.QUrl.encodedQuery()
+
+
+    :rtype: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Returns the query string of the URL in percent encoded form.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setEncodedQuery` 
+
+
+.. method:: PySide.QtCore.QUrl.encodedQueryItemValue(key)
+
+
+    :param key: :class:`PySide.QtCore.QByteArray`
+    :rtype: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Returns the first query string value whose key is equal to ``key`` from the URL.
+
+    Note: if the encoded ``key`` does not match the encoded version of the query, this function will not work. That is, if the encoded query of this URL is "search=Qt%20Rules", calling this function with ``key`` = "%73earch" will return an empty string.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.queryItemValue`  :meth:`PySide.QtCore.QUrl.allQueryItemValues` 
+
+
+.. method:: PySide.QtCore.QUrl.encodedQueryItems()
+
+
+    :rtype: 
+
+
+
+
+    Returns the query string of the URL, as a map of encoded keys and values.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setEncodedQueryItems`  :meth:`PySide.QtCore.QUrl.setQueryItems`  :meth:`PySide.QtCore.QUrl.setEncodedQuery` 
+
+
+.. method:: PySide.QtCore.QUrl.encodedUserName()
+
+
+    :rtype: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Returns the user name of the URL if it is defined; otherwise an empty string is returned. The returned value will have its non-ASCII and other control characters percent-encoded, as in :meth:`PySide.QtCore.QUrl.toEncoded` .
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setEncodedUserName` 
+
+
+.. method:: PySide.QtCore.QUrl.errorString()
+
+
+    :rtype: unicode
+
+
+
+
+    Returns a text string that explains why an URL is invalid in the case being; otherwise returns an empty string.
+
+
+
+.. method:: PySide.QtCore.QUrl.fragment()
+
+
+    :rtype: unicode
+
+
+
+
+    Returns the fragment of the URL.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setFragment` 
+
+
+.. staticmethod:: PySide.QtCore.QUrl.fromAce(arg__1)
+
+
+    :param arg__1: :class:`PySide.QtCore.QByteArray`
+    :rtype: unicode
+
+
+
+
+    Returns the Unicode form of the given domain name ``domain`` , which is encoded in the ASCII Compatible Encoding (ACE). The result of this function is considered equivalent to ``domain`` .
+
+    If the value in ``domain`` cannot be encoded, it will be converted to :class:`PySide.QtCore.QString` and returned.
+
+    The ASCII Compatible Encoding (ACE) is defined by RFC 3490, RFC 3491 and RFC 3492. It is part of the Internationalizing Domain Names in Applications (IDNA) specification, which allows for domain names (like ``"example.com"`` ) to be written using international characters.
+
+
+
+.. staticmethod:: PySide.QtCore.QUrl.fromEncoded(url)
+
+
+    :param url: :class:`PySide.QtCore.QByteArray`
+    :rtype: :class:`PySide.QtCore.QUrl`
+
+
+
+
+    Parses ``input`` and returns the corresponding :class:`PySide.QtCore.QUrl` . ``input`` is assumed to be in encoded form, containing only ASCII characters.
+
+    The URL is parsed using :attr:`TolerantMode<QUrl.ParsingMode>` .
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.toEncoded`  :meth:`PySide.QtCore.QUrl.setUrl` 
+
+
+.. staticmethod:: PySide.QtCore.QUrl.fromEncoded(url, mode)
+
+
+    :param url: :class:`PySide.QtCore.QByteArray`
+    :param mode: :attr:`PySide.QtCore.QUrl.ParsingMode`
+    :rtype: :class:`PySide.QtCore.QUrl`
+
+
+
+
+    This is an overloaded function.
+
+    Parses the URL using ``parsingMode`` .
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.toEncoded`  :meth:`PySide.QtCore.QUrl.setUrl` 
+
+
+.. staticmethod:: PySide.QtCore.QUrl.fromLocalFile(localfile)
+
+
+    :param localfile: unicode
+    :rtype: :class:`PySide.QtCore.QUrl`
+
+
+
+
+    Returns a :class:`PySide.QtCore.QUrl` representation of ``localFile`` , interpreted as a local file.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.toLocalFile` 
+
+
+.. staticmethod:: PySide.QtCore.QUrl.fromPercentEncoding(arg__1)
+
+
+    :param arg__1: :class:`PySide.QtCore.QByteArray`
+    :rtype: unicode
+
+
+
+
+    Returns a decoded copy of ``input`` . ``input`` is first decoded from percent encoding, then converted from UTF-8 to unicode.
+
+
+
+.. staticmethod:: PySide.QtCore.QUrl.fromPunycode(arg__1)
+
+
+    :param arg__1: :class:`PySide.QtCore.QByteArray`
+    :rtype: unicode
+
+
+
+
+    Returns the Punycode decoded representation of ``pc`` .
+
+    Punycode is a Unicode encoding used for internationalized domain names, as defined in RFC3492. If you want to convert a domain from its ASCII-compatible encoding to the Unicode representation, use :meth:`PySide.QtCore.QUrl.fromAce` .
+
+
+
+.. staticmethod:: PySide.QtCore.QUrl.fromUserInput(userInput)
+
+
+    :param userInput: unicode
+    :rtype: :class:`PySide.QtCore.QUrl`
+
+
+
+
+    Returns a valid URL from a user supplied ``userInput`` string if one can be deducted. In the case that is not possible, an invalid :meth:`PySide.QtCore.QUrl.QUrl` is returned.
+
+    Most applications that can browse the web, allow the user to input a URL in the form of a plain string. This string can be manually typed into a location bar, obtained from the clipboard, or passed in via command line arguments.
+
+    When the string is not already a valid URL, a best guess is performed, making various web related assumptions.
+
+    In the case the string corresponds to a valid file path on the system, a file:// URL is constructed, using :meth:`QUrl.fromLocalFile()<PySide.QtCore.QUrl.fromLocalFile>` .
+
+    If that is not the case, an attempt is made to turn the string into a http:// or ftp:// URL. The latter in the case the string starts with 'ftp'. The result is then passed through :class:`PySide.QtCore.QUrl` 's tolerant parser, and in the case or success, a valid :class:`PySide.QtCore.QUrl` is returned, or else a :meth:`PySide.QtCore.QUrl.QUrl` .
+
+    .. _PySide.QtCore.QUrl_examples:
+
+
+
+Examples:
+^^^^^^^^^
+
+
+    * qt.nokia.com becomes http://qt.nokia.com
+    * ftp.qt.nokia.com becomes ftp://ftp.qt.nokia.com
+    * hostname becomes http://hostname
+    * /home/user/test.html becomes file:///home/user/test.html
+
+    .. _PySide.QtCore.QUrl_tips-to-avoid-erroneous-character-conversion-when-dealing-with:
+
+
+
+Tips to avoid erroneous character conversion when dealing with
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    URLs and strings:
+
+
+    * When creating an URL :class:`PySide.QtCore.QString` from a :class:`PySide.QtCore.QByteArray` or a char\*, always use :meth:`QString.fromUtf8` .
+    * Favor the use of :meth:`QUrl.fromEncoded()<PySide.QtCore.QUrl.fromEncoded>` and :meth:`QUrl.toEncoded()<PySide.QtCore.QUrl.toEncoded>` instead of :class:`PySide.QtCore.QUrl` (string) and :meth:`QUrl.toString()<PySide.QtCore.QUrl.toString>` when converting :class:`PySide.QtCore.QUrl` to/from string.
+
+
+
+.. method:: PySide.QtCore.QUrl.hasEncodedQueryItem(key)
+
+
+    :param key: :class:`PySide.QtCore.QByteArray`
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if there is a query string pair whose key is equal to ``key`` from the URL.
+
+    Note: if the encoded ``key`` does not match the encoded version of the query, this function will return false. That is, if the encoded query of this URL is "search=Qt%20Rules", calling this function with ``key`` = "%73earch" will return false.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.hasQueryItem` 
+
+
+.. method:: PySide.QtCore.QUrl.hasFragment()
+
+
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if this URL contains a fragment (i.e., if # was seen on it).
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.fragment`  :meth:`PySide.QtCore.QUrl.setFragment` 
+
+
+.. method:: PySide.QtCore.QUrl.hasQuery()
+
+
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if this URL contains a Query (i.e., if ? was seen on it).
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.hasQueryItem`  :meth:`PySide.QtCore.QUrl.encodedQuery` 
+
+
+.. method:: PySide.QtCore.QUrl.hasQueryItem(key)
+
+
+    :param key: unicode
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if there is a query string pair whose key is equal to ``key`` from the URL.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.hasEncodedQueryItem` 
+
+
+.. method:: PySide.QtCore.QUrl.host()
+
+
+    :rtype: unicode
+
+
+
+
+    Returns the host of the URL if it is defined; otherwise an empty string is returned.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setHost` 
+
+
+.. staticmethod:: PySide.QtCore.QUrl.idnWhitelist()
+
+
+    :rtype: list of strings
+
+
+
+
+    Returns the current whitelist of top-level domains that are allowed to have non-ASCII characters in their compositions.
+
+    See :meth:`PySide.QtCore.QUrl.setIdnWhitelist` for the rationale of this list.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setIdnWhitelist` 
+
+
+.. method:: PySide.QtCore.QUrl.isEmpty()
+
+
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if the URL has no data; otherwise returns false.
+
+
+
+.. method:: PySide.QtCore.QUrl.isParentOf(url)
+
+
+    :param url: :class:`PySide.QtCore.QUrl`
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if this URL is a parent of ``childUrl`` . ``childUrl`` is a child of this URL if the two URLs share the same scheme and authority, and this URL's path is a parent of the path of ``childUrl`` .
+
+
+
+.. method:: PySide.QtCore.QUrl.isRelative()
+
+
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if the URL is relative; otherwise returns false. A URL is relative if its scheme is undefined; this function is therefore equivalent to calling :meth:`PySide.QtCore.QUrl.scheme` . :meth:`PySide.QtCore.QUrl.isEmpty` .
+
+
+
+.. method:: PySide.QtCore.QUrl.isValid()
+
+
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if the URL is valid; otherwise returns false.
+
+    The URL is run through a conformance test. Every part of the URL must conform to the standard encoding rules of the URI standard for the URL to be reported as valid.
+
+    ::
+
+        def checkUrl(url):
+            if !url.isValid():
+                print "Invalid URL: %s" % url.toString()
+                return False
+
+            return True
+
+
+
+
+
+.. method:: PySide.QtCore.QUrl.__ne__(url)
+
+
+    :param url: :class:`PySide.QtCore.QUrl`
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if this URL and the given ``url`` are not equal; otherwise returns false.
+
+
+
+.. method:: PySide.QtCore.QUrl.__lt__(url)
+
+
+    :param url: :class:`PySide.QtCore.QUrl`
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if this URL is "less than" the given ``url`` . This provides a means of ordering URLs.
+
+
+
+.. method:: PySide.QtCore.QUrl.__eq__(url)
+
+
+    :param url: :class:`PySide.QtCore.QUrl`
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if this URL and the given ``url`` are equal; otherwise returns false.
+
+
+
+.. method:: PySide.QtCore.QUrl.password()
+
+
+    :rtype: unicode
+
+
+
+
+    Returns the password of the URL if it is defined; otherwise an empty string is returned.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setPassword` 
+
+
+.. method:: PySide.QtCore.QUrl.path()
+
+
+    :rtype: unicode
+
+
+
+
+    Returns the path of the URL.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setPath` 
+
+
+.. method:: PySide.QtCore.QUrl.port(defaultPort)
+
+
+    :param defaultPort: :class:`PySide.QtCore.int`
+    :rtype: :class:`PySide.QtCore.int`
+
+
+
+
+    This is an overloaded function.
+
+    Returns the port of the URL, or ``defaultPort`` if the port is unspecified.
+
+    Example:
+
+    ::
+
+        ftp = QFtp()
+        ftp.connectToHost(url.host(), url.port(21))
+
+
+
+
+.. method:: PySide.QtCore.QUrl.port()
+
+
+    :rtype: :class:`PySide.QtCore.int`
+
+
+
+
+    Returns the port of the URL, or -1 if the port is unspecified.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setPort` 
+
+
+.. method:: PySide.QtCore.QUrl.queryItemValue(key)
+
+
+    :param key: unicode
+    :rtype: unicode
+
+
+
+
+    Returns the first query string value whose key is equal to ``key`` from the URL.
+
+    .. note::  This method does not decode spaces plus (+) signs as spaces (ASCII 0x20), like HTML forms do. If you need that kind of decoding, you must use QUrl::encodedQueryItemValue and decode the data yourself.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.allQueryItemValues` 
+
+
+.. method:: PySide.QtCore.QUrl.queryItems()
+
+
+    :rtype: 
+
+
+
+
+    Returns the query string of the URL, as a map of keys and values.
+
+    .. note::  This method does not decode spaces plus (+) signs as spaces (ASCII 0x20), like HTML forms do. If you need that kind of decoding, you must use QUrl::encodedQueryItems and decode the data yourself.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setQueryItems`  :meth:`PySide.QtCore.QUrl.setEncodedQuery` 
+
+
+.. method:: PySide.QtCore.QUrl.queryPairDelimiter()
+
+
+    :rtype: :class:`PySide.QtCore.char`
+
+
+
+
+    Returns the character used to delimit between key-value pairs in the query string of the URL.
+
+
+
+.. method:: PySide.QtCore.QUrl.queryValueDelimiter()
+
+
+    :rtype: :class:`PySide.QtCore.char`
+
+
+
+
+    Returns the character used to delimit between keys and values in the query string of the URL.
+
+
+
+.. method:: PySide.QtCore.QUrl.removeAllEncodedQueryItems(key)
+
+
+    :param key: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Removes all the query string pairs whose key is equal to ``key`` from the URL.
+
+    Note: if the encoded ``key`` does not match the encoded version of the query, this function will not work. That is, if the encoded query of this URL is "search=Qt%20Rules", calling this function with ``key`` = "%73earch" will do nothing.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.removeQueryItem` 
+
+
+.. method:: PySide.QtCore.QUrl.removeAllQueryItems(key)
+
+
+    :param key: unicode
+
+
+
+
+    Removes all the query string pairs whose key is equal to ``key`` from the URL.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.removeQueryItem` 
+
+
+.. method:: PySide.QtCore.QUrl.removeEncodedQueryItem(key)
+
+
+    :param key: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Removes the first query string pair whose key is equal to ``key`` from the URL.
+
+    Note: if the encoded ``key`` does not match the encoded version of the query, this function will not work. That is, if the encoded query of this URL is "search=Qt%20Rules", calling this function with ``key`` = "%73earch" will do nothing.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.removeQueryItem`  :meth:`PySide.QtCore.QUrl.removeAllQueryItems` 
+
+
+.. method:: PySide.QtCore.QUrl.removeQueryItem(key)
+
+
+    :param key: unicode
+
+
+
+
+    Removes the first query string pair whose key is equal to ``key`` from the URL.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.removeAllQueryItems` 
+
+
+.. method:: PySide.QtCore.QUrl.resolved(relative)
+
+
+    :param relative: :class:`PySide.QtCore.QUrl`
+    :rtype: :class:`PySide.QtCore.QUrl`
+
+
+
+
+    Returns the result of the merge of this URL with ``relative`` . This URL is used as a base to convert ``relative`` to an absolute URL.
+
+    If ``relative`` is not a relative URL, this function will return ``relative`` directly. Otherwise, the paths of the two URLs are merged, and the new URL returned has the scheme and authority of the base URL, but with the merged path, as in the following example:
+
+    ::
+
+        baseUrl = QUrl("http://qtsoftware.com/support")
+        relativeUrl = QUrl("../products/solutions")
+        print baseUrl.resolved(relativeUrl).toString()
+        # prints "http://qtsoftware.com/products/solutions"
+
+
+    Calling :meth:`PySide.QtCore.QUrl.resolved` with ".." returns a :class:`PySide.QtCore.QUrl` whose directory is one level higher than the original. Similarly, calling :meth:`PySide.QtCore.QUrl.resolved` with "../.." removes two levels from the path. If ``relative`` is "/", the path becomes "/".
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.isRelative` 
+
+
+.. method:: PySide.QtCore.QUrl.scheme()
+
+
+    :rtype: unicode
+
+
+
+
+    Returns the scheme of the URL. If an empty string is returned, this means the scheme is undefined and the URL is then relative.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setScheme`  :meth:`PySide.QtCore.QUrl.isRelative` 
+
+
+.. method:: PySide.QtCore.QUrl.setAuthority(authority)
+
+
+    :param authority: unicode
+
+
+
+
+    Sets the authority of the URL to ``authority`` .
+
+    The authority of a URL is the combination of user info, a host name and a port. All of these elements are optional; an empty authority is therefore valid.
+
+    The user info and host are separated by a '@', and the host and port are separated by a ':'. If the user info is empty, the '@' must be omitted; although a stray ':' is permitted if the port is empty.
+
+    The following example shows a valid authority string:
+
+    .. image:: ../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/qurl-authority.png
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.authority` 
+
+
+.. method:: PySide.QtCore.QUrl.setEncodedFragment(fragment)
+
+
+    :param fragment: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Sets the URL's fragment to the percent-encoded ``fragment`` . The fragment is the last part of the URL, represented by a '#' followed by a string of characters. It is typically used in HTTP for referring to a certain link or point on a page:
+
+    .. image:: ../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/qurl-fragment.png
+
+    The fragment is sometimes also referred to as the URL "reference".
+
+    Passing an argument of :meth:`~PySide.QtCore.QUrl.QByteArray` (a null :class:`PySide.QtCore.QByteArray` ) will unset the fragment. Passing an argument of :class:`PySide.QtCore.QByteArray` ("") (an empty but not null :class:`PySide.QtCore.QByteArray` ) will set the fragment to an empty string (as if the original URL had a lone "#").
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setFragment`  :meth:`PySide.QtCore.QUrl.encodedFragment` 
+
+
+.. method:: PySide.QtCore.QUrl.setEncodedHost(host)
+
+
+    :param host: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Sets the URL's host to the ACE- or percent-encoded ``host`` . The ``host`` is part of the user info element in the authority of the URL, as described in :meth:`PySide.QtCore.QUrl.setAuthority` .
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setHost`  :meth:`PySide.QtCore.QUrl.encodedHost`  :meth:`PySide.QtCore.QUrl.setAuthority`  :meth:`PySide.QtCore.QUrl.fromAce` 
+
+
+.. method:: PySide.QtCore.QUrl.setEncodedPassword(password)
+
+
+    :param password: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Sets the URL's password to the percent-encoded ``password`` . The ``password`` is part of the user info element in the authority of the URL, as described in :meth:`PySide.QtCore.QUrl.setUserInfo` .
+
+    Note: this function does not verify that ``password`` is properly encoded. It is the caller's responsibility to ensure that the any delimiters (such as colons or slashes) are properly encoded.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setPassword`  :meth:`PySide.QtCore.QUrl.encodedPassword`  :meth:`PySide.QtCore.QUrl.setUserInfo` 
+
+
+.. method:: PySide.QtCore.QUrl.setEncodedPath(path)
+
+
+    :param path: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Sets the URL's path to the percent-encoded ``path`` . The path is the part of the URL that comes after the authority but before the query string.
+
+    .. image:: ../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/qurl-ftppath.png
+
+    For non-hierarchical schemes, the path will be everything following the scheme declaration, as in the following example:
+
+    .. image:: ../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/qurl-mailtopath.png
+
+    Note: this function does not verify that ``path`` is properly encoded. It is the caller's responsibility to ensure that the any delimiters (such as '?' and '#') are properly encoded.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setPath`  :meth:`PySide.QtCore.QUrl.encodedPath`  :meth:`PySide.QtCore.QUrl.setUserInfo` 
+
+
+.. method:: PySide.QtCore.QUrl.setEncodedQuery(query)
+
+
+    :param query: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Sets the query string of the URL to ``query`` . The string is inserted as-is, and no further encoding is performed when calling :meth:`PySide.QtCore.QUrl.toEncoded` .
+
+    This function is useful if you need to pass a query string that does not fit into the key-value pattern, or that uses a different scheme for encoding special characters than what is suggested by :class:`PySide.QtCore.QUrl` .
+
+    Passing a value of :meth:`~PySide.QtCore.QUrl.QByteArray` to ``query`` (a null :class:`PySide.QtCore.QByteArray` ) unsets the query completely. However, passing a value of :class:`PySide.QtCore.QByteArray` ("") will set the query to an empty value, as if the original URL had a lone "?".
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.encodedQuery`  :meth:`PySide.QtCore.QUrl.hasQuery` 
+
+
+.. method:: PySide.QtCore.QUrl.setEncodedQueryItems(query)
+
+
+    :param query: 
+
+
+
+
+
+
+
+.. method:: PySide.QtCore.QUrl.setEncodedUrl(url)
+
+
+    :param url: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Constructs a URL by parsing the contents of ``encodedUrl`` .
+
+    ``encodedUrl`` is assumed to be a URL string in percent encoded form, containing only ASCII characters.
+
+    Use :meth:`PySide.QtCore.QUrl.isValid` to determine if a valid URL was constructed.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setUrl` 
+
+
+.. method:: PySide.QtCore.QUrl.setEncodedUrl(url, mode)
+
+
+    :param url: :class:`PySide.QtCore.QByteArray`
+    :param mode: :attr:`PySide.QtCore.QUrl.ParsingMode`
+
+
+
+
+    Constructs a URL by parsing the contents of ``encodedUrl`` using the given ``parsingMode`` .
+
+
+
+.. method:: PySide.QtCore.QUrl.setEncodedUserName(userName)
+
+
+    :param userName: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Sets the URL's user name to the percent-encoded ``userName`` . The ``userName`` is part of the user info element in the authority of the URL, as described in :meth:`PySide.QtCore.QUrl.setUserInfo` .
+
+    Note: this function does not verify that ``userName`` is properly encoded. It is the caller's responsibility to ensure that the any delimiters (such as colons or slashes) are properly encoded.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setUserName`  :meth:`PySide.QtCore.QUrl.encodedUserName`  :meth:`PySide.QtCore.QUrl.setUserInfo` 
+
+
+.. method:: PySide.QtCore.QUrl.setFragment(fragment)
+
+
+    :param fragment: unicode
+
+
+
+
+    Sets the fragment of the URL to ``fragment`` . The fragment is the last part of the URL, represented by a '#' followed by a string of characters. It is typically used in HTTP for referring to a certain link or point on a page:
+
+    .. image:: ../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/qurl-fragment.png
+
+    The fragment is sometimes also referred to as the URL "reference".
+
+    Passing an argument of :meth:`~PySide.QtCore.QUrl.QString` (a null :class:`PySide.QtCore.QString` ) will unset the fragment. Passing an argument of :class:`PySide.QtCore.QString` ("") (an empty but not null :class:`PySide.QtCore.QString` ) will set the fragment to an empty string (as if the original URL had a lone "#").
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.fragment`  :meth:`PySide.QtCore.QUrl.hasFragment` 
+
+
+.. method:: PySide.QtCore.QUrl.setHost(host)
+
+
+    :param host: unicode
+
+
+
+
+    Sets the host of the URL to ``host`` . The host is part of the authority.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.host`  :meth:`PySide.QtCore.QUrl.setAuthority` 
+
+
+.. staticmethod:: PySide.QtCore.QUrl.setIdnWhitelist(arg__1)
+
+
+    :param arg__1: list of strings
+
+
+
+
+    Sets the whitelist of Top-Level Domains (TLDs) that are allowed to have non-ASCII characters in domains to the value of ``list`` .
+
+    Qt has comes a default list that contains the Internet top-level domains that have published support for Internationalized Domain Names (IDNs) and rules to guarantee that no deception can happen between similarly-looking characters (such as the Latin lowercase letter ``'a'`` and the Cyrillic equivalent, which in most fonts are visually identical).
+
+    This list is periodically maintained, as registrars publish new rules.
+
+    This function is provided for those who need to manipulate the list, in order to add or remove a TLD. It is not recommended to change its value for purposes other than testing, as it may expose users to security risks.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.idnWhitelist` 
+
+
+.. method:: PySide.QtCore.QUrl.setPassword(password)
+
+
+    :param password: unicode
+
+
+
+
+    Sets the URL's password to ``password`` . The ``password`` is part of the user info element in the authority of the URL, as described in :meth:`PySide.QtCore.QUrl.setUserInfo` .
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.password`  :meth:`PySide.QtCore.QUrl.setUserInfo` 
+
+
+.. method:: PySide.QtCore.QUrl.setPath(path)
+
+
+    :param path: unicode
+
+
+
+
+    Sets the path of the URL to ``path`` . The path is the part of the URL that comes after the authority but before the query string.
+
+    .. image:: ../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/qurl-ftppath.png
+
+    For non-hierarchical schemes, the path will be everything following the scheme declaration, as in the following example:
+
+    .. image:: ../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/qurl-mailtopath.png
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.path` 
+
+
+.. method:: PySide.QtCore.QUrl.setPort(port)
+
+
+    :param port: :class:`PySide.QtCore.int`
+
+
+
+
+    Sets the port of the URL to ``port`` . The port is part of the authority of the URL, as described in :meth:`PySide.QtCore.QUrl.setAuthority` .
+
+    ``port`` must be between 0 and 65535 inclusive. Setting the port to -1 indicates that the port is unspecified.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.port` 
+
+
+.. method:: PySide.QtCore.QUrl.setQueryDelimiters(valueDelimiter, pairDelimiter)
+
+
+    :param valueDelimiter: :class:`PySide.QtCore.char`
+    :param pairDelimiter: :class:`PySide.QtCore.char`
+
+
+
+
+    Sets the characters used for delimiting between keys and values, and between key-value pairs in the URL's query string. The default value delimiter is '=' and the default pair delimiter is '&'.
+
+    .. image:: ../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/qurl-querystring.png
+
+    ``valueDelimiter`` will be used for separating keys from values, and ``pairDelimiter`` will be used to separate key-value pairs. Any occurrences of these delimiting characters in the encoded representation of the keys and values of the query string are percent encoded.
+
+    If ``valueDelimiter`` is set to '-' and ``pairDelimiter`` is '/', the above query string would instead be represented like this:
+
+    ::
+
+        http://www.example.com/cgi-bin/drawgraph.cgi?type-pie/color-green
+
+
+    Calling this function does not change the delimiters of the current query string. It only affects :meth:`PySide.QtCore.QUrl.queryItems` , :meth:`PySide.QtCore.QUrl.setQueryItems` and addQueryItems().
+
+
+
+.. method:: PySide.QtCore.QUrl.setQueryItems(query)
+
+
+    :param query: 
+
+
+
+
+
+
+
+.. method:: PySide.QtCore.QUrl.setScheme(scheme)
+
+
+    :param scheme: unicode
+
+
+
+
+    Sets the scheme of the URL to ``scheme`` . As a scheme can only contain ASCII characters, no conversion or encoding is done on the input.
+
+    The scheme describes the type (or protocol) of the URL. It's represented by one or more ASCII characters at the start the URL, and is followed by a ':'. The following example shows a URL where the scheme is "ftp":
+
+    .. image:: ../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/qurl-authority2.png
+
+    The scheme can also be empty, in which case the URL is interpreted as relative.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.scheme`  :meth:`PySide.QtCore.QUrl.isRelative` 
+
+
+.. method:: PySide.QtCore.QUrl.setUrl(url, mode)
+
+
+    :param url: unicode
+    :param mode: :attr:`PySide.QtCore.QUrl.ParsingMode`
+
+
+
+
+    This is an overloaded function.
+
+    Parses ``url`` using the parsing mode ``parsingMode`` .
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setEncodedUrl` 
+
+
+.. method:: PySide.QtCore.QUrl.setUrl(url)
+
+
+    :param url: unicode
+
+
+
+
+    Constructs a URL by parsing the contents of ``url`` .
+
+    ``url`` is assumed to be in unicode format, with no percent encoding.
+
+    Calling :meth:`PySide.QtCore.QUrl.isValid` will tell whether or not a valid URL was constructed.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setEncodedUrl` 
+
+
+.. method:: PySide.QtCore.QUrl.setUserInfo(userInfo)
+
+
+    :param userInfo: unicode
+
+
+
+
+    Sets the user info of the URL to ``userInfo`` . The user info is an optional part of the authority of the URL, as described in :meth:`PySide.QtCore.QUrl.setAuthority` .
+
+    The user info consists of a user name and optionally a password, separated by a ':'. If the password is empty, the colon must be omitted. The following example shows a valid user info string:
+
+    .. image:: ../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/qurl-authority3.png
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.userInfo`  :meth:`PySide.QtCore.QUrl.setUserName`  :meth:`PySide.QtCore.QUrl.setPassword`  :meth:`PySide.QtCore.QUrl.setAuthority` 
+
+
+.. method:: PySide.QtCore.QUrl.setUserName(userName)
+
+
+    :param userName: unicode
+
+
+
+
+    Sets the URL's user name to ``userName`` . The ``userName`` is part of the user info element in the authority of the URL, as described in :meth:`PySide.QtCore.QUrl.setUserInfo` .
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setEncodedUserName`  :meth:`PySide.QtCore.QUrl.userName`  :meth:`PySide.QtCore.QUrl.setUserInfo` 
+
+
+.. staticmethod:: PySide.QtCore.QUrl.toAce(arg__1)
+
+
+    :param arg__1: unicode
+    :rtype: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Returns the ASCII Compatible Encoding of the given domain name ``domain`` . The result of this function is considered equivalent to ``domain`` .
+
+    The ASCII-Compatible Encoding (ACE) is defined by RFC 3490, RFC 3491 and RFC 3492. It is part of the Internationalizing Domain Names in Applications (IDNA) specification, which allows for domain names (like ``"example.com"`` ) to be written using international characters.
+
+    This function return an empty QByteArra if ``domain`` is not a valid hostname. Note, in particular, that IPv6 literals are not valid domain names.
+
+
+
+.. method:: PySide.QtCore.QUrl.toEncoded([options=QUrl.None])
+
+
+    :param options: :class:`PySide.QtCore.QUrl.FormattingOptions`
+    :rtype: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+
+
+
+.. method:: PySide.QtCore.QUrl.toLocalFile()
+
+
+    :rtype: unicode
+
+
+
+
+    Returns the path of this URL formatted as a local file path.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.fromLocalFile` 
+
+
+.. staticmethod:: PySide.QtCore.QUrl.toPercentEncoding(arg__1[, exclude=QByteArray()[, include=QByteArray()]])
+
+
+    :param arg__1: unicode
+    :param exclude: :class:`PySide.QtCore.QByteArray`
+    :param include: :class:`PySide.QtCore.QByteArray`
+    :rtype: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Returns an encoded copy of ``input`` . ``input`` is first converted to UTF-8, and all ASCII-characters that are not in the unreserved group are percent encoded. To prevent characters from being percent encoded pass them to ``exclude`` . To force characters to be percent encoded pass them to ``include`` .
+
+    Unreserved is defined as: ALPHA / DIGIT / "-" / "." / " :ref:`_<index.html>` " / "~"
+
+    ::
+
+        ba = QUrl.toPercentEncoding("{a fishy string?}", "{}", "s")
+        print ba
+        # prints "{a fi%73hy %73tring%3F}"
+
+
+
+
+.. staticmethod:: PySide.QtCore.QUrl.toPunycode(arg__1)
+
+
+    :param arg__1: unicode
+    :rtype: :class:`PySide.QtCore.QByteArray`
+
+
+
+
+    Returns a ``uc`` in Punycode encoding.
+
+    Punycode is a Unicode encoding used for internationalized domain names, as defined in RFC3492. If you want to convert a domain name from Unicode to its ASCII-compatible representation, use :meth:`PySide.QtCore.QUrl.toAce` .
+
+
+
+.. method:: PySide.QtCore.QUrl.toString([options=QUrl.None])
+
+
+    :param options: :class:`PySide.QtCore.QUrl.FormattingOptions`
+    :rtype: unicode
+
+
+
+
+
+
+
+.. method:: PySide.QtCore.QUrl.userInfo()
+
+
+    :rtype: unicode
+
+
+
+
+    Returns the user info of the URL, or an empty string if the user info is undefined.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setUserInfo` 
+
+
+.. method:: PySide.QtCore.QUrl.userName()
+
+
+    :rtype: unicode
+
+
+
+
+    Returns the user name of the URL if it is defined; otherwise an empty string is returned.
+
+    .. seealso::  :meth:`PySide.QtCore.QUrl.setUserName`  :meth:`PySide.QtCore.QUrl.encodedUserName` 
+
+
+

@@ -1,0 +1,1381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   QGraphicsSceneWheelEvent — PySide 1.1.0 documentation
+  </title>
+  <link href="../../_static/pysidedocs.css" rel="stylesheet" type="text/css"/>
+  <link href="../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+  </script>
+  <script src="../../_static/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../_static/underscore.js" type="text/javascript">
+  </script>
+  <script src="../../_static/doctools.js" type="text/javascript">
+  </script>
+  <link href="../../index.html" rel="top" title="PySide 1.1.0 documentation"/>
+  <link href="index.html" rel="up" title="PySide.QtGui"/>
+  <link href="QGraphicsSceneMouseEvent.html" rel="next" title="QGraphicsSceneMouseEvent"/>
+  <link href="QGraphicsSceneContextMenuEvent.html" rel="prev" title="QGraphicsSceneContextMenuEvent"/>
+ </head>
+ <body>
+  <div id="container">
+   <div class="header">
+    <div class="header_container">
+     <div class="logo">
+      <a href="http://www.pyside.org">
+       <img alt="PySide" height="102" src="../../_static/pysidelogo.png" width="199"/>
+      </a>
+     </div>
+     <div class="related">
+      <ul>
+       <li>
+        <a href="../../index.html">
+         PySide 1.1.0 documentation
+        </a>
+       </li>
+       <li>
+        »
+        <a href="../../modules.html">
+         PySide modules
+        </a>
+       </li>
+       <li>
+        »
+        <a accesskey="U" href="index.html">
+         PySide.QtGui
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="sphinxsidebar">
+    <div class="sphinxsidebarwrapper">
+     <h3>
+      <a href="../../contents.html">
+       Table Of Contents
+      </a>
+     </h3>
+     <ul>
+      <li>
+       <a class="reference internal" href="#">
+        QGraphicsSceneWheelEvent
+       </a>
+       <ul>
+        <li>
+         <a class="reference internal" href="#synopsis">
+          Synopsis
+         </a>
+         <ul>
+          <li>
+           <a class="reference internal" href="#functions">
+            Functions
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a class="reference internal" href="#detailed-description">
+          Detailed Description
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+     <h4>
+      Previous topic
+     </h4>
+     <p class="topless">
+      <a href="QGraphicsSceneContextMenuEvent.html" title="previous chapter">
+       QGraphicsSceneContextMenuEvent
+      </a>
+     </p>
+     <h4>
+      Next topic
+     </h4>
+     <p class="topless">
+      <a href="QGraphicsSceneMouseEvent.html" title="next chapter">
+       QGraphicsSceneMouseEvent
+      </a>
+     </p>
+     <div id="searchbox" style="display: none">
+      <h3>
+       Quick search
+      </h3>
+      <form action="../../search.html" class="search" method="get">
+       <input id="q" name="q" size="18" type="text"/>
+       <input id="search_button" type="submit" value="Go"/>
+       <input name="check_keywords" type="hidden" value="yes"/>
+       <input name="area" type="hidden" value="default"/>
+      </form>
+     </div>
+     <script type="text/javascript">
+      $('#searchbox').show(0);
+     </script>
+    </div>
+   </div>
+   <div class="document">
+    <div class="documentwrapper">
+     <div class="bodywrapper">
+      <div class="body">
+       <span class="target" id="module-PySide.QtGui">
+       </span>
+       <div class="section" id="qgraphicsscenewheelevent">
+        <span id="id1">
+        </span>
+        <h1>
+         QGraphicsSceneWheelEvent
+         <a class="headerlink" href="#qgraphicsscenewheelevent" title="Permalink to this headline">
+          ¶
+         </a>
+        </h1>
+        <p class="graphviz">
+         <img alt="Inheritance diagram of QGraphicsSceneWheelEvent" class="inheritance" src="../../_images/inheritance-5d4ffbf45c9c9719b3199b7aa93ff11b0038b98b.png" usemap="#inheritance9c6dec4f9c"/>
+         <map id="inheritance9c6dec4f9c" name="inheritance9c6dec4f9c">
+          <area alt="" coords="424,5,667,33" href="#PySide.QtGui.QGraphicsSceneWheelEvent" id="node1" shape="rect" title="QtGui.QGraphicsSceneWheelEvent">
+          </area>
+          <area alt="" coords="172,5,375,33" href="QGraphicsSceneEvent.html#PySide.QtGui.QGraphicsSceneEvent" id="node2" shape="rect" title="QtGui.QGraphicsSceneEvent">
+          </area>
+          <area alt="" coords="5,5,123,33" href="../QtCore/QEvent.html#PySide.QtCore.QEvent" id="node4" shape="rect" title="QtCore.QEvent">
+          </area>
+         </map>
+        </p>
+        <div class="section" id="synopsis">
+         <h2>
+          Synopsis
+          <a class="headerlink" href="#synopsis" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <div class="section" id="functions">
+          <h3>
+           Functions
+           <a class="headerlink" href="#functions" title="Permalink to this headline">
+            ¶
+           </a>
+          </h3>
+          <ul class="simple">
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.buttons" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.buttons">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               buttons
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.delta" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.delta">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               delta
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.modifiers" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.modifiers">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               modifiers
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.orientation" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.orientation">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               orientation
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.pos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.pos">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               pos
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.scenePos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.scenePos">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               scenePos
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.screenPos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.screenPos">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               screenPos
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setButtons" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setButtons">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setButtons
+              </span>
+             </tt>
+            </a>
+            (buttons)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setDelta" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setDelta">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setDelta
+              </span>
+             </tt>
+            </a>
+            (delta)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setModifiers" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setModifiers">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setModifiers
+              </span>
+             </tt>
+            </a>
+            (modifiers)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setOrientation" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setOrientation">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setOrientation
+              </span>
+             </tt>
+            </a>
+            (orientation)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setPos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setPos">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setPos
+              </span>
+             </tt>
+            </a>
+            (pos)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setScenePos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setScenePos">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setScenePos
+              </span>
+             </tt>
+            </a>
+            (pos)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setScreenPos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setScreenPos">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setScreenPos
+              </span>
+             </tt>
+            </a>
+            (pos)
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="section" id="detailed-description">
+         <h2>
+          Detailed Description
+          <a class="headerlink" href="#detailed-description" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <blockquote>
+          <div>
+           <p>
+            The
+            <a class="reference internal" href="#PySide.QtGui.QGraphicsSceneWheelEvent" title="PySide.QtGui.QGraphicsSceneWheelEvent">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QGraphicsSceneWheelEvent
+              </span>
+             </tt>
+            </a>
+            class provides wheel events in the graphics view framework.
+           </p>
+           <p>
+            The
+            <a class="reference internal" href="#PySide.QtGui.QGraphicsSceneWheelEvent" title="PySide.QtGui.QGraphicsSceneWheelEvent">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QGraphicsSceneWheelEvent
+              </span>
+             </tt>
+            </a>
+            class provides wheel events in the graphics view framework.
+           </p>
+           <p>
+            <a class="reference internal" href="QWheelEvent.html#PySide.QtGui.QWheelEvent" title="PySide.QtGui.QWheelEvent">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QWheelEvent
+              </span>
+             </tt>
+            </a>
+            s received by a
+            <a class="reference internal" href="QGraphicsView.html#PySide.QtGui.QGraphicsView" title="PySide.QtGui.QGraphicsView">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QGraphicsView
+              </span>
+             </tt>
+            </a>
+            are translated into QGraphicsSceneWheelEvents; it translates the
+            <a class="reference internal" href="QWheelEvent.html#PySide.QtGui.PySide.QtGui.QWheelEvent.globalPos" title="PySide.QtGui.PySide.QtGui.QWheelEvent.globalPos">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               QWheelEvent.globalPos()
+              </span>
+             </tt>
+            </a>
+            into item, scene, and screen coordinates (
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.pos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.pos">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QGraphicsSceneWheelEvent.pos()
+              </span>
+             </tt>
+            </a>
+            ,
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.scenePos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.scenePos">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QGraphicsSceneWheelEvent.scenePos()
+              </span>
+             </tt>
+            </a>
+            , and
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.screenPos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.screenPos">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QGraphicsSceneWheelEvent.screenPos()
+              </span>
+             </tt>
+            </a>
+            ).
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="QGraphicsSceneMouseEvent.html#PySide.QtGui.QGraphicsSceneMouseEvent" title="PySide.QtGui.QGraphicsSceneMouseEvent">
+              <tt class="xref py py-class docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneMouseEvent
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="QGraphicsSceneContextMenuEvent.html#PySide.QtGui.QGraphicsSceneContextMenuEvent" title="PySide.QtGui.QGraphicsSceneContextMenuEvent">
+              <tt class="xref py py-class docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneContextMenuEvent
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="QGraphicsSceneHoverEvent.html#PySide.QtGui.QGraphicsSceneHoverEvent" title="PySide.QtGui.QGraphicsSceneHoverEvent">
+              <tt class="xref py py-class docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneHoverEvent
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="QWheelEvent.html#PySide.QtGui.QWheelEvent" title="PySide.QtGui.QWheelEvent">
+              <tt class="xref py py-class docutils literal">
+               <span class="pre">
+                PySide.QtGui.QWheelEvent
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </div>
+         </blockquote>
+         <dl class="class">
+          <dt id="PySide.QtGui.QGraphicsSceneWheelEvent">
+           <em class="property">
+            class
+           </em>
+           <tt class="descclassname">
+            PySide.QtGui.
+           </tt>
+           <tt class="descname">
+            QGraphicsSceneWheelEvent
+           </tt>
+           <big>
+            (
+           </big>
+           <span class="optional">
+            [
+           </span>
+           <em>
+            type=None
+           </em>
+           <span class="optional">
+            ]
+           </span>
+           <big>
+            )
+           </big>
+           <a class="headerlink" href="#PySide.QtGui.QGraphicsSceneWheelEvent" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                type
+               </strong>
+               –
+               <tt class="xref py py-attr docutils literal">
+                <span class="pre">
+                 PySide.QtCore.QEvent.Type
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Constructs a
+            <a class="reference internal" href="#PySide.QtGui.QGraphicsSceneWheelEvent" title="PySide.QtGui.QGraphicsSceneWheelEvent">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QGraphicsSceneWheelEvent
+              </span>
+             </tt>
+            </a>
+            of type
+            <tt class="docutils literal">
+             <span class="pre">
+              type
+             </span>
+            </tt>
+            , which is always
+            <tt class="xref py py-attr docutils literal">
+             <span class="pre">
+              QEvent.GraphicsSceneWheel
+             </span>
+            </tt>
+            .
+           </p>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.buttons">
+           <tt class="descclassname">
+            PySide.QtGui.QGraphicsSceneWheelEvent.
+           </tt>
+           <tt class="descname">
+            buttons
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/buttons">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.buttons" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.Qt.MouseButtons
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the mouse buttons that were pressed when the wheel event occurred.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.modifiers" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.modifiers">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneWheelEvent.modifiers()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.delta">
+           <tt class="descclassname">
+            PySide.QtGui.QGraphicsSceneWheelEvent.
+           </tt>
+           <tt class="descname">
+            delta
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/delta">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.delta" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.int
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the distance that the wheel is rotated, in eighths (1/8s) of a degree. A positive value indicates that the wheel was rotated forwards away from the user; a negative value indicates that the wheel was rotated backwards toward the user.
+           </p>
+           <p>
+            Most mouse types work in steps of 15 degrees, in which case the delta value is a multiple of 120 (== 15 * 8).
+           </p>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.modifiers">
+           <tt class="descclassname">
+            PySide.QtGui.QGraphicsSceneWheelEvent.
+           </tt>
+           <tt class="descname">
+            modifiers
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/modifiers">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.modifiers" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.Qt.KeyboardModifiers
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the keyboard modifiers that were active when the wheel event occurred.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.buttons" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.buttons">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneWheelEvent.buttons()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.orientation">
+           <tt class="descclassname">
+            PySide.QtGui.QGraphicsSceneWheelEvent.
+           </tt>
+           <tt class="descname">
+            orientation
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/orientation">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.orientation" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-attr docutils literal">
+                <span class="pre">
+                 PySide.QtCore.Qt.Orientation
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the wheel orientation.
+           </p>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.pos">
+           <tt class="descclassname">
+            PySide.QtGui.QGraphicsSceneWheelEvent.
+           </tt>
+           <tt class="descname">
+            pos
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/pos">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.pos" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <a class="reference internal" href="../QtCore/QPointF.html#PySide.QtCore.QPointF" title="PySide.QtCore.QPointF">
+                <tt class="xref py py-class docutils literal">
+                 <span class="pre">
+                  PySide.QtCore.QPointF
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the position of the cursor in item coordinates when the wheel event occurred.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.scenePos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.scenePos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneWheelEvent.scenePos()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.screenPos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.screenPos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneWheelEvent.screenPos()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.scenePos">
+           <tt class="descclassname">
+            PySide.QtGui.QGraphicsSceneWheelEvent.
+           </tt>
+           <tt class="descname">
+            scenePos
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/scenePos">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.scenePos" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <a class="reference internal" href="../QtCore/QPointF.html#PySide.QtCore.QPointF" title="PySide.QtCore.QPointF">
+                <tt class="xref py py-class docutils literal">
+                 <span class="pre">
+                  PySide.QtCore.QPointF
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the position of the cursor in scene coordinates when the wheel event occurred.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.pos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.pos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneWheelEvent.pos()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.screenPos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.screenPos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneWheelEvent.screenPos()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.screenPos">
+           <tt class="descclassname">
+            PySide.QtGui.QGraphicsSceneWheelEvent.
+           </tt>
+           <tt class="descname">
+            screenPos
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/screenPos">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.screenPos" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <a class="reference internal" href="../QtCore/QPoint.html#PySide.QtCore.QPoint" title="PySide.QtCore.QPoint">
+                <tt class="xref py py-class docutils literal">
+                 <span class="pre">
+                  PySide.QtCore.QPoint
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the position of the cursor in screen coordinates when the wheel event occurred.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.pos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.pos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneWheelEvent.pos()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.scenePos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.scenePos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneWheelEvent.scenePos()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setButtons">
+           <tt class="descclassname">
+            PySide.QtGui.QGraphicsSceneWheelEvent.
+           </tt>
+           <tt class="descname">
+            setButtons
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            buttons
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setButtons">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setButtons" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                buttons
+               </strong>
+               –
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.Qt.MouseButtons
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setDelta">
+           <tt class="descclassname">
+            PySide.QtGui.QGraphicsSceneWheelEvent.
+           </tt>
+           <tt class="descname">
+            setDelta
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            delta
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setDelta">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setDelta" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                delta
+               </strong>
+               –
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.int
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.delta" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.delta">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneWheelEvent.delta()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setModifiers">
+           <tt class="descclassname">
+            PySide.QtGui.QGraphicsSceneWheelEvent.
+           </tt>
+           <tt class="descname">
+            setModifiers
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            modifiers
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setModifiers">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setModifiers" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                modifiers
+               </strong>
+               –
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.Qt.KeyboardModifiers
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setOrientation">
+           <tt class="descclassname">
+            PySide.QtGui.QGraphicsSceneWheelEvent.
+           </tt>
+           <tt class="descname">
+            setOrientation
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            orientation
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setOrientation">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setOrientation" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                orientation
+               </strong>
+               –
+               <tt class="xref py py-attr docutils literal">
+                <span class="pre">
+                 PySide.QtCore.Qt.Orientation
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setPos">
+           <tt class="descclassname">
+            PySide.QtGui.QGraphicsSceneWheelEvent.
+           </tt>
+           <tt class="descname">
+            setPos
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            pos
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setPos">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setPos" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                pos
+               </strong>
+               –
+               <a class="reference internal" href="../QtCore/QPointF.html#PySide.QtCore.QPointF" title="PySide.QtCore.QPointF">
+                <tt class="xref py py-class docutils literal">
+                 <span class="pre">
+                  PySide.QtCore.QPointF
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.pos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.pos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneWheelEvent.pos()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setScenePos">
+           <tt class="descclassname">
+            PySide.QtGui.QGraphicsSceneWheelEvent.
+           </tt>
+           <tt class="descname">
+            setScenePos
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            pos
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setScenePos">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setScenePos" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                pos
+               </strong>
+               –
+               <a class="reference internal" href="../QtCore/QPointF.html#PySide.QtCore.QPointF" title="PySide.QtCore.QPointF">
+                <tt class="xref py py-class docutils literal">
+                 <span class="pre">
+                  PySide.QtCore.QPointF
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.scenePos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.scenePos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneWheelEvent.scenePos()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setScreenPos">
+           <tt class="descclassname">
+            PySide.QtGui.QGraphicsSceneWheelEvent.
+           </tt>
+           <tt class="descname">
+            setScreenPos
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            pos
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setScreenPos">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.setScreenPos" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                pos
+               </strong>
+               –
+               <a class="reference internal" href="../QtCore/QPoint.html#PySide.QtCore.QPoint" title="PySide.QtCore.QPoint">
+                <tt class="xref py py-class docutils literal">
+                 <span class="pre">
+                  PySide.QtCore.QPoint
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.screenPos" title="PySide.QtGui.PySide.QtGui.QGraphicsSceneWheelEvent.screenPos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QGraphicsSceneWheelEvent.screenPos()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearer">
+    </div>
+   </div>
+   <div class="footer">
+    <a href="http://www.indt.org.br">
+     <img alt="Indt" border="0" src="../../_static/logo_indt.jpg"/>
+    </a>
+    <a href="http://www.openbossa.org">
+     <img alt="Openbossa" border="0" src="../../_static/logo_openbossa.png"/>
+    </a>
+    <a href="http://qt.nokia.com/">
+     <img alt="Qt" border="0" src="../../_static/logo_qt.png"/>
+    </a>
+    <a href="http://www.python.org">
+     <img alt="Python" border="0" src="../../_static/logo_python.jpg"/>
+    </a>
+   </div>
+  </div>
+ </body>
+</html>

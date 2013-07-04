@@ -1,0 +1,83 @@
+.. module:: PySide.QtNetwork
+
+PySide.QtNetwork
+****************
+
+.. container:: pysidetoc
+
+    +------------------------------+-------------------------------------+-----------------------------+--------------------------+
+    |**A**                         |* :doc:`QHttpResponseHeader`         |* :doc:`QNetworkCookie`      |* :doc:`QSslConfiguration`|
+    |                              |                                     |* :doc:`QNetworkCookieJar`   |* :doc:`QSslError`        |
+    |* :doc:`QAbstractNetworkCache`|**I**                                |* :doc:`QNetworkDiskCache`   |* :doc:`QSslKey`          |
+    |* :doc:`QAbstractSocket`      |                                     |* :doc:`QNetworkInterface`   |* :doc:`QSslSocket`       |
+    |* :doc:`QAuthenticator`       |* :doc:`QIPv6Address`                |* :doc:`QNetworkProxy`       |                          |
+    |                              |                                     |* :doc:`QNetworkProxyFactory`|**T**                     |
+    |**F**                         |**L**                                |* :doc:`QNetworkProxyQuery`  |                          |
+    |                              |                                     |* :doc:`QNetworkReply`       |* :doc:`QTcpServer`       |
+    |* :doc:`QFtp`                 |* :doc:`QLocalServer`                |* :doc:`QNetworkRequest`     |* :doc:`QTcpSocket`       |
+    |                              |* :doc:`QLocalSocket`                |* :doc:`QNetworkSession`     |                          |
+    |**H**                         |                                     |                             |**U**                     |
+    |                              |**N**                                |**S**                        |                          |
+    |* :doc:`QHostAddress`         |                                     |                             |* :doc:`QUdpSocket`       |
+    |* :doc:`QHostInfo`            |* :doc:`QNetworkAccessManager`       |* :doc:`QSsl`                |* :doc:`QUrlInfo`         |
+    |* :doc:`QHttp`                |* :doc:`QNetworkAddressEntry`        |* :doc:`QSslCertificate`     |                          |
+    |* :doc:`QHttpHeader`          |* :doc:`QNetworkCacheMetaData`       |* :doc:`QSslCipher`          |                          |
+    |* :doc:`QHttpRequestHeader`   |* :doc:`QNetworkConfiguration`       |                             |                          |
+    |                              |* :doc:`QNetworkConfigurationManager`|                             |                          |
+    |                              |                                     |                             |                          |
+    +------------------------------+-------------------------------------+-----------------------------+--------------------------+
+
+    .. container:: hide
+
+        .. toctree::
+            :maxdepth: 1
+
+            QSsl.rst
+            QSslConfiguration.rst
+            QSslError.rst
+            QSslCipher.rst
+            QNetworkConfiguration.rst
+            QHttpHeader.rst
+            QHttpRequestHeader.rst
+            QHttpResponseHeader.rst
+            QNetworkCacheMetaData.rst
+            QUrlInfo.rst
+            QNetworkProxy.rst
+            QNetworkProxyQuery.rst
+            QNetworkProxyFactory.rst
+            QNetworkAddressEntry.rst
+            QHostInfo.rst
+            QAuthenticator.rst
+            QNetworkInterface.rst
+            QHostAddress.rst
+            QIPv6Address.rst
+            QTcpServer.rst
+            QLocalServer.rst
+            QNetworkSession.rst
+            QNetworkConfigurationManager.rst
+            QNetworkCookieJar.rst
+            QLocalSocket.rst
+            QAbstractSocket.rst
+            QNetworkReply.rst
+            QUdpSocket.rst
+            QTcpSocket.rst
+            QNetworkAccessManager.rst
+            QHttp.rst
+            QFtp.rst
+            QAbstractNetworkCache.rst
+            QNetworkDiskCache.rst
+            QSslKey.rst
+            QSslSocket.rst
+            QNetworkRequest.rst
+            QSslCertificate.rst
+            QNetworkCookie.rst
+
+
+Detailed Description
+--------------------
+
+To include the definitions of the module's classes, use the following directive:
+
+::
+
+    import PySide.QtNetwork

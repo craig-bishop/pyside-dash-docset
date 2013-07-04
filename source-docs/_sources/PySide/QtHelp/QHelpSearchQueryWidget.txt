@@ -1,0 +1,63 @@
+.. module:: PySide.QtHelp
+.. _QHelpSearchQueryWidget:
+
+QHelpSearchQueryWidget
+**********************
+
+.. inheritance-diagram:: QHelpSearchQueryWidget
+    :parts: 2
+
+Synopsis
+--------
+
+Functions
+^^^^^^^^^
+.. container:: function_list
+
+*    def :meth:`query<PySide.QtHelp.QHelpSearchQueryWidget.query>` ()
+
+
+Signals
+^^^^^^^
+.. container:: function_list
+
+*    def :meth:`search<PySide.QtHelp.QHelpSearchQueryWidget.search>` ()
+
+
+Detailed Description
+--------------------
+
+
+
+    The :class:`PySide.QtHelp.QHelpSearchQueryWidget` class provides a simple line edit or an advanced widget to enable the user to input a search term in a standardized input mask.
+
+
+.. class:: QHelpSearchQueryWidget([parent=None])
+
+    :param parent: :class:`PySide.QtGui.QWidget`
+
+    Constructs a new search query widget with the given ``parent`` .
+
+
+.. method:: PySide.QtHelp.QHelpSearchQueryWidget.query()
+
+
+    :rtype: 
+
+
+
+
+    Returns a list of queries to use in combination with the search engines search( :class:`QList` < :class:`PySide.QtHelp.QHelpSearchQuery` > &query) function.
+
+
+
+.. method:: PySide.QtHelp.QHelpSearchQueryWidget.search()
+
+
+
+
+
+
+
+
+

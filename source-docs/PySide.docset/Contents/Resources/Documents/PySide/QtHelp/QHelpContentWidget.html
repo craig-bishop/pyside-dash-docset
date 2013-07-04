@@ -1,0 +1,569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   QHelpContentWidget — PySide 1.1.0 documentation
+  </title>
+  <link href="../../_static/pysidedocs.css" rel="stylesheet" type="text/css"/>
+  <link href="../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+  </script>
+  <script src="../../_static/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../_static/underscore.js" type="text/javascript">
+  </script>
+  <script src="../../_static/doctools.js" type="text/javascript">
+  </script>
+  <link href="../../index.html" rel="top" title="PySide 1.1.0 documentation"/>
+  <link href="index.html" rel="up" title="PySide.QtHelp"/>
+  <link href="QHelpIndexWidget.html" rel="next" title="QHelpIndexWidget"/>
+  <link href="QHelpSearchQueryWidget.html" rel="prev" title="QHelpSearchQueryWidget"/>
+ </head>
+ <body>
+  <div id="container">
+   <div class="header">
+    <div class="header_container">
+     <div class="logo">
+      <a href="http://www.pyside.org">
+       <img alt="PySide" height="102" src="../../_static/pysidelogo.png" width="199"/>
+      </a>
+     </div>
+     <div class="related">
+      <ul>
+       <li>
+        <a href="../../index.html">
+         PySide 1.1.0 documentation
+        </a>
+       </li>
+       <li>
+        »
+        <a href="../../modules.html">
+         PySide modules
+        </a>
+       </li>
+       <li>
+        »
+        <a accesskey="U" href="index.html">
+         PySide.QtHelp
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="sphinxsidebar">
+    <div class="sphinxsidebarwrapper">
+     <h3>
+      <a href="../../contents.html">
+       Table Of Contents
+      </a>
+     </h3>
+     <ul>
+      <li>
+       <a class="reference internal" href="#">
+        QHelpContentWidget
+       </a>
+       <ul>
+        <li>
+         <a class="reference internal" href="#synopsis">
+          Synopsis
+         </a>
+         <ul>
+          <li>
+           <a class="reference internal" href="#functions">
+            Functions
+           </a>
+          </li>
+          <li>
+           <a class="reference internal" href="#slots">
+            Slots
+           </a>
+          </li>
+          <li>
+           <a class="reference internal" href="#signals">
+            Signals
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a class="reference internal" href="#detailed-description">
+          Detailed Description
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+     <h4>
+      Previous topic
+     </h4>
+     <p class="topless">
+      <a href="QHelpSearchQueryWidget.html" title="previous chapter">
+       QHelpSearchQueryWidget
+      </a>
+     </p>
+     <h4>
+      Next topic
+     </h4>
+     <p class="topless">
+      <a href="QHelpIndexWidget.html" title="next chapter">
+       QHelpIndexWidget
+      </a>
+     </p>
+     <div id="searchbox" style="display: none">
+      <h3>
+       Quick search
+      </h3>
+      <form action="../../search.html" class="search" method="get">
+       <input id="q" name="q" size="18" type="text"/>
+       <input id="search_button" type="submit" value="Go"/>
+       <input name="check_keywords" type="hidden" value="yes"/>
+       <input name="area" type="hidden" value="default"/>
+      </form>
+     </div>
+     <script type="text/javascript">
+      $('#searchbox').show(0);
+     </script>
+    </div>
+   </div>
+   <div class="document">
+    <div class="documentwrapper">
+     <div class="bodywrapper">
+      <div class="body">
+       <span class="target" id="module-PySide.QtHelp">
+       </span>
+       <div class="section" id="qhelpcontentwidget">
+        <span id="id1">
+        </span>
+        <h1>
+         QHelpContentWidget
+         <a class="headerlink" href="#qhelpcontentwidget" title="Permalink to this headline">
+          ¶
+         </a>
+        </h1>
+        <p class="graphviz">
+         <img alt="Inheritance diagram of QHelpContentWidget" class="inheritance" src="../../_images/inheritance-72267426fd273e7367502fe751b8b1bbb494a28e.png" usemap="#inheritance484327ce5a"/>
+         <map id="inheritance484327ce5a" name="inheritance484327ce5a">
+          <area alt="" coords="555,17,625,32" href="../QtGui/QTreeView.html#PySide.QtGui.QTreeView" id="node2" shape="rect" title="QtGui.QTreeView">
+          </area>
+          <area alt="" coords="10,3,78,18" href="../QtCore/QObject.html#PySide.QtCore.QObject" id="node4" shape="rect" title="QtCore.QObject">
+          </area>
+          <area alt="" coords="111,17,175,32" href="../QtGui/QWidget.html#PySide.QtGui.QWidget" id="node6" shape="rect" title="QtGui.QWidget">
+          </area>
+          <area alt="" coords="202,17,264,32" href="../QtGui/QFrame.html#PySide.QtGui.QFrame" id="node5" shape="rect" title="QtGui.QFrame">
+          </area>
+          <area alt="" coords="292,17,397,32" href="../QtGui/QAbstractScrollArea.html#PySide.QtGui.QAbstractScrollArea" id="node8" shape="rect" title="QtGui.QAbstractScrollArea">
+          </area>
+          <area alt="" coords="425,17,527,32" href="../QtGui/QAbstractItemView.html#PySide.QtGui.QAbstractItemView" id="node11" shape="rect" title="QtGui.QAbstractItemView">
+          </area>
+          <area alt="" coords="3,31,85,46" href="../QtGui/QPaintDevice.html#PySide.QtGui.QPaintDevice" id="node10" shape="rect" title="QtGui.QPaintDevice">
+          </area>
+         </map>
+        </p>
+        <div class="section" id="synopsis">
+         <h2>
+          Synopsis
+          <a class="headerlink" href="#synopsis" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <div class="section" id="functions">
+          <h3>
+           Functions
+           <a class="headerlink" href="#functions" title="Permalink to this headline">
+            ¶
+           </a>
+          </h3>
+          <ul class="simple">
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.indexOf" title="PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.indexOf">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               indexOf
+              </span>
+             </tt>
+            </a>
+            (link)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.searchContentItem" title="PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.searchContentItem">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               searchContentItem
+              </span>
+             </tt>
+            </a>
+            (model, parent, path)
+           </li>
+          </ul>
+         </div>
+         <div class="section" id="slots">
+          <h3>
+           Slots
+           <a class="headerlink" href="#slots" title="Permalink to this headline">
+            ¶
+           </a>
+          </h3>
+          <ul class="simple">
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.showLink" title="PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.showLink">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               showLink
+              </span>
+             </tt>
+            </a>
+            (index)
+           </li>
+          </ul>
+         </div>
+         <div class="section" id="signals">
+          <h3>
+           Signals
+           <a class="headerlink" href="#signals" title="Permalink to this headline">
+            ¶
+           </a>
+          </h3>
+          <ul class="simple">
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.linkActivated" title="PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.linkActivated">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               linkActivated
+              </span>
+             </tt>
+            </a>
+            (link)
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="section" id="detailed-description">
+         <h2>
+          Detailed Description
+          <a class="headerlink" href="#detailed-description" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <blockquote>
+          <div>
+           The
+           <tt class="xref py py-class docutils literal">
+            <span class="pre">
+             PySide.QtHelp.QHelpContentWidget
+            </span>
+           </tt>
+           class provides a tree view for displaying help content model items.
+          </div>
+         </blockquote>
+         <dl class="method">
+          <dt id="PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.indexOf">
+           <tt class="descclassname">
+            PySide.QtHelp.QHelpContentWidget.
+           </tt>
+           <tt class="descname">
+            indexOf
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            link
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/indexOf">
+           </a>
+           <a class="headerlink" href="#PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.indexOf" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                link
+               </strong>
+               –
+               <a class="reference internal" href="../QtCore/QUrl.html#PySide.QtCore.QUrl" title="PySide.QtCore.QUrl">
+                <tt class="xref py py-class docutils literal">
+                 <span class="pre">
+                  PySide.QtCore.QUrl
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+             <tr class="field-even field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <a class="reference internal" href="../QtCore/QModelIndex.html#PySide.QtCore.QModelIndex" title="PySide.QtCore.QModelIndex">
+                <tt class="xref py py-class docutils literal">
+                 <span class="pre">
+                  PySide.QtCore.QModelIndex
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the index of the content item with the
+            <tt class="docutils literal">
+             <span class="pre">
+              link
+             </span>
+            </tt>
+            . An invalid index is returned if no such an item exists.
+           </p>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.linkActivated">
+           <tt class="descclassname">
+            PySide.QtHelp.QHelpContentWidget.
+           </tt>
+           <tt class="descname">
+            linkActivated
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            link
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/Attribute/linkActivated">
+           </a>
+           <a class="headerlink" href="#PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.linkActivated" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                link
+               </strong>
+               –
+               <a class="reference internal" href="../QtCore/QUrl.html#PySide.QtCore.QUrl" title="PySide.QtCore.QUrl">
+                <tt class="xref py py-class docutils literal">
+                 <span class="pre">
+                  PySide.QtCore.QUrl
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.searchContentItem">
+           <tt class="descclassname">
+            PySide.QtHelp.QHelpContentWidget.
+           </tt>
+           <tt class="descname">
+            searchContentItem
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            model
+           </em>
+           ,
+           <em>
+            parent
+           </em>
+           ,
+           <em>
+            path
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/searchContentItem">
+           </a>
+           <a class="headerlink" href="#PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.searchContentItem" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <ul class="first simple">
+                <li>
+                 <strong>
+                  model
+                 </strong>
+                 –
+                 <tt class="xref py py-class docutils literal">
+                  <span class="pre">
+                   PySide.QtHelp.QHelpContentModel
+                  </span>
+                 </tt>
+                </li>
+                <li>
+                 <strong>
+                  parent
+                 </strong>
+                 –
+                 <a class="reference internal" href="../QtCore/QModelIndex.html#PySide.QtCore.QModelIndex" title="PySide.QtCore.QModelIndex">
+                  <tt class="xref py py-class docutils literal">
+                   <span class="pre">
+                    PySide.QtCore.QModelIndex
+                   </span>
+                  </tt>
+                 </a>
+                </li>
+                <li>
+                 <strong>
+                  path
+                 </strong>
+                 – unicode
+                </li>
+               </ul>
+              </td>
+             </tr>
+             <tr class="field-even field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <p class="first last">
+                <tt class="xref py py-class docutils literal">
+                 <span class="pre">
+                  PySide.QtCore.bool
+                 </span>
+                </tt>
+               </p>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.showLink">
+           <tt class="descclassname">
+            PySide.QtHelp.QHelpContentWidget.
+           </tt>
+           <tt class="descname">
+            showLink
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            index
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/showLink">
+           </a>
+           <a class="headerlink" href="#PySide.QtHelp.PySide.QtHelp.QHelpContentWidget.showLink" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                index
+               </strong>
+               –
+               <a class="reference internal" href="../QtCore/QModelIndex.html#PySide.QtCore.QModelIndex" title="PySide.QtCore.QModelIndex">
+                <tt class="xref py py-class docutils literal">
+                 <span class="pre">
+                  PySide.QtCore.QModelIndex
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </dd>
+         </dl>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearer">
+    </div>
+   </div>
+   <div class="footer">
+    <a href="http://www.indt.org.br">
+     <img alt="Indt" border="0" src="../../_static/logo_indt.jpg"/>
+    </a>
+    <a href="http://www.openbossa.org">
+     <img alt="Openbossa" border="0" src="../../_static/logo_openbossa.png"/>
+    </a>
+    <a href="http://qt.nokia.com/">
+     <img alt="Qt" border="0" src="../../_static/logo_qt.png"/>
+    </a>
+    <a href="http://www.python.org">
+     <img alt="Python" border="0" src="../../_static/logo_python.jpg"/>
+    </a>
+   </div>
+  </div>
+ </body>
+</html>

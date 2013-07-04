@@ -1,0 +1,824 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   QX11EmbedWidget — PySide 1.1.0 documentation
+  </title>
+  <link href="../../_static/pysidedocs.css" rel="stylesheet" type="text/css"/>
+  <link href="../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+  </script>
+  <script src="../../_static/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../_static/underscore.js" type="text/javascript">
+  </script>
+  <script src="../../_static/doctools.js" type="text/javascript">
+  </script>
+  <link href="../../index.html" rel="top" title="PySide 1.1.0 documentation"/>
+  <link href="index.html" rel="up" title="PySide.QtGui"/>
+  <link href="QWorkspace.html" rel="next" title="QWorkspace"/>
+  <link href="QX11EmbedContainer.html" rel="prev" title="QX11EmbedContainer"/>
+ </head>
+ <body>
+  <div id="container">
+   <div class="header">
+    <div class="header_container">
+     <div class="logo">
+      <a href="http://www.pyside.org">
+       <img alt="PySide" height="102" src="../../_static/pysidelogo.png" width="199"/>
+      </a>
+     </div>
+     <div class="related">
+      <ul>
+       <li>
+        <a href="../../index.html">
+         PySide 1.1.0 documentation
+        </a>
+       </li>
+       <li>
+        »
+        <a href="../../modules.html">
+         PySide modules
+        </a>
+       </li>
+       <li>
+        »
+        <a accesskey="U" href="index.html">
+         PySide.QtGui
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="sphinxsidebar">
+    <div class="sphinxsidebarwrapper">
+     <h3>
+      <a href="../../contents.html">
+       Table Of Contents
+      </a>
+     </h3>
+     <ul>
+      <li>
+       <a class="reference internal" href="#">
+        QX11EmbedWidget
+       </a>
+       <ul>
+        <li>
+         <a class="reference internal" href="#synopsis">
+          Synopsis
+         </a>
+         <ul>
+          <li>
+           <a class="reference internal" href="#functions">
+            Functions
+           </a>
+          </li>
+          <li>
+           <a class="reference internal" href="#signals">
+            Signals
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a class="reference internal" href="#detailed-description">
+          Detailed Description
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+     <h4>
+      Previous topic
+     </h4>
+     <p class="topless">
+      <a href="QX11EmbedContainer.html" title="previous chapter">
+       QX11EmbedContainer
+      </a>
+     </p>
+     <h4>
+      Next topic
+     </h4>
+     <p class="topless">
+      <a href="QWorkspace.html" title="next chapter">
+       QWorkspace
+      </a>
+     </p>
+     <div id="searchbox" style="display: none">
+      <h3>
+       Quick search
+      </h3>
+      <form action="../../search.html" class="search" method="get">
+       <input id="q" name="q" size="18" type="text"/>
+       <input id="search_button" type="submit" value="Go"/>
+       <input name="check_keywords" type="hidden" value="yes"/>
+       <input name="area" type="hidden" value="default"/>
+      </form>
+     </div>
+     <script type="text/javascript">
+      $('#searchbox').show(0);
+     </script>
+    </div>
+   </div>
+   <div class="document">
+    <div class="documentwrapper">
+     <div class="bodywrapper">
+      <div class="body">
+       <span class="target" id="module-PySide.QtGui">
+       </span>
+       <div class="section" id="qx11embedwidget">
+        <span id="id1">
+        </span>
+        <h1>
+         QX11EmbedWidget
+         <a class="headerlink" href="#qx11embedwidget" title="Permalink to this headline">
+          ¶
+         </a>
+        </h1>
+        <p class="graphviz">
+         <img alt="Inheritance diagram of QX11EmbedWidget" class="inheritance" src="../../_images/inheritance-cb70752db3bef774f3d54fcc8d88357208ff9fc4.png" usemap="#inheritance7bc034af90"/>
+         <map id="inheritance7bc034af90" name="inheritance7bc034af90">
+          <area alt="" coords="363,30,547,58" href="#PySide.QtGui.QX11EmbedWidget" id="node1" shape="rect" title="QtGui.QX11EmbedWidget">
+          </area>
+          <area alt="" coords="200,30,315,58" href="QWidget.html#PySide.QtGui.QWidget" id="node2" shape="rect" title="QtGui.QWidget">
+          </area>
+          <area alt="" coords="17,5,140,33" href="../QtCore/QObject.html#PySide.QtCore.QObject" id="node4" shape="rect" title="QtCore.QObject">
+          </area>
+          <area alt="" coords="5,55,152,83" href="QPaintDevice.html#PySide.QtGui.QPaintDevice" id="node6" shape="rect" title="QtGui.QPaintDevice">
+          </area>
+         </map>
+        </p>
+        <div class="section" id="synopsis">
+         <h2>
+          Synopsis
+          <a class="headerlink" href="#synopsis" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <div class="section" id="functions">
+          <h3>
+           Functions
+           <a class="headerlink" href="#functions" title="Permalink to this headline">
+            ¶
+           </a>
+          </h3>
+          <ul class="simple">
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.containerWinId" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.containerWinId">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               containerWinId
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedInto" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedInto">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               embedInto
+              </span>
+             </tt>
+            </a>
+            (id)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.error" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.error">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               error
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+          </ul>
+         </div>
+         <div class="section" id="signals">
+          <h3>
+           Signals
+           <a class="headerlink" href="#signals" title="Permalink to this headline">
+            ¶
+           </a>
+          </h3>
+          <ul class="simple">
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.containerClosed" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.containerClosed">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               containerClosed
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedded" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedded">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               embedded
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.error" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.error">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               error
+              </span>
+             </tt>
+            </a>
+            (error)
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="section" id="detailed-description">
+         <h2>
+          Detailed Description
+          <a class="headerlink" href="#detailed-description" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <blockquote>
+          <div>
+           <p>
+            The
+            <a class="reference internal" href="#PySide.QtGui.QX11EmbedWidget" title="PySide.QtGui.QX11EmbedWidget">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QX11EmbedWidget
+              </span>
+             </tt>
+            </a>
+            class provides an XEmbed client widget.
+           </p>
+           <p>
+            XEmbed is an X11 protocol that supports the embedding of a widget from one application into another application.
+           </p>
+           <p>
+            An XEmbed
+            <em>
+             client widget
+            </em>
+            is a window that is embedded into a
+            <em>
+             container
+            </em>
+            . A container is the graphical location that embeds (or
+            <em>
+             swallows
+            </em>
+            ) an external application.
+           </p>
+           <p>
+            <a class="reference internal" href="#PySide.QtGui.QX11EmbedWidget" title="PySide.QtGui.QX11EmbedWidget">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QX11EmbedWidget
+              </span>
+             </tt>
+            </a>
+            is a widget used for writing XEmbed applets or plugins. When it has been embedded and the container receives tab focus, focus is passed on to the widget. When the widget reaches the end of its focus chain, focus is passed back to the container. Window activation, accelerator support, modality and drag and drop (XDND) are also handled.
+           </p>
+           <p>
+            The widget and container can both initiate the embedding. If the widget is the initiator, the X11 window ID of the container that it wants to embed itself into must be passed to
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedInto" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedInto">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QX11EmbedWidget.embedInto()
+              </span>
+             </tt>
+            </a>
+            .
+           </p>
+           <p>
+            If the container initiates the embedding, the window ID of the embedded widget must be known. The container calls embed(), passing the window ID.
+           </p>
+           <p>
+            This example shows an application that embeds a
+            <a class="reference internal" href="#PySide.QtGui.QX11EmbedWidget" title="PySide.QtGui.QX11EmbedWidget">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QX11EmbedWidget
+              </span>
+             </tt>
+            </a>
+            subclass into the window whose ID is passed as a command-line argument:
+           </p>
+           <div class="highlight-python">
+            <pre>
+             int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+
+    if (app.arguments().count() != 2) {
+        qFatal("Error - expected window id as argument");
+        return 1;
+    }
+
+    QString windowId(app.arguments()[1]);
+    EmbedWidget window;
+    window.embedInto(windowId.toULong());
+    window.show();
+
+    return app.exec();
+}
+            </pre>
+           </div>
+           <p>
+            The problem of obtaining the window IDs is often solved by the container invoking the application that provides the widget as a separate process (as a panel invokes a docked applet), passing its window ID to the new process as a command-line argument. The new process can then call
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedInto" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedInto">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QX11EmbedWidget.embedInto()
+              </span>
+             </tt>
+            </a>
+            with the container’s window ID, as shown in the example code above. Similarly, the new process can report its window ID to the container through IPC, in which case the container can embed the widget.
+           </p>
+           <p>
+            When the widget has been embedded, it emits the signal
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedded" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedded">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QX11EmbedWidget.embedded()
+              </span>
+             </tt>
+            </a>
+            . If it is closed by the container, the widget emits
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.containerClosed" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.containerClosed">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QX11EmbedWidget.containerClosed()
+              </span>
+             </tt>
+            </a>
+            . If an error occurs when embedding,
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.error" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.error">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QX11EmbedWidget.error()
+              </span>
+             </tt>
+            </a>
+            is emitted.
+           </p>
+           <p>
+            There are XEmbed widgets available for KDE and GTK+. The GTK+ equivalent of
+            <a class="reference internal" href="#PySide.QtGui.QX11EmbedWidget" title="PySide.QtGui.QX11EmbedWidget">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QX11EmbedWidget
+              </span>
+             </tt>
+            </a>
+            is GtkPlug. The corresponding KDE 3 widget is called QXEmbed.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="QX11EmbedContainer.html#PySide.QtGui.QX11EmbedContainer" title="PySide.QtGui.QX11EmbedContainer">
+              <tt class="xref py py-class docutils literal">
+               <span class="pre">
+                PySide.QtGui.QX11EmbedContainer
+               </span>
+              </tt>
+             </a>
+             <em class="xref std std-ref">
+              XEmbed Specification
+             </em>
+            </p>
+           </div>
+          </div>
+         </blockquote>
+         <dl class="class">
+          <dt id="PySide.QtGui.QX11EmbedWidget">
+           <em class="property">
+            class
+           </em>
+           <tt class="descclassname">
+            PySide.QtGui.
+           </tt>
+           <tt class="descname">
+            QX11EmbedWidget
+           </tt>
+           <big>
+            (
+           </big>
+           <span class="optional">
+            [
+           </span>
+           <em>
+            parent=None
+           </em>
+           <span class="optional">
+            ]
+           </span>
+           <big>
+            )
+           </big>
+           <a class="headerlink" href="#PySide.QtGui.QX11EmbedWidget" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                parent
+               </strong>
+               –
+               <a class="reference internal" href="QWidget.html#PySide.QtGui.QWidget" title="PySide.QtGui.QWidget">
+                <tt class="xref py py-class docutils literal">
+                 <span class="pre">
+                  PySide.QtGui.QWidget
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Constructs a
+            <a class="reference internal" href="#PySide.QtGui.QX11EmbedWidget" title="PySide.QtGui.QX11EmbedWidget">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QX11EmbedWidget
+              </span>
+             </tt>
+            </a>
+            object with the given
+            <tt class="docutils literal">
+             <span class="pre">
+              parent
+             </span>
+            </tt>
+            .
+           </p>
+          </dd>
+         </dl>
+         <dl class="attribute">
+          <dt id="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.Error">
+           <tt class="descclassname">
+            PySide.QtGui.QX11EmbedWidget.
+           </tt>
+           <tt class="descname">
+            Error
+           </tt>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.Error" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table border="1" class="docutils">
+            <colgroup>
+             <col width="16%">
+             </col>
+             <col width="84%">
+             </col>
+            </colgroup>
+            <thead valign="bottom">
+             <tr class="row-odd">
+              <th class="head">
+               Constant
+              </th>
+              <th class="head">
+               Description
+              </th>
+             </tr>
+            </thead>
+            <tbody valign="top">
+             <tr class="row-even">
+              <td>
+               QX11EmbedWidget.Unknown
+              </td>
+              <td>
+               An unrecognized error occurred.
+              </td>
+             </tr>
+             <tr class="row-odd">
+              <td>
+               QX11EmbedWidget.InvalidWindowID
+              </td>
+              <td>
+               The X11 window ID of the container was invalid. This error is usually triggered by passing an invalid window ID to
+               <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedInto" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedInto">
+                <tt class="xref py py-meth docutils literal">
+                 <span class="pre">
+                  PySide.QtGui.QX11EmbedWidget.embedInto()
+                 </span>
+                </tt>
+               </a>
+               .
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.containerClosed">
+           <tt class="descclassname">
+            PySide.QtGui.QX11EmbedWidget.
+           </tt>
+           <tt class="descname">
+            containerClosed
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/Attribute/containerClosed">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.containerClosed" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.containerWinId">
+           <tt class="descclassname">
+            PySide.QtGui.QX11EmbedWidget.
+           </tt>
+           <tt class="descname">
+            containerWinId
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/containerWinId">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.containerWinId" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               long
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            If the widget is embedded, returns the window ID of the container; otherwize returns 0.
+           </p>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedInto">
+           <tt class="descclassname">
+            PySide.QtGui.QX11EmbedWidget.
+           </tt>
+           <tt class="descname">
+            embedInto
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            id
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/embedInto">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedInto" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                id
+               </strong>
+               – long
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedded">
+           <tt class="descclassname">
+            PySide.QtGui.QX11EmbedWidget.
+           </tt>
+           <tt class="descname">
+            embedded
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/Attribute/embedded">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.embedded" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.error">
+           <tt class="descclassname">
+            PySide.QtGui.QX11EmbedWidget.
+           </tt>
+           <tt class="descname">
+            error
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            error
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/error">
+           </a>
+           <a name="//apple_ref/cpp/Attribute/error">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.error" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                error
+               </strong>
+               –
+               <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.Error" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.Error">
+                <tt class="xref py py-attr docutils literal">
+                 <span class="pre">
+                  PySide.QtGui.QX11EmbedWidget.Error
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt>
+           <tt class="descclassname">
+            PySide.QtGui.QX11EmbedWidget.
+           </tt>
+           <tt class="descname">
+            error
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.Error" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.Error">
+                <tt class="xref py py-attr docutils literal">
+                 <span class="pre">
+                  PySide.QtGui.QX11EmbedWidget.Error
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the type of error that occurred last. This is the same error code that is emitted by the
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QX11EmbedWidget.error" title="PySide.QtGui.PySide.QtGui.QX11EmbedWidget.error">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QX11EmbedWidget.error()
+              </span>
+             </tt>
+            </a>
+            signal.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <tt class="xref py py-attr docutils literal">
+              <span class="pre">
+               QX11EmbedWidget.Error
+              </span>
+             </tt>
+            </p>
+           </div>
+          </dd>
+         </dl>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearer">
+    </div>
+   </div>
+   <div class="footer">
+    <a href="http://www.indt.org.br">
+     <img alt="Indt" border="0" src="../../_static/logo_indt.jpg"/>
+    </a>
+    <a href="http://www.openbossa.org">
+     <img alt="Openbossa" border="0" src="../../_static/logo_openbossa.png"/>
+    </a>
+    <a href="http://qt.nokia.com/">
+     <img alt="Qt" border="0" src="../../_static/logo_qt.png"/>
+    </a>
+    <a href="http://www.python.org">
+     <img alt="Python" border="0" src="../../_static/logo_python.jpg"/>
+    </a>
+   </div>
+  </div>
+ </body>
+</html>

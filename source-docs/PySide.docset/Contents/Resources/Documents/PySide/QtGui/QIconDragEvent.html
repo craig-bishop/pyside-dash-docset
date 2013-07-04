@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   QIconDragEvent — PySide 1.1.0 documentation
+  </title>
+  <link href="../../_static/pysidedocs.css" rel="stylesheet" type="text/css"/>
+  <link href="../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+  </script>
+  <script src="../../_static/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../_static/underscore.js" type="text/javascript">
+  </script>
+  <script src="../../_static/doctools.js" type="text/javascript">
+  </script>
+  <link href="../../index.html" rel="top" title="PySide 1.1.0 documentation"/>
+  <link href="index.html" rel="up" title="PySide.QtGui"/>
+  <link href="QCloseEvent.html" rel="next" title="QCloseEvent"/>
+  <link href="QShowEvent.html" rel="prev" title="QShowEvent"/>
+ </head>
+ <body>
+  <div id="container">
+   <div class="header">
+    <div class="header_container">
+     <div class="logo">
+      <a href="http://www.pyside.org">
+       <img alt="PySide" height="102" src="../../_static/pysidelogo.png" width="199"/>
+      </a>
+     </div>
+     <div class="related">
+      <ul>
+       <li>
+        <a href="../../index.html">
+         PySide 1.1.0 documentation
+        </a>
+       </li>
+       <li>
+        »
+        <a href="../../modules.html">
+         PySide modules
+        </a>
+       </li>
+       <li>
+        »
+        <a accesskey="U" href="index.html">
+         PySide.QtGui
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="sphinxsidebar">
+    <div class="sphinxsidebarwrapper">
+     <h3>
+      <a href="../../contents.html">
+       Table Of Contents
+      </a>
+     </h3>
+     <ul>
+      <li>
+       <a class="reference internal" href="#">
+        QIconDragEvent
+       </a>
+       <ul>
+        <li>
+         <a class="reference internal" href="#detailed-description">
+          Detailed Description
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+     <h4>
+      Previous topic
+     </h4>
+     <p class="topless">
+      <a href="QShowEvent.html" title="previous chapter">
+       QShowEvent
+      </a>
+     </p>
+     <h4>
+      Next topic
+     </h4>
+     <p class="topless">
+      <a href="QCloseEvent.html" title="next chapter">
+       QCloseEvent
+      </a>
+     </p>
+     <div id="searchbox" style="display: none">
+      <h3>
+       Quick search
+      </h3>
+      <form action="../../search.html" class="search" method="get">
+       <input id="q" name="q" size="18" type="text"/>
+       <input id="search_button" type="submit" value="Go"/>
+       <input name="check_keywords" type="hidden" value="yes"/>
+       <input name="area" type="hidden" value="default"/>
+      </form>
+     </div>
+     <script type="text/javascript">
+      $('#searchbox').show(0);
+     </script>
+    </div>
+   </div>
+   <div class="document">
+    <div class="documentwrapper">
+     <div class="bodywrapper">
+      <div class="body">
+       <span class="target" id="module-PySide.QtGui">
+       </span>
+       <div class="section" id="qicondragevent">
+        <span id="id1">
+        </span>
+        <h1>
+         QIconDragEvent
+         <a class="headerlink" href="#qicondragevent" title="Permalink to this headline">
+          ¶
+         </a>
+        </h1>
+        <p class="graphviz">
+         <img alt="Inheritance diagram of QIconDragEvent" class="inheritance" src="../../_images/inheritance-df86d59e4454ee3e4e8efdd7ce50d7c3c54edade.png" usemap="#inheritancede40a8b2f2"/>
+         <map id="inheritancede40a8b2f2" name="inheritancede40a8b2f2">
+          <area alt="" coords="5,5,123,33" href="../QtCore/QEvent.html#PySide.QtCore.QEvent" id="node1" shape="rect" title="QtCore.QEvent">
+          </area>
+          <area alt="" coords="171,5,336,33" href="#PySide.QtGui.QIconDragEvent" id="node2" shape="rect" title="QtGui.QIconDragEvent">
+          </area>
+         </map>
+        </p>
+        <div class="section" id="detailed-description">
+         <h2>
+          Detailed Description
+          <a class="headerlink" href="#detailed-description" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <blockquote>
+          <div>
+           <p>
+            The
+            <a class="reference internal" href="#PySide.QtGui.QIconDragEvent" title="PySide.QtGui.QIconDragEvent">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QIconDragEvent
+              </span>
+             </tt>
+            </a>
+            class indicates that a main icon drag has begun.
+           </p>
+           <p>
+            Icon drag events are sent to widgets when the main icon of a window has been dragged away. On Mac OS X, this happens when the proxy icon of a window is dragged off the title bar.
+           </p>
+           <p>
+            It is normal to begin using drag and drop in response to this event.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <em class="xref std std-ref">
+              Drag and Drop
+             </em>
+             <a class="reference internal" href="../QtCore/QMimeData.html#PySide.QtCore.QMimeData" title="PySide.QtCore.QMimeData">
+              <tt class="xref py py-class docutils literal">
+               <span class="pre">
+                PySide.QtCore.QMimeData
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="QDrag.html#PySide.QtGui.QDrag" title="PySide.QtGui.QDrag">
+              <tt class="xref py py-class docutils literal">
+               <span class="pre">
+                PySide.QtGui.QDrag
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </div>
+         </blockquote>
+         <dl class="class">
+          <dt id="PySide.QtGui.QIconDragEvent">
+           <em class="property">
+            class
+           </em>
+           <tt class="descclassname">
+            PySide.QtGui.
+           </tt>
+           <tt class="descname">
+            QIconDragEvent
+           </tt>
+           <a class="headerlink" href="#PySide.QtGui.QIconDragEvent" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <p>
+            Constructs an icon drag event object with the accept flag set to false.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtCore.QEvent.accept()
+              </span>
+             </tt>
+            </p>
+           </div>
+          </dd>
+         </dl>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearer">
+    </div>
+   </div>
+   <div class="footer">
+    <a href="http://www.indt.org.br">
+     <img alt="Indt" border="0" src="../../_static/logo_indt.jpg"/>
+    </a>
+    <a href="http://www.openbossa.org">
+     <img alt="Openbossa" border="0" src="../../_static/logo_openbossa.png"/>
+    </a>
+    <a href="http://qt.nokia.com/">
+     <img alt="Qt" border="0" src="../../_static/logo_qt.png"/>
+    </a>
+    <a href="http://www.python.org">
+     <img alt="Python" border="0" src="../../_static/logo_python.jpg"/>
+    </a>
+   </div>
+  </div>
+ </body>
+</html>
