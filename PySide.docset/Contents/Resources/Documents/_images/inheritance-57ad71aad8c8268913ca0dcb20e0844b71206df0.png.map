@@ -1,0 +1,9 @@
+<map id="inheritanceecee64b8d0" name="inheritanceecee64b8d0">
+<area shape="rect" id="node1" href="#PySide.QtGui.QListView" title="QtGui.QListView" alt="" coords="680,21,764,40"/>
+<area shape="rect" id="node2" href="QAbstractItemView.html#PySide.QtGui.QAbstractItemView" title="QtGui.QAbstractItemView" alt="" coords="522,21,648,40"/>
+<area shape="rect" id="node4" href="QAbstractScrollArea.html#PySide.QtGui.QAbstractScrollArea" title="QtGui.QAbstractScrollArea" alt="" coords="358,21,488,40"/>
+<area shape="rect" id="node5" href="QFrame.html#PySide.QtGui.QFrame" title="QtGui.QFrame" alt="" coords="248,21,325,40"/>
+<area shape="rect" id="node7" href="QPaintDevice.html#PySide.QtGui.QPaintDevice" title="QtGui.QPaintDevice" alt="" coords="4,3,104,22"/>
+<area shape="rect" id="node8" href="QWidget.html#PySide.QtGui.QWidget" title="QtGui.QWidget" alt="" coords="137,21,215,40"/>
+<area shape="rect" id="node10" href="../QtCore/QObject.html#PySide.QtCore.QObject" title="QtCore.QObject" alt="" coords="12,38,96,57"/>
+</map>

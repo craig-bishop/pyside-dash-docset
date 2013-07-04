@@ -1,0 +1,471 @@
+.. module:: PySide.QtGui
+.. _QX11Info:
+
+QX11Info
+********
+
+.. inheritance-diagram:: QX11Info
+    :parts: 2
+
+Synopsis
+--------
+
+Functions
+^^^^^^^^^
+.. container:: function_list
+
+*    def :meth:`cells<PySide.QtGui.QX11Info.cells>` ()
+*    def :meth:`cloneX11Data<PySide.QtGui.QX11Info.cloneX11Data>` (arg__1)
+*    def :meth:`colormap<PySide.QtGui.QX11Info.colormap>` ()
+*    def :meth:`copyX11Data<PySide.QtGui.QX11Info.copyX11Data>` (arg__1)
+*    def :meth:`defaultColormap<PySide.QtGui.QX11Info.defaultColormap>` ()
+*    def :meth:`defaultVisual<PySide.QtGui.QX11Info.defaultVisual>` ()
+*    def :meth:`depth<PySide.QtGui.QX11Info.depth>` ()
+*    def :meth:`screen<PySide.QtGui.QX11Info.screen>` ()
+*    def :meth:`visual<PySide.QtGui.QX11Info.visual>` ()
+
+
+Static functions
+^^^^^^^^^^^^^^^^
+.. container:: function_list
+
+*    def :meth:`appCells<PySide.QtGui.QX11Info.appCells>` ([screen=-1])
+*    def :meth:`appClass<PySide.QtGui.QX11Info.appClass>` ()
+*    def :meth:`appColormap<PySide.QtGui.QX11Info.appColormap>` ([screen=-1])
+*    def :meth:`appDefaultColormap<PySide.QtGui.QX11Info.appDefaultColormap>` ([screen=-1])
+*    def :meth:`appDefaultVisual<PySide.QtGui.QX11Info.appDefaultVisual>` ([screen=-1])
+*    def :meth:`appDepth<PySide.QtGui.QX11Info.appDepth>` ([screen=-1])
+*    def :meth:`appDpiX<PySide.QtGui.QX11Info.appDpiX>` ([screen=-1])
+*    def :meth:`appDpiY<PySide.QtGui.QX11Info.appDpiY>` ([screen=-1])
+*    def :meth:`appRootWindow<PySide.QtGui.QX11Info.appRootWindow>` ([screen=-1])
+*    def :meth:`appScreen<PySide.QtGui.QX11Info.appScreen>` ()
+*    def :meth:`appTime<PySide.QtGui.QX11Info.appTime>` ()
+*    def :meth:`appUserTime<PySide.QtGui.QX11Info.appUserTime>` ()
+*    def :meth:`appVisual<PySide.QtGui.QX11Info.appVisual>` ([screen=-1])
+*    def :meth:`display<PySide.QtGui.QX11Info.display>` ()
+*    def :meth:`isCompositingManagerRunning<PySide.QtGui.QX11Info.isCompositingManagerRunning>` ()
+*    def :meth:`setAppDpiX<PySide.QtGui.QX11Info.setAppDpiX>` (screen, dpi)
+*    def :meth:`setAppDpiY<PySide.QtGui.QX11Info.setAppDpiY>` (screen, dpi)
+*    def :meth:`setAppTime<PySide.QtGui.QX11Info.setAppTime>` (time)
+*    def :meth:`setAppUserTime<PySide.QtGui.QX11Info.setAppUserTime>` (time)
+
+
+Detailed Description
+--------------------
+
+
+
+    The :class:`PySide.QtGui.QX11Info` class provides information about the X display configuration.
+
+    The class provides two APIs: a set of non-static functions that provide information about a specific widget or pixmap, and a set of static functions that provide the default information for the application.
+
+    .. warning::  This class is only available on X11. For querying per-screen information in a portable way, use :class:`PySide.QtGui.QDesktopWidget` .
+
+    .. seealso::  :meth:`QWidget.x11Info()<PySide.QtGui.QWidget.x11Info>`  :meth:`QPixmap.x11Info()<PySide.QtGui.QPixmap.x11Info>`  :class:`PySide.QtGui.QDesktopWidget` 
+
+.. class:: QX11Info()
+           QX11Info(other)
+
+    :param other: :class:`PySide.QtGui.QX11Info`
+
+    Constructs an empty :class:`PySide.QtGui.QX11Info` object.
+
+
+    Constructs a copy of ``other`` .
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.appCells([screen=-1])
+
+
+    :param screen: :class:`PySide.QtCore.int`
+    :rtype: :class:`PySide.QtCore.int`
+
+
+
+
+    Returns the number of cells used by the application on the given ``screen`` .
+
+    The ``screen`` argument is an X screen number. Be aware that if the user's system uses Xinerama (as opposed to traditional X11 multiscreen), there is only one X screen. Use :class:`PySide.QtGui.QDesktopWidget` to query for information about Xinerama screens.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.cells` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.appClass()
+
+
+    :rtype: str
+
+
+
+
+    Returns the X11 application class.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.display` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.appColormap([screen=-1])
+
+
+    :param screen: :class:`PySide.QtCore.int`
+    :rtype: :class:`PySide.QtCore.Qt::HANDLE`
+
+
+
+
+    Returns a handle for the application's color map on the given ``screen`` .
+
+    The ``screen`` argument is an X screen number. Be aware that if the user's system uses Xinerama (as opposed to traditional X11 multiscreen), there is only one X screen. Use :class:`PySide.QtGui.QDesktopWidget` to query for information about Xinerama screens.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.colormap`  :meth:`PySide.QtGui.QX11Info.defaultColormap` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.appDefaultColormap([screen=-1])
+
+
+    :param screen: :class:`PySide.QtCore.int`
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if the application has a default color map on the given ``screen`` ; otherwise returns false.
+
+    The ``screen`` argument is an X screen number. Be aware that if the user's system uses Xinerama (as opposed to traditional X11 multiscreen), there is only one X screen. Use :class:`PySide.QtGui.QDesktopWidget` to query for information about Xinerama screens.
+
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.appDefaultVisual([screen=-1])
+
+
+    :param screen: :class:`PySide.QtCore.int`
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if the application has a default visual on the given ``screen`` ; otherwise returns false.
+
+    The ``screen`` argument is an X screen number. Be aware that if the user's system uses Xinerama (as opposed to traditional X11 multiscreen), there is only one X screen. Use :class:`PySide.QtGui.QDesktopWidget` to query for information about Xinerama screens.
+
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.appDepth([screen=-1])
+
+
+    :param screen: :class:`PySide.QtCore.int`
+    :rtype: :class:`PySide.QtCore.int`
+
+
+
+
+    Returns the color depth (bits per pixel) used by the application on the given ``screen`` .
+
+    The ``screen`` argument is an X screen number. Be aware that if the user's system uses Xinerama (as opposed to traditional X11 multiscreen), there is only one X screen. Use :class:`PySide.QtGui.QDesktopWidget` to query for information about Xinerama screens.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.depth` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.appDpiX([screen=-1])
+
+
+    :param screen: :class:`PySide.QtCore.int`
+    :rtype: :class:`PySide.QtCore.int`
+
+
+
+
+    Returns the horizontal resolution of the given ``screen`` in terms of the number of dots per inch.
+
+    The ``screen`` argument is an X screen number. Be aware that if the user's system uses Xinerama (as opposed to traditional X11 multiscreen), there is only one X screen. Use :class:`PySide.QtGui.QDesktopWidget` to query for information about Xinerama screens.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.setAppDpiX`  :meth:`PySide.QtGui.QX11Info.appDpiY` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.appDpiY([screen=-1])
+
+
+    :param screen: :class:`PySide.QtCore.int`
+    :rtype: :class:`PySide.QtCore.int`
+
+
+
+
+    Returns the vertical resolution of the given ``screen`` in terms of the number of dots per inch.
+
+    The ``screen`` argument is an X screen number. Be aware that if the user's system uses Xinerama (as opposed to traditional X11 multiscreen), there is only one X screen. Use :class:`PySide.QtGui.QDesktopWidget` to query for information about Xinerama screens.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.setAppDpiY`  :meth:`PySide.QtGui.QX11Info.appDpiX` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.appRootWindow([screen=-1])
+
+
+    :param screen: :class:`PySide.QtCore.int`
+    :rtype: :class:`PySide.QtCore.Qt::HANDLE`
+
+
+
+
+    Returns a handle for the applications root window on the given ``screen`` .
+
+    The ``screen`` argument is an X screen number. Be aware that if the user's system uses Xinerama (as opposed to traditional X11 multiscreen), there is only one X screen. Use :class:`PySide.QtGui.QDesktopWidget` to query for information about Xinerama screens.
+
+    .. seealso::  :meth:`QApplication.desktop()<PySide.QtGui.QApplication.desktop>` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.appScreen()
+
+
+    :rtype: :class:`PySide.QtCore.int`
+
+
+
+
+    Returns the number of the screen where the application is being displayed.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.display`  :meth:`PySide.QtGui.QX11Info.screen` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.appTime()
+
+
+    :rtype: long
+
+
+
+
+    Returns the X11 time.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.setAppTime`  :meth:`PySide.QtGui.QX11Info.appUserTime` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.appUserTime()
+
+
+    :rtype: long
+
+
+
+
+    Returns the X11 user time.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.setAppUserTime`  :meth:`PySide.QtGui.QX11Info.appTime` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.appVisual([screen=-1])
+
+
+    :param screen: :class:`PySide.QtCore.int`
+    :rtype: :class:`void`
+
+
+
+
+    Returns the current visual used by the application on the given ``screen`` .
+
+    The ``screen`` argument is an X screen number. Be aware that if the user's system uses Xinerama (as opposed to traditional X11 multiscreen), there is only one X screen. Use :class:`PySide.QtGui.QDesktopWidget` to query for information about Xinerama screens.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.visual`  :meth:`PySide.QtGui.QX11Info.defaultVisual` 
+
+
+.. method:: PySide.QtGui.QX11Info.cells()
+
+
+    :rtype: :class:`PySide.QtCore.int`
+
+
+
+
+    Returns the number of cells.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.appCells` 
+
+
+.. method:: PySide.QtGui.QX11Info.cloneX11Data(arg__1)
+
+
+    :param arg__1: :class:`PySide.QtGui.QPaintDevice`
+
+
+
+
+    Makes a deep copy of the X11-specific data of ``fromDevice`` , if it is not null. Otherwise this function sets it to null.
+
+
+
+.. method:: PySide.QtGui.QX11Info.colormap()
+
+
+    :rtype: :class:`PySide.QtCore.Qt::HANDLE`
+
+
+
+
+    Returns a handle for the color map.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.defaultColormap` 
+
+
+.. method:: PySide.QtGui.QX11Info.copyX11Data(arg__1)
+
+
+    :param arg__1: :class:`PySide.QtGui.QPaintDevice`
+
+
+
+
+    Makes a shallow copy of the X11-specific data of ``fromDevice`` , if it is not null. Otherwise this function sets it to null.
+
+
+
+.. method:: PySide.QtGui.QX11Info.defaultColormap()
+
+
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if there is a default color map; otherwise returns false.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.colormap` 
+
+
+.. method:: PySide.QtGui.QX11Info.defaultVisual()
+
+
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if there is a default visual; otherwise returns false.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.visual`  :meth:`PySide.QtGui.QX11Info.appVisual` 
+
+
+.. method:: PySide.QtGui.QX11Info.depth()
+
+
+    :rtype: :class:`PySide.QtCore.int`
+
+
+
+
+    Returns the color depth (bits per pixel) of the X display.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.appDepth` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.display()
+
+
+    :rtype: long
+
+
+
+
+    Returns the default display for the application.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.appScreen` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.isCompositingManagerRunning()
+
+
+    :rtype: :class:`PySide.QtCore.bool`
+
+
+
+
+    Returns true if there is a compositing manager running.
+
+
+
+.. method:: PySide.QtGui.QX11Info.screen()
+
+
+    :rtype: :class:`PySide.QtCore.int`
+
+
+
+
+    Returns the number of the screen currently in use.
+
+    The return value is an X screen number. Be aware that if the user's system uses Xinerama (as opposed to traditional X11 multiscreen), there is only one X screen. Use :class:`PySide.QtGui.QDesktopWidget` to query for information about Xinerama screens.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.appScreen` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.setAppDpiX(screen, dpi)
+
+
+    :param screen: :class:`PySide.QtCore.int`
+    :param dpi: :class:`PySide.QtCore.int`
+
+
+
+
+    Sets the horizontal resolution of the given ``screen`` to the number of dots per inch specified by ``xdpi`` .
+
+    The ``screen`` argument is an X screen number. Be aware that if the user's system uses Xinerama (as opposed to traditional X11 multiscreen), there is only one X screen. Use :class:`PySide.QtGui.QDesktopWidget` to query for information about Xinerama screens.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.appDpiX`  :meth:`PySide.QtGui.QX11Info.setAppDpiY` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.setAppDpiY(screen, dpi)
+
+
+    :param screen: :class:`PySide.QtCore.int`
+    :param dpi: :class:`PySide.QtCore.int`
+
+
+
+
+    Sets the vertical resolution of the given ``screen`` to the number of dots per inch specified by ``ydpi`` .
+
+    The ``screen`` argument is an X screen number. Be aware that if the user's system uses Xinerama (as opposed to traditional X11 multiscreen), there is only one X screen. Use :class:`PySide.QtGui.QDesktopWidget` to query for information about Xinerama screens.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.appDpiY`  :meth:`PySide.QtGui.QX11Info.setAppDpiX` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.setAppTime(time)
+
+
+    :param time: long
+
+
+
+
+    Sets the X11 time to the value specified by ``time`` .
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.appTime`  :meth:`PySide.QtGui.QX11Info.setAppUserTime` 
+
+
+.. staticmethod:: PySide.QtGui.QX11Info.setAppUserTime(time)
+
+
+    :param time: long
+
+
+
+
+    Sets the X11 user time as specified by ``time`` .
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.appUserTime`  :meth:`PySide.QtGui.QX11Info.setAppTime` 
+
+
+.. method:: PySide.QtGui.QX11Info.visual()
+
+
+    :rtype: :class:`void`
+
+
+
+
+    Returns the current visual.
+
+    .. seealso::  :meth:`PySide.QtGui.QX11Info.appVisual`  :meth:`PySide.QtGui.QX11Info.defaultVisual` 
+
+
+

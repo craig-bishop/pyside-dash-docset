@@ -1,0 +1,1090 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   QContextMenuEvent — PySide 1.1.0 documentation
+  </title>
+  <link href="../../_static/pysidedocs.css" rel="stylesheet" type="text/css"/>
+  <link href="../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+  </script>
+  <script src="../../_static/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../_static/underscore.js" type="text/javascript">
+  </script>
+  <script src="../../_static/doctools.js" type="text/javascript">
+  </script>
+  <link href="../../index.html" rel="top" title="PySide 1.1.0 documentation"/>
+  <link href="index.html" rel="up" title="PySide.QtGui"/>
+  <link href="QKeyEvent.html" rel="next" title="QKeyEvent"/>
+  <link href="QTouchEvent.TouchPoint.html" rel="prev" title="QTouchEvent.TouchPoint"/>
+ </head>
+ <body>
+  <div id="container">
+   <div class="header">
+    <div class="header_container">
+     <div class="logo">
+      <a href="http://www.pyside.org">
+       <img alt="PySide" height="102" src="../../_static/pysidelogo.png" width="199"/>
+      </a>
+     </div>
+     <div class="related">
+      <ul>
+       <li>
+        <a href="../../index.html">
+         PySide 1.1.0 documentation
+        </a>
+       </li>
+       <li>
+        »
+        <a href="../../modules.html">
+         PySide modules
+        </a>
+       </li>
+       <li>
+        »
+        <a accesskey="U" href="index.html">
+         PySide.QtGui
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="sphinxsidebar">
+    <div class="sphinxsidebarwrapper">
+     <h3>
+      <a href="../../contents.html">
+       Table Of Contents
+      </a>
+     </h3>
+     <ul>
+      <li>
+       <a class="reference internal" href="#">
+        QContextMenuEvent
+       </a>
+       <ul>
+        <li>
+         <a class="reference internal" href="#synopsis">
+          Synopsis
+         </a>
+         <ul>
+          <li>
+           <a class="reference internal" href="#functions">
+            Functions
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a class="reference internal" href="#detailed-description">
+          Detailed Description
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+     <h4>
+      Previous topic
+     </h4>
+     <p class="topless">
+      <a href="QTouchEvent.TouchPoint.html" title="previous chapter">
+       QTouchEvent.TouchPoint
+      </a>
+     </p>
+     <h4>
+      Next topic
+     </h4>
+     <p class="topless">
+      <a href="QKeyEvent.html" title="next chapter">
+       QKeyEvent
+      </a>
+     </p>
+     <div id="searchbox" style="display: none">
+      <h3>
+       Quick search
+      </h3>
+      <form action="../../search.html" class="search" method="get">
+       <input id="q" name="q" size="18" type="text"/>
+       <input id="search_button" type="submit" value="Go"/>
+       <input name="check_keywords" type="hidden" value="yes"/>
+       <input name="area" type="hidden" value="default"/>
+      </form>
+     </div>
+     <script type="text/javascript">
+      $('#searchbox').show(0);
+     </script>
+    </div>
+   </div>
+   <div class="document">
+    <div class="documentwrapper">
+     <div class="bodywrapper">
+      <div class="body">
+       <span class="target" id="module-PySide.QtGui">
+       </span>
+       <div class="section" id="qcontextmenuevent">
+        <span id="id1">
+        </span>
+        <h1>
+         QContextMenuEvent
+         <a class="headerlink" href="#qcontextmenuevent" title="Permalink to this headline">
+          ¶
+         </a>
+        </h1>
+        <p class="graphviz">
+         <img alt="Inheritance diagram of QContextMenuEvent" class="inheritance" src="../../_images/inheritance-fbb5fb9d3b2ac98b0364dd6ded19f1546e44d232.png" usemap="#inheritance24b8f9dc4b"/>
+         <map id="inheritance24b8f9dc4b" name="inheritance24b8f9dc4b">
+          <area alt="" coords="361,5,553,33" href="#PySide.QtGui.QContextMenuEvent" id="node1" shape="rect" title="QtGui.QContextMenuEvent">
+          </area>
+          <area alt="" coords="172,5,311,33" href="QInputEvent.html#PySide.QtGui.QInputEvent" id="node2" shape="rect" title="QtGui.QInputEvent">
+          </area>
+          <area alt="" coords="5,5,123,33" href="../QtCore/QEvent.html#PySide.QtCore.QEvent" id="node4" shape="rect" title="QtCore.QEvent">
+          </area>
+         </map>
+        </p>
+        <div class="section" id="synopsis">
+         <h2>
+          Synopsis
+          <a class="headerlink" href="#synopsis" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <div class="section" id="functions">
+          <h3>
+           Functions
+           <a class="headerlink" href="#functions" title="Permalink to this headline">
+            ¶
+           </a>
+          </h3>
+          <ul class="simple">
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalPos" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalPos">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               globalPos
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalX" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalX">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               globalX
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalY" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalY">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               globalY
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.pos" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.pos">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               pos
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.reason" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.reason">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               reason
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.x" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.x">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               x
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.y" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.y">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               y
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="section" id="detailed-description">
+         <h2>
+          Detailed Description
+          <a class="headerlink" href="#detailed-description" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <blockquote>
+          <div>
+           <p>
+            The
+            <a class="reference internal" href="#PySide.QtGui.QContextMenuEvent" title="PySide.QtGui.QContextMenuEvent">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QContextMenuEvent
+              </span>
+             </tt>
+            </a>
+            class contains parameters that describe a context menu event.
+           </p>
+           <p>
+            Context menu events are sent to widgets when a user performs an action associated with opening a context menu. The actions required to open context menus vary between platforms; for example, on Windows, pressing the menu button or clicking the right mouse button will cause this event to be sent.
+           </p>
+           <p>
+            When this event occurs it is customary to show a
+            <a class="reference internal" href="QMenu.html#PySide.QtGui.QMenu" title="PySide.QtGui.QMenu">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QMenu
+              </span>
+             </tt>
+            </a>
+            with a context menu, if this is relevant to the context.
+           </p>
+           <p>
+            Context menu events contain a special accept flag that indicates whether the receiver accepted the event. If the event handler does not accept the event then, if possible, whatever triggered the event will be handled as a regular input event.
+           </p>
+          </div>
+         </blockquote>
+         <dl class="class">
+          <dt id="PySide.QtGui.QContextMenuEvent">
+           <em class="property">
+            class
+           </em>
+           <tt class="descclassname">
+            PySide.QtGui.
+           </tt>
+           <tt class="descname">
+            QContextMenuEvent
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            reason
+           </em>
+           ,
+           <em>
+            pos
+           </em>
+           <big>
+            )
+           </big>
+           <a class="headerlink" href="#PySide.QtGui.QContextMenuEvent" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dt>
+           <em class="property">
+            class
+           </em>
+           <tt class="descclassname">
+            PySide.QtGui.
+           </tt>
+           <tt class="descname">
+            QContextMenuEvent
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            reason
+           </em>
+           ,
+           <em>
+            pos
+           </em>
+           ,
+           <em>
+            globalPos
+           </em>
+           <big>
+            )
+           </big>
+          </dt>
+          <dt>
+           <em class="property">
+            class
+           </em>
+           <tt class="descclassname">
+            PySide.QtGui.
+           </tt>
+           <tt class="descname">
+            QContextMenuEvent
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            reason
+           </em>
+           ,
+           <em>
+            pos
+           </em>
+           ,
+           <em>
+            globalPos
+           </em>
+           ,
+           <em>
+            modifiers
+           </em>
+           <big>
+            )
+           </big>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <ul class="first last simple">
+                <li>
+                 <strong>
+                  reason
+                 </strong>
+                 –
+                 <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.Reason" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.Reason">
+                  <tt class="xref py py-attr docutils literal">
+                   <span class="pre">
+                    PySide.QtGui.QContextMenuEvent.Reason
+                   </span>
+                  </tt>
+                 </a>
+                </li>
+                <li>
+                 <strong>
+                  globalPos
+                 </strong>
+                 –
+                 <a class="reference internal" href="../QtCore/QPoint.html#PySide.QtCore.QPoint" title="PySide.QtCore.QPoint">
+                  <tt class="xref py py-class docutils literal">
+                   <span class="pre">
+                    PySide.QtCore.QPoint
+                   </span>
+                  </tt>
+                 </a>
+                </li>
+                <li>
+                 <strong>
+                  modifiers
+                 </strong>
+                 –
+                 <tt class="xref py py-class docutils literal">
+                  <span class="pre">
+                   PySide.QtCore.Qt.KeyboardModifiers
+                  </span>
+                 </tt>
+                </li>
+                <li>
+                 <strong>
+                  pos
+                 </strong>
+                 –
+                 <a class="reference internal" href="../QtCore/QPoint.html#PySide.QtCore.QPoint" title="PySide.QtCore.QPoint">
+                  <tt class="xref py py-class docutils literal">
+                   <span class="pre">
+                    PySide.QtCore.QPoint
+                   </span>
+                  </tt>
+                 </a>
+                </li>
+               </ul>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Constructs a context menu event object with the accept parameter flag set to false.
+           </p>
+           <p>
+            The
+            <tt class="docutils literal">
+             <span class="pre">
+              reason
+             </span>
+            </tt>
+            parameter must be
+            <tt class="xref py py-attr docutils literal">
+             <span class="pre">
+              QContextMenuEvent.Mouse
+             </span>
+            </tt>
+            or
+            <tt class="xref py py-attr docutils literal">
+             <span class="pre">
+              QContextMenuEvent.Keyboard
+             </span>
+            </tt>
+            .
+           </p>
+           <p>
+            The
+            <tt class="docutils literal">
+             <span class="pre">
+              pos
+             </span>
+            </tt>
+            parameter specifies the mouse position relative to the receiving widget.
+           </p>
+           <p>
+            The
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalPos" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalPos">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QContextMenuEvent.globalPos()
+              </span>
+             </tt>
+            </a>
+            is initialized to
+            <a class="reference internal" href="QCursor.html#PySide.QtGui.PySide.QtGui.QCursor.pos" title="PySide.QtGui.PySide.QtGui.QCursor.pos">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               QCursor.pos()
+              </span>
+             </tt>
+            </a>
+            , which may not be appropriate. Use the other constructor to specify the global position explicitly.
+           </p>
+           <p>
+            Constructs a context menu event object with the accept parameter flag set to false.
+           </p>
+           <p>
+            The
+            <tt class="docutils literal">
+             <span class="pre">
+              reason
+             </span>
+            </tt>
+            parameter must be
+            <tt class="xref py py-attr docutils literal">
+             <span class="pre">
+              QContextMenuEvent.Mouse
+             </span>
+            </tt>
+            or
+            <tt class="xref py py-attr docutils literal">
+             <span class="pre">
+              QContextMenuEvent.Keyboard
+             </span>
+            </tt>
+            .
+           </p>
+           <p>
+            The
+            <tt class="docutils literal">
+             <span class="pre">
+              pos
+             </span>
+            </tt>
+            parameter specifies the mouse position relative to the receiving widget.
+            <tt class="docutils literal">
+             <span class="pre">
+              globalPos
+             </span>
+            </tt>
+            is the mouse position in absolute coordinates.
+           </p>
+          </dd>
+         </dl>
+         <dl class="attribute">
+          <dt id="PySide.QtGui.PySide.QtGui.QContextMenuEvent.Reason">
+           <tt class="descclassname">
+            PySide.QtGui.QContextMenuEvent.
+           </tt>
+           <tt class="descname">
+            Reason
+           </tt>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.Reason" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <p>
+            This enum describes the reason why the event was sent.
+           </p>
+           <table border="1" class="docutils">
+            <colgroup>
+             <col width="17%">
+             </col>
+             <col width="83%">
+             </col>
+            </colgroup>
+            <thead valign="bottom">
+             <tr class="row-odd">
+              <th class="head">
+               Constant
+              </th>
+              <th class="head">
+               Description
+              </th>
+             </tr>
+            </thead>
+            <tbody valign="top">
+             <tr class="row-even">
+              <td>
+               QContextMenuEvent.Mouse
+              </td>
+              <td>
+               The mouse caused the event to be sent. Normally this means the right mouse button was clicked, but this is platform dependent.
+              </td>
+             </tr>
+             <tr class="row-odd">
+              <td>
+               QContextMenuEvent.Keyboard
+              </td>
+              <td>
+               The keyboard caused this event to be sent. On Windows, this means the menu button was pressed.
+              </td>
+             </tr>
+             <tr class="row-even">
+              <td>
+               QContextMenuEvent.Other
+              </td>
+              <td>
+               The event was sent by some other means (i.e. not by the mouse or keyboard).
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalPos">
+           <tt class="descclassname">
+            PySide.QtGui.QContextMenuEvent.
+           </tt>
+           <tt class="descname">
+            globalPos
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/globalPos">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalPos" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <a class="reference internal" href="../QtCore/QPoint.html#PySide.QtCore.QPoint" title="PySide.QtCore.QPoint">
+                <tt class="xref py py-class docutils literal">
+                 <span class="pre">
+                  PySide.QtCore.QPoint
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the global position of the mouse pointer at the time of the event.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.x" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.x">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QContextMenuEvent.x()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.y" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.y">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QContextMenuEvent.y()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.pos" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.pos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QContextMenuEvent.pos()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalX">
+           <tt class="descclassname">
+            PySide.QtGui.QContextMenuEvent.
+           </tt>
+           <tt class="descname">
+            globalX
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/globalX">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalX" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.int
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the global x position of the mouse pointer at the time of the event.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalY" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalY">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QContextMenuEvent.globalY()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalPos" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalPos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QContextMenuEvent.globalPos()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalY">
+           <tt class="descclassname">
+            PySide.QtGui.QContextMenuEvent.
+           </tt>
+           <tt class="descname">
+            globalY
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/globalY">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalY" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.int
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the global y position of the mouse pointer at the time of the event.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalX" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalX">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QContextMenuEvent.globalX()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalPos" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalPos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QContextMenuEvent.globalPos()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QContextMenuEvent.pos">
+           <tt class="descclassname">
+            PySide.QtGui.QContextMenuEvent.
+           </tt>
+           <tt class="descname">
+            pos
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/pos">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.pos" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <a class="reference internal" href="../QtCore/QPoint.html#PySide.QtCore.QPoint" title="PySide.QtCore.QPoint">
+                <tt class="xref py py-class docutils literal">
+                 <span class="pre">
+                  PySide.QtCore.QPoint
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the position of the mouse pointer relative to the widget that received the event.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.x" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.x">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QContextMenuEvent.x()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.y" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.y">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QContextMenuEvent.y()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalPos" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.globalPos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QContextMenuEvent.globalPos()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QContextMenuEvent.reason">
+           <tt class="descclassname">
+            PySide.QtGui.QContextMenuEvent.
+           </tt>
+           <tt class="descname">
+            reason
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/reason">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.reason" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.Reason" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.Reason">
+                <tt class="xref py py-attr docutils literal">
+                 <span class="pre">
+                  PySide.QtGui.QContextMenuEvent.Reason
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the reason for this context event.
+           </p>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QContextMenuEvent.x">
+           <tt class="descclassname">
+            PySide.QtGui.QContextMenuEvent.
+           </tt>
+           <tt class="descname">
+            x
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/x">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.x" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.int
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the x position of the mouse pointer, relative to the widget that received the event.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.y" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.y">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QContextMenuEvent.y()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.pos" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.pos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QContextMenuEvent.pos()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QContextMenuEvent.y">
+           <tt class="descclassname">
+            PySide.QtGui.QContextMenuEvent.
+           </tt>
+           <tt class="descname">
+            y
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/y">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.y" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.int
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns the y position of the mouse pointer, relative to the widget that received the event.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.x" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.x">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QContextMenuEvent.x()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QContextMenuEvent.pos" title="PySide.QtGui.PySide.QtGui.QContextMenuEvent.pos">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QContextMenuEvent.pos()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearer">
+    </div>
+   </div>
+   <div class="footer">
+    <a href="http://www.indt.org.br">
+     <img alt="Indt" border="0" src="../../_static/logo_indt.jpg"/>
+    </a>
+    <a href="http://www.openbossa.org">
+     <img alt="Openbossa" border="0" src="../../_static/logo_openbossa.png"/>
+    </a>
+    <a href="http://qt.nokia.com/">
+     <img alt="Qt" border="0" src="../../_static/logo_qt.png"/>
+    </a>
+    <a href="http://www.python.org">
+     <img alt="Python" border="0" src="../../_static/logo_python.jpg"/>
+    </a>
+   </div>
+  </div>
+ </body>
+</html>

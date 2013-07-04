@@ -1,0 +1,8 @@
+<map id="inheritance82cd2c88f2" name="inheritance82cd2c88f2">
+<area shape="rect" id="node1" href="../QtCore/QObject.html#PySide.QtCore.QObject" title="QtCore.QObject" alt="" coords="20,4,125,28"/>
+<area shape="rect" id="node3" href="QGraphicsObject.html#PySide.QtGui.QGraphicsObject" title="QtGui.QGraphicsObject" alt="" coords="195,26,340,50"/>
+<area shape="rect" id="node2" href="QGraphicsLayoutItem.html#PySide.QtGui.QGraphicsLayoutItem" title="QtGui.QGraphicsLayoutItem" alt="" coords="182,70,354,94"/>
+<area shape="rect" id="node8" href="QGraphicsWidget.html#PySide.QtGui.QGraphicsWidget" title="QtGui.QGraphicsWidget" alt="" coords="395,48,543,72"/>
+<area shape="rect" id="node5" href="QGraphicsItem.html#PySide.QtGui.QGraphicsItem" title="QtGui.QGraphicsItem" alt="" coords="5,48,140,72"/>
+<area shape="rect" id="node7" href="#PySide.QtGui.QGraphicsProxyWidget" title="QtGui.QGraphicsProxyWidget" alt="" coords="585,48,762,72"/>
+</map>

@@ -1,0 +1,2790 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   QLCDNumber — PySide 1.1.0 documentation
+  </title>
+  <link href="../../_static/pysidedocs.css" rel="stylesheet" type="text/css"/>
+  <link href="../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+  </script>
+  <script src="../../_static/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../_static/underscore.js" type="text/javascript">
+  </script>
+  <script src="../../_static/doctools.js" type="text/javascript">
+  </script>
+  <link href="../../index.html" rel="top" title="PySide 1.1.0 documentation"/>
+  <link href="index.html" rel="up" title="PySide.QtGui"/>
+  <link href="QLabel.html" rel="next" title="QLabel"/>
+  <link href="QLineEdit.html" rel="prev" title="QLineEdit"/>
+ </head>
+ <body>
+  <div id="container">
+   <div class="header">
+    <div class="header_container">
+     <div class="logo">
+      <a href="http://www.pyside.org">
+       <img alt="PySide" height="102" src="../../_static/pysidelogo.png" width="199"/>
+      </a>
+     </div>
+     <div class="related">
+      <ul>
+       <li>
+        <a href="../../index.html">
+         PySide 1.1.0 documentation
+        </a>
+       </li>
+       <li>
+        »
+        <a href="../../modules.html">
+         PySide modules
+        </a>
+       </li>
+       <li>
+        »
+        <a accesskey="U" href="index.html">
+         PySide.QtGui
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="sphinxsidebar">
+    <div class="sphinxsidebarwrapper">
+     <h3>
+      <a href="../../contents.html">
+       Table Of Contents
+      </a>
+     </h3>
+     <ul>
+      <li>
+       <a class="reference internal" href="#">
+        QLCDNumber
+       </a>
+       <ul>
+        <li>
+         <a class="reference internal" href="#synopsis">
+          Synopsis
+         </a>
+         <ul>
+          <li>
+           <a class="reference internal" href="#functions">
+            Functions
+           </a>
+          </li>
+          <li>
+           <a class="reference internal" href="#slots">
+            Slots
+           </a>
+          </li>
+          <li>
+           <a class="reference internal" href="#signals">
+            Signals
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a class="reference internal" href="#detailed-description">
+          Detailed Description
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+     <h4>
+      Previous topic
+     </h4>
+     <p class="topless">
+      <a href="QLineEdit.html" title="previous chapter">
+       QLineEdit
+      </a>
+     </p>
+     <h4>
+      Next topic
+     </h4>
+     <p class="topless">
+      <a href="QLabel.html" title="next chapter">
+       QLabel
+      </a>
+     </p>
+     <div id="searchbox" style="display: none">
+      <h3>
+       Quick search
+      </h3>
+      <form action="../../search.html" class="search" method="get">
+       <input id="q" name="q" size="18" type="text"/>
+       <input id="search_button" type="submit" value="Go"/>
+       <input name="check_keywords" type="hidden" value="yes"/>
+       <input name="area" type="hidden" value="default"/>
+      </form>
+     </div>
+     <script type="text/javascript">
+      $('#searchbox').show(0);
+     </script>
+    </div>
+   </div>
+   <div class="document">
+    <div class="documentwrapper">
+     <div class="bodywrapper">
+      <div class="body">
+       <span class="target" id="module-PySide.QtGui">
+       </span>
+       <div class="section" id="qlcdnumber">
+        <span id="id1">
+        </span>
+        <h1>
+         QLCDNumber
+         <a class="headerlink" href="#qlcdnumber" title="Permalink to this headline">
+          ¶
+         </a>
+        </h1>
+        <p class="graphviz">
+         <img alt="Inheritance diagram of QLCDNumber" class="inheritance" src="../../_images/inheritance-2e3e39ad6193123cb0b583bc89798a0c812e440c.png" usemap="#inheritancec516917fbb"/>
+         <map id="inheritancec516917fbb" name="inheritancec516917fbb">
+          <area alt="" coords="363,30,475,58" href="QFrame.html#PySide.QtGui.QFrame" id="node1" shape="rect" title="QtGui.QFrame">
+          </area>
+          <area alt="" coords="524,30,673,58" href="#PySide.QtGui.QLCDNumber" id="node8" shape="rect" title="QtGui.QLCDNumber">
+          </area>
+          <area alt="" coords="200,30,315,58" href="QWidget.html#PySide.QtGui.QWidget" id="node2" shape="rect" title="QtGui.QWidget">
+          </area>
+          <area alt="" coords="17,5,140,33" href="../QtCore/QObject.html#PySide.QtCore.QObject" id="node4" shape="rect" title="QtCore.QObject">
+          </area>
+          <area alt="" coords="5,55,152,83" href="QPaintDevice.html#PySide.QtGui.QPaintDevice" id="node6" shape="rect" title="QtGui.QPaintDevice">
+          </area>
+         </map>
+        </p>
+        <div class="section" id="synopsis">
+         <h2>
+          Synopsis
+          <a class="headerlink" href="#synopsis" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <div class="section" id="functions">
+          <h3>
+           Functions
+           <a class="headerlink" href="#functions" title="Permalink to this headline">
+            ¶
+           </a>
+          </h3>
+          <ul class="simple">
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.checkOverflow" title="PySide.QtGui.PySide.QtGui.QLCDNumber.checkOverflow">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               checkOverflow
+              </span>
+             </tt>
+            </a>
+            (num)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.checkOverflow" title="PySide.QtGui.PySide.QtGui.QLCDNumber.checkOverflow">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               checkOverflow
+              </span>
+             </tt>
+            </a>
+            (num)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.digitCount" title="PySide.QtGui.PySide.QtGui.QLCDNumber.digitCount">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               digitCount
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.intValue" title="PySide.QtGui.PySide.QtGui.QLCDNumber.intValue">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               intValue
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.mode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.mode">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               mode
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.numDigits" title="PySide.QtGui.PySide.QtGui.QLCDNumber.numDigits">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               numDigits
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.segmentStyle" title="PySide.QtGui.PySide.QtGui.QLCDNumber.segmentStyle">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               segmentStyle
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setDigitCount" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setDigitCount">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setDigitCount
+              </span>
+             </tt>
+            </a>
+            (nDigits)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setMode">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setMode
+              </span>
+             </tt>
+            </a>
+            (arg__1)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setNumDigits" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setNumDigits">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setNumDigits
+              </span>
+             </tt>
+            </a>
+            (nDigits)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setSegmentStyle" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setSegmentStyle">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setSegmentStyle
+              </span>
+             </tt>
+            </a>
+            (arg__1)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               smallDecimalPoint
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.value" title="PySide.QtGui.PySide.QtGui.QLCDNumber.value">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               value
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+          </ul>
+         </div>
+         <div class="section" id="slots">
+          <h3>
+           Slots
+           <a class="headerlink" href="#slots" title="Permalink to this headline">
+            ¶
+           </a>
+          </h3>
+          <ul class="simple">
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.display" title="PySide.QtGui.PySide.QtGui.QLCDNumber.display">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               display
+              </span>
+             </tt>
+            </a>
+            (num)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.display" title="PySide.QtGui.PySide.QtGui.QLCDNumber.display">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               display
+              </span>
+             </tt>
+            </a>
+            (num)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.display" title="PySide.QtGui.PySide.QtGui.QLCDNumber.display">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               display
+              </span>
+             </tt>
+            </a>
+            (str)
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setBinMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setBinMode">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setBinMode
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setDecMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setDecMode">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setDecMode
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setHexMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setHexMode">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setHexMode
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setOctMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setOctMode">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setOctMode
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setSmallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setSmallDecimalPoint">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               setSmallDecimalPoint
+              </span>
+             </tt>
+            </a>
+            (arg__1)
+           </li>
+          </ul>
+         </div>
+         <div class="section" id="signals">
+          <h3>
+           Signals
+           <a class="headerlink" href="#signals" title="Permalink to this headline">
+            ¶
+           </a>
+          </h3>
+          <ul class="simple">
+           <li>
+            def
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.overflow" title="PySide.QtGui.PySide.QtGui.QLCDNumber.overflow">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               overflow
+              </span>
+             </tt>
+            </a>
+            ()
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="section" id="detailed-description">
+         <h2>
+          Detailed Description
+          <a class="headerlink" href="#detailed-description" title="Permalink to this headline">
+           ¶
+          </a>
+         </h2>
+         <blockquote>
+          <div>
+           <p>
+            The
+            <a class="reference internal" href="#PySide.QtGui.QLCDNumber" title="PySide.QtGui.QLCDNumber">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber
+              </span>
+             </tt>
+            </a>
+            widget displays a number with LCD-like digits.
+           </p>
+           <p>
+            It can display a number in just about any size. It can display decimal, hexadecimal, octal or binary numbers. It is easy to connect to data sources using the
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.display" title="PySide.QtGui.PySide.QtGui.QLCDNumber.display">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber.display()
+              </span>
+             </tt>
+            </a>
+            slot, which is overloaded to take any of five argument types.
+           </p>
+           <p>
+            There are also slots to change the base with
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setMode">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber.setMode()
+              </span>
+             </tt>
+            </a>
+            and the decimal point with
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setSmallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setSmallDecimalPoint">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber.setSmallDecimalPoint()
+              </span>
+             </tt>
+            </a>
+            .
+           </p>
+           <p>
+            <a class="reference internal" href="#PySide.QtGui.QLCDNumber" title="PySide.QtGui.QLCDNumber">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber
+              </span>
+             </tt>
+            </a>
+            emits the
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.overflow" title="PySide.QtGui.PySide.QtGui.QLCDNumber.overflow">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber.overflow()
+              </span>
+             </tt>
+            </a>
+            signal when it is asked to display something beyond its range. The range is set by
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setDigitCount" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setDigitCount">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber.setDigitCount()
+              </span>
+             </tt>
+            </a>
+            , but
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setSmallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setSmallDecimalPoint">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber.setSmallDecimalPoint()
+              </span>
+             </tt>
+            </a>
+            also influences it. If the display is set to hexadecimal, octal or binary, the integer equivalent of the value is displayed.
+           </p>
+           <p>
+            These digits and other symbols can be shown: 0/O, 1, 2, 3, 4, 5/S, 6, 7, 8, 9/g, minus, decimal point, A, B, C, D, E, F, h, H, L, o, P, r, u, U, Y, colon, degree sign (which is specified as single quote in the string) and space.
+            <a class="reference internal" href="#PySide.QtGui.QLCDNumber" title="PySide.QtGui.QLCDNumber">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber
+              </span>
+             </tt>
+            </a>
+            substitutes spaces for illegal characters.
+           </p>
+           <p>
+            It is not possible to retrieve the contents of a
+            <a class="reference internal" href="#PySide.QtGui.QLCDNumber" title="PySide.QtGui.QLCDNumber">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber
+              </span>
+             </tt>
+            </a>
+            object, although you can retrieve the numeric value with
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.value" title="PySide.QtGui.PySide.QtGui.QLCDNumber.value">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber.value()
+              </span>
+             </tt>
+            </a>
+            . If you really need the text, we recommend that you connect the signals that feed the
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.display" title="PySide.QtGui.PySide.QtGui.QLCDNumber.display">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber.display()
+              </span>
+             </tt>
+            </a>
+            slot to another slot as well and store the value there.
+           </p>
+           <p>
+            Incidentally,
+            <a class="reference internal" href="#PySide.QtGui.QLCDNumber" title="PySide.QtGui.QLCDNumber">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber
+              </span>
+             </tt>
+            </a>
+            is the very oldest part of Qt, tracing its roots back to a BASIC program on the Sinclair Spectrum.
+           </p>
+           <table border="1" class="docutils">
+            <colgroup>
+             <col width="100%">
+             </col>
+            </colgroup>
+            <tbody valign="top">
+             <tr class="row-odd">
+              <td>
+               <img alt="PySide/QtGui/../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/motif-lcdnumber.png..image::../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/cde-lcdnumber.png..image::../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/windows-lcdnumber.png..image::../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/windowsxp-lcdnumber.png..image::../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/macintosh-lcdnumber.png..image::../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/plastique-lcdnumber.png" class="first last" src="PySide/QtGui/../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/motif-lcdnumber.png..image::../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/cde-lcdnumber.png..image::../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/windows-lcdnumber.png..image::../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/windowsxp-lcdnumber.png..image::../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/macintosh-lcdnumber.png..image::../../../../../../../src/qt-everywhere-opensource-src-4.7.2/doc/src/images/plastique-lcdnumber.png"/>
+              </td>
+             </tr>
+             <tr class="row-even">
+              <td>
+               LCD number widgets shown in various widget styles (from left to right):
+               <em class="xref std std-ref">
+                Motif
+               </em>
+               ,
+               <em class="xref std std-ref">
+                CDE
+               </em>
+               ,
+               <em class="xref std std-ref">
+                Windows
+               </em>
+               ,
+               <em class="xref std std-ref">
+                Windows XP
+               </em>
+               ,
+               <em class="xref std std-ref">
+                Macintosh
+               </em>
+               ,
+               <em class="xref std std-ref">
+                Plastique
+               </em>
+               .
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="QLabel.html#PySide.QtGui.QLabel" title="PySide.QtGui.QLabel">
+              <tt class="xref py py-class docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLabel
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="QFrame.html#PySide.QtGui.QFrame" title="PySide.QtGui.QFrame">
+              <tt class="xref py py-class docutils literal">
+               <span class="pre">
+                PySide.QtGui.QFrame
+               </span>
+              </tt>
+             </a>
+             <em class="xref std std-ref">
+              Digital Clock Example
+             </em>
+             <em class="xref std std-ref">
+              Tetrix Example
+             </em>
+            </p>
+           </div>
+          </div>
+         </blockquote>
+         <dl class="class">
+          <dt id="PySide.QtGui.QLCDNumber">
+           <em class="property">
+            class
+           </em>
+           <tt class="descclassname">
+            PySide.QtGui.
+           </tt>
+           <tt class="descname">
+            QLCDNumber
+           </tt>
+           <big>
+            (
+           </big>
+           <span class="optional">
+            [
+           </span>
+           <em>
+            parent=None
+           </em>
+           <span class="optional">
+            ]
+           </span>
+           <big>
+            )
+           </big>
+           <a class="headerlink" href="#PySide.QtGui.QLCDNumber" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dt>
+           <em class="property">
+            class
+           </em>
+           <tt class="descclassname">
+            PySide.QtGui.
+           </tt>
+           <tt class="descname">
+            QLCDNumber
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            numDigits
+           </em>
+           <span class="optional">
+            [
+           </span>
+           ,
+           <em>
+            parent=None
+           </em>
+           <span class="optional">
+            ]
+           </span>
+           <big>
+            )
+           </big>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <ul class="first last simple">
+                <li>
+                 <strong>
+                  parent
+                 </strong>
+                 –
+                 <a class="reference internal" href="QWidget.html#PySide.QtGui.QWidget" title="PySide.QtGui.QWidget">
+                  <tt class="xref py py-class docutils literal">
+                   <span class="pre">
+                    PySide.QtGui.QWidget
+                   </span>
+                  </tt>
+                 </a>
+                </li>
+                <li>
+                 <strong>
+                  numDigits
+                 </strong>
+                 –
+                 <tt class="xref py py-class docutils literal">
+                  <span class="pre">
+                   PySide.QtCore.uint
+                  </span>
+                 </tt>
+                </li>
+               </ul>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Constructs an LCD number, sets the number of digits to 5, the base to decimal, the decimal point mode to ‘small’ and the frame style to a raised box. The
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.segmentStyle" title="PySide.QtGui.PySide.QtGui.QLCDNumber.segmentStyle">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber.segmentStyle()
+              </span>
+             </tt>
+            </a>
+            is set to
+            <tt class="docutils literal">
+             <span class="pre">
+              Outline
+             </span>
+            </tt>
+            .
+           </p>
+           <p>
+            The
+            <tt class="docutils literal">
+             <span class="pre">
+              parent
+             </span>
+            </tt>
+            argument is passed to the
+            <a class="reference internal" href="QFrame.html#PySide.QtGui.QFrame" title="PySide.QtGui.QFrame">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QFrame
+              </span>
+             </tt>
+            </a>
+            constructor.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setDigitCount" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setDigitCount">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setDigitCount()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setSmallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setSmallDecimalPoint">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setSmallDecimalPoint()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+           <p>
+            Constructs an LCD number, sets the number of digits to
+            <tt class="docutils literal">
+             <span class="pre">
+              numDigits
+             </span>
+            </tt>
+            , the base to decimal, the decimal point mode to ‘small’ and the frame style to a raised box. The
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.segmentStyle" title="PySide.QtGui.PySide.QtGui.QLCDNumber.segmentStyle">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber.segmentStyle()
+              </span>
+             </tt>
+            </a>
+            is set to
+            <tt class="docutils literal">
+             <span class="pre">
+              Filled
+             </span>
+            </tt>
+            .
+           </p>
+           <p>
+            The
+            <tt class="docutils literal">
+             <span class="pre">
+              parent
+             </span>
+            </tt>
+            argument is passed to the
+            <a class="reference internal" href="QFrame.html#PySide.QtGui.QFrame" title="PySide.QtGui.QFrame">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QFrame
+              </span>
+             </tt>
+            </a>
+            constructor.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setDigitCount" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setDigitCount">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setDigitCount()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setSmallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setSmallDecimalPoint">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setSmallDecimalPoint()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="attribute">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.Mode">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            Mode
+           </tt>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.Mode" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <p>
+            This type determines how numbers are shown.
+           </p>
+           <table border="1" class="docutils">
+            <colgroup>
+             <col width="56%">
+             </col>
+             <col width="44%">
+             </col>
+            </colgroup>
+            <thead valign="bottom">
+             <tr class="row-odd">
+              <th class="head">
+               Constant
+              </th>
+              <th class="head">
+               Description
+              </th>
+             </tr>
+            </thead>
+            <tbody valign="top">
+             <tr class="row-even">
+              <td>
+               QLCDNumber.Hex
+              </td>
+              <td>
+               Hexadecimal
+              </td>
+             </tr>
+             <tr class="row-odd">
+              <td>
+               QLCDNumber.Dec
+              </td>
+              <td>
+               Decimal
+              </td>
+             </tr>
+             <tr class="row-even">
+              <td>
+               QLCDNumber.Oct
+              </td>
+              <td>
+               Octal
+              </td>
+             </tr>
+             <tr class="row-odd">
+              <td>
+               QLCDNumber.Bin
+              </td>
+              <td>
+               Binary
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            If the display is set to hexadecimal, octal or binary, the integer equivalent of the value is displayed.
+           </p>
+          </dd>
+         </dl>
+         <dl class="attribute">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.SegmentStyle">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            SegmentStyle
+           </tt>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.SegmentStyle" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <p>
+            This type determines the visual appearance of the
+            <a class="reference internal" href="#PySide.QtGui.QLCDNumber" title="PySide.QtGui.QLCDNumber">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber
+              </span>
+             </tt>
+            </a>
+            widget.
+           </p>
+           <table border="1" class="docutils">
+            <colgroup>
+             <col width="25%">
+             </col>
+             <col width="75%">
+             </col>
+            </colgroup>
+            <thead valign="bottom">
+             <tr class="row-odd">
+              <th class="head">
+               Constant
+              </th>
+              <th class="head">
+               Description
+              </th>
+             </tr>
+            </thead>
+            <tbody valign="top">
+             <tr class="row-even">
+              <td>
+               QLCDNumber.Outline
+              </td>
+              <td>
+               gives raised segments filled with the background color.
+              </td>
+             </tr>
+             <tr class="row-odd">
+              <td>
+               QLCDNumber.Filled
+              </td>
+              <td>
+               gives raised segments filled with the windowText color.
+              </td>
+             </tr>
+             <tr class="row-even">
+              <td>
+               QLCDNumber.Flat
+              </td>
+              <td>
+               gives flat segments filled with the windowText color.
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.checkOverflow">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            checkOverflow
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            num
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/checkOverflow">
+           </a>
+           <a name="//apple_ref/cpp/clm/checkOverflow">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.checkOverflow" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                num
+               </strong>
+               –
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.double
+                </span>
+               </tt>
+              </td>
+             </tr>
+             <tr class="field-even field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.bool
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Returns true if
+            <tt class="docutils literal">
+             <span class="pre">
+              num
+             </span>
+            </tt>
+            is too big to be displayed in its entirety; otherwise returns false.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.display" title="PySide.QtGui.PySide.QtGui.QLCDNumber.display">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.display()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.digitCount" title="PySide.QtGui.PySide.QtGui.QLCDNumber.digitCount">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.digitCount()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.smallDecimalPoint()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt>
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            checkOverflow
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            num
+           </em>
+           <big>
+            )
+           </big>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                num
+               </strong>
+               –
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.int
+                </span>
+               </tt>
+              </td>
+             </tr>
+             <tr class="field-even field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.bool
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This is an overloaded function.
+           </p>
+           <p>
+            Returns true if
+            <tt class="docutils literal">
+             <span class="pre">
+              num
+             </span>
+            </tt>
+            is too big to be displayed in its entirety; otherwise returns false.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.display" title="PySide.QtGui.PySide.QtGui.QLCDNumber.display">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.display()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.digitCount" title="PySide.QtGui.PySide.QtGui.QLCDNumber.digitCount">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.digitCount()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.smallDecimalPoint()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.digitCount">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            digitCount
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/digitCount">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.digitCount" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.int
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This property holds the current number of digits displayed.
+           </p>
+           <p>
+            Corresponds to the current number of digits. If
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               QLCDNumber.smallDecimalPoint
+              </span>
+             </tt>
+            </a>
+            is false, the decimal point occupies one digit position.
+           </p>
+           <p>
+            By default, this property contains a value of 5.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.smallDecimalPoint()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.display">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            display
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            num
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/display">
+           </a>
+           <a name="//apple_ref/cpp/clm/display">
+           </a>
+           <a name="//apple_ref/cpp/clm/display">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.display" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                num
+               </strong>
+               –
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.double
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This property holds the displayed value.
+           </p>
+           <p>
+            This property corresponds to the current value displayed by the LCDNumber.
+           </p>
+           <p>
+            If the displayed value is not a number, the property has a value of 0.
+           </p>
+           <p>
+            By default, this property contains a value of 0.
+           </p>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt>
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            display
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            num
+           </em>
+           <big>
+            )
+           </big>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                num
+               </strong>
+               –
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.int
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This is an overloaded function.
+           </p>
+           <p>
+            Displays the number
+            <tt class="docutils literal">
+             <span class="pre">
+              num
+             </span>
+            </tt>
+            .
+           </p>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt>
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            display
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            str
+           </em>
+           <big>
+            )
+           </big>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                str
+               </strong>
+               – unicode
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            Displays the number represented by the string
+            <tt class="docutils literal">
+             <span class="pre">
+              s
+             </span>
+            </tt>
+            .
+           </p>
+           <p>
+            This version of the function disregards
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.mode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.mode">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber.mode()
+              </span>
+             </tt>
+            </a>
+            and
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber.smallDecimalPoint()
+              </span>
+             </tt>
+            </a>
+            .
+           </p>
+           <p>
+            These digits and other symbols can be shown: 0/O, 1, 2, 3, 4, 5/S, 6, 7, 8, 9/g, minus, decimal point, A, B, C, D, E, F, h, H, L, o, P, r, u, U, Y, colon, degree sign (which is specified as single quote in the string) and space.
+            <a class="reference internal" href="#PySide.QtGui.QLCDNumber" title="PySide.QtGui.QLCDNumber">
+             <tt class="xref py py-class docutils literal">
+              <span class="pre">
+               PySide.QtGui.QLCDNumber
+              </span>
+             </tt>
+            </a>
+            substitutes spaces for illegal characters.
+           </p>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.intValue">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            intValue
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/intValue">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.intValue" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.int
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This property holds the displayed value rounded to the nearest integer.
+           </p>
+           <p>
+            This property corresponds to the nearest integer to the current value displayed by the LCDNumber. This is the value used for hexadecimal, octal and binary modes.
+           </p>
+           <p>
+            If the displayed value is not a number, the property has a value of 0.
+           </p>
+           <p>
+            By default, this property contains a value of 0.
+           </p>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.mode">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            mode
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/mode">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.mode" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.Mode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.Mode">
+                <tt class="xref py py-attr docutils literal">
+                 <span class="pre">
+                  PySide.QtGui.QLCDNumber.Mode
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This property holds the current display mode (number base).
+           </p>
+           <p>
+            Corresponds to the current display mode, which is one of
+            <tt class="docutils literal">
+             <span class="pre">
+              Bin
+             </span>
+            </tt>
+            ,
+            <tt class="docutils literal">
+             <span class="pre">
+              Oct
+             </span>
+            </tt>
+            ,
+            <tt class="docutils literal">
+             <span class="pre">
+              Dec
+             </span>
+            </tt>
+            (the default) and
+            <tt class="docutils literal">
+             <span class="pre">
+              Hex
+             </span>
+            </tt>
+            .
+            <tt class="docutils literal">
+             <span class="pre">
+              Dec
+             </span>
+            </tt>
+            mode can display floating point values, the other modes display the integer equivalent.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.smallDecimalPoint()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setHexMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setHexMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setHexMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setDecMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setDecMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setDecMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setOctMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setOctMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setOctMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setBinMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setBinMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setBinMode()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.numDigits">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            numDigits
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/numDigits">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.numDigits" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.int
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This property holds the current number of digits displayed.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.digitCount" title="PySide.QtGui.PySide.QtGui.QLCDNumber.digitCount">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.digitCount()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.overflow">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            overflow
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/Attribute/overflow">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.overflow" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.segmentStyle">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            segmentStyle
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/segmentStyle">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.segmentStyle" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.SegmentStyle" title="PySide.QtGui.PySide.QtGui.QLCDNumber.SegmentStyle">
+                <tt class="xref py py-attr docutils literal">
+                 <span class="pre">
+                  PySide.QtGui.QLCDNumber.SegmentStyle
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This property holds the style of the LCDNumber.
+           </p>
+           <table border="1" class="docutils">
+            <colgroup>
+             <col width="36%">
+             </col>
+             <col width="64%">
+             </col>
+            </colgroup>
+            <tbody valign="top">
+             <tr class="row-odd">
+              <td>
+               Style
+              </td>
+              <td>
+               Result
+              </td>
+             </tr>
+             <tr class="row-even">
+              <td>
+               <tt class="docutils literal">
+                <span class="pre">
+                 Outline
+                </span>
+               </tt>
+              </td>
+              <td>
+               Produces raised segments filled with the background color
+              </td>
+             </tr>
+             <tr class="row-odd">
+              <td>
+               <tt class="docutils literal">
+                <span class="pre">
+                 Filled
+                </span>
+               </tt>
+               (this is the default).
+              </td>
+              <td>
+               Produces raised segments filled with the foreground color.
+              </td>
+             </tr>
+             <tr class="row-even">
+              <td>
+               <tt class="docutils literal">
+                <span class="pre">
+                 Flat
+                </span>
+               </tt>
+              </td>
+              <td>
+               Produces flat segments filled with the foreground color.
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            <tt class="docutils literal">
+             <span class="pre">
+              Outline
+             </span>
+            </tt>
+            and
+            <tt class="docutils literal">
+             <span class="pre">
+              Filled
+             </span>
+            </tt>
+            will additionally use
+            <a class="reference internal" href="QPalette.html#PySide.QtGui.PySide.QtGui.QPalette.light" title="PySide.QtGui.PySide.QtGui.QPalette.light">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               QPalette.light()
+              </span>
+             </tt>
+            </a>
+            and
+            <a class="reference internal" href="QPalette.html#PySide.QtGui.PySide.QtGui.QPalette.dark" title="PySide.QtGui.PySide.QtGui.QPalette.dark">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               QPalette.dark()
+              </span>
+             </tt>
+            </a>
+            for shadow effects.
+           </p>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.setBinMode">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            setBinMode
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setBinMode">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setBinMode" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <p>
+            Calls setMode(Bin). Provided for convenience (e.g. for connecting buttons to it).
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setHexMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setHexMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setHexMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setDecMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setDecMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setDecMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setOctMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setOctMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setOctMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.mode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.mode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.mode()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.setDecMode">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            setDecMode
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setDecMode">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setDecMode" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <p>
+            Calls setMode(Dec). Provided for convenience (e.g. for connecting buttons to it).
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setHexMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setHexMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setHexMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setOctMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setOctMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setOctMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setBinMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setBinMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setBinMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.mode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.mode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.mode()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.setDigitCount">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            setDigitCount
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            nDigits
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setDigitCount">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setDigitCount" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                nDigits
+               </strong>
+               –
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.int
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This property holds the current number of digits displayed.
+           </p>
+           <p>
+            Corresponds to the current number of digits. If
+            <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               QLCDNumber.smallDecimalPoint
+              </span>
+             </tt>
+            </a>
+            is false, the decimal point occupies one digit position.
+           </p>
+           <p>
+            By default, this property contains a value of 5.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.smallDecimalPoint()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.setHexMode">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            setHexMode
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setHexMode">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setHexMode" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <p>
+            Calls setMode(Hex). Provided for convenience (e.g. for connecting buttons to it).
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setDecMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setDecMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setDecMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setOctMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setOctMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setOctMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setBinMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setBinMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setBinMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.mode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.mode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.mode()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.setMode">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            setMode
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            arg__1
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setMode">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setMode" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                arg__1
+               </strong>
+               –
+               <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.Mode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.Mode">
+                <tt class="xref py py-attr docutils literal">
+                 <span class="pre">
+                  PySide.QtGui.QLCDNumber.Mode
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This property holds the current display mode (number base).
+           </p>
+           <p>
+            Corresponds to the current display mode, which is one of
+            <tt class="docutils literal">
+             <span class="pre">
+              Bin
+             </span>
+            </tt>
+            ,
+            <tt class="docutils literal">
+             <span class="pre">
+              Oct
+             </span>
+            </tt>
+            ,
+            <tt class="docutils literal">
+             <span class="pre">
+              Dec
+             </span>
+            </tt>
+            (the default) and
+            <tt class="docutils literal">
+             <span class="pre">
+              Hex
+             </span>
+            </tt>
+            .
+            <tt class="docutils literal">
+             <span class="pre">
+              Dec
+             </span>
+            </tt>
+            mode can display floating point values, the other modes display the integer equivalent.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint" title="PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.smallDecimalPoint()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setHexMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setHexMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setHexMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setDecMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setDecMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setDecMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setOctMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setOctMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setOctMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setBinMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setBinMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setBinMode()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.setNumDigits">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            setNumDigits
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            nDigits
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setNumDigits">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setNumDigits" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                nDigits
+               </strong>
+               –
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.int
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This property holds the current number of digits displayed.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.digitCount" title="PySide.QtGui.PySide.QtGui.QLCDNumber.digitCount">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.digitCount()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.setOctMode">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            setOctMode
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setOctMode">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setOctMode" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <p>
+            Calls setMode(Oct). Provided for convenience (e.g. for connecting buttons to it).
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setHexMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setHexMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setHexMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setDecMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setDecMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setDecMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setBinMode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.setBinMode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.setBinMode()
+               </span>
+              </tt>
+             </a>
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.mode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.mode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.mode()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.setSegmentStyle">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            setSegmentStyle
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            arg__1
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setSegmentStyle">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setSegmentStyle" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                arg__1
+               </strong>
+               –
+               <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.SegmentStyle" title="PySide.QtGui.PySide.QtGui.QLCDNumber.SegmentStyle">
+                <tt class="xref py py-attr docutils literal">
+                 <span class="pre">
+                  PySide.QtGui.QLCDNumber.SegmentStyle
+                 </span>
+                </tt>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This property holds the style of the LCDNumber.
+           </p>
+           <table border="1" class="docutils">
+            <colgroup>
+             <col width="36%">
+             </col>
+             <col width="64%">
+             </col>
+            </colgroup>
+            <tbody valign="top">
+             <tr class="row-odd">
+              <td>
+               Style
+              </td>
+              <td>
+               Result
+              </td>
+             </tr>
+             <tr class="row-even">
+              <td>
+               <tt class="docutils literal">
+                <span class="pre">
+                 Outline
+                </span>
+               </tt>
+              </td>
+              <td>
+               Produces raised segments filled with the background color
+              </td>
+             </tr>
+             <tr class="row-odd">
+              <td>
+               <tt class="docutils literal">
+                <span class="pre">
+                 Filled
+                </span>
+               </tt>
+               (this is the default).
+              </td>
+              <td>
+               Produces raised segments filled with the foreground color.
+              </td>
+             </tr>
+             <tr class="row-even">
+              <td>
+               <tt class="docutils literal">
+                <span class="pre">
+                 Flat
+                </span>
+               </tt>
+              </td>
+              <td>
+               Produces flat segments filled with the foreground color.
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            <tt class="docutils literal">
+             <span class="pre">
+              Outline
+             </span>
+            </tt>
+            and
+            <tt class="docutils literal">
+             <span class="pre">
+              Filled
+             </span>
+            </tt>
+            will additionally use
+            <a class="reference internal" href="QPalette.html#PySide.QtGui.PySide.QtGui.QPalette.light" title="PySide.QtGui.PySide.QtGui.QPalette.light">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               QPalette.light()
+              </span>
+             </tt>
+            </a>
+            and
+            <a class="reference internal" href="QPalette.html#PySide.QtGui.PySide.QtGui.QPalette.dark" title="PySide.QtGui.PySide.QtGui.QPalette.dark">
+             <tt class="xref py py-meth docutils literal">
+              <span class="pre">
+               QPalette.dark()
+              </span>
+             </tt>
+            </a>
+            for shadow effects.
+           </p>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.setSmallDecimalPoint">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            setSmallDecimalPoint
+           </tt>
+           <big>
+            (
+           </big>
+           <em>
+            arg__1
+           </em>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/setSmallDecimalPoint">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.setSmallDecimalPoint" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Parameters:
+              </th>
+              <td class="field-body">
+               <strong>
+                arg__1
+               </strong>
+               –
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.bool
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This property holds the style of the decimal point.
+           </p>
+           <p>
+            If true the decimal point is drawn between two digit positions. Otherwise it occupies a digit position of its own, i.e. is drawn in a digit position. The default is false.
+           </p>
+           <p>
+            The inter-digit space is made slightly wider when the decimal point is drawn between the digits.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.mode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.mode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.mode()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            smallDecimalPoint
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/smallDecimalPoint">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.smallDecimalPoint" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.bool
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This property holds the style of the decimal point.
+           </p>
+           <p>
+            If true the decimal point is drawn between two digit positions. Otherwise it occupies a digit position of its own, i.e. is drawn in a digit position. The default is false.
+           </p>
+           <p>
+            The inter-digit space is made slightly wider when the decimal point is drawn between the digits.
+           </p>
+           <div class="admonition-see-also admonition seealso">
+            <p class="first admonition-title">
+             See also
+            </p>
+            <p class="last">
+             <a class="reference internal" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.mode" title="PySide.QtGui.PySide.QtGui.QLCDNumber.mode">
+              <tt class="xref py py-meth docutils literal">
+               <span class="pre">
+                PySide.QtGui.QLCDNumber.mode()
+               </span>
+              </tt>
+             </a>
+            </p>
+           </div>
+          </dd>
+         </dl>
+         <dl class="method">
+          <dt id="PySide.QtGui.PySide.QtGui.QLCDNumber.value">
+           <tt class="descclassname">
+            PySide.QtGui.QLCDNumber.
+           </tt>
+           <tt class="descname">
+            value
+           </tt>
+           <big>
+            (
+           </big>
+           <big>
+            )
+           </big>
+           <a name="//apple_ref/cpp/clm/value">
+           </a>
+           <a class="headerlink" href="#PySide.QtGui.PySide.QtGui.QLCDNumber.value" title="Permalink to this definition">
+            ¶
+           </a>
+          </dt>
+          <dd>
+           <table class="docutils field-list" frame="void" rules="none">
+            <col class="field-name">
+            </col>
+            <col class="field-body">
+            </col>
+            <tbody valign="top">
+             <tr class="field-odd field">
+              <th class="field-name">
+               Return type:
+              </th>
+              <td class="field-body">
+               <tt class="xref py py-class docutils literal">
+                <span class="pre">
+                 PySide.QtCore.double
+                </span>
+               </tt>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            This property holds the displayed value.
+           </p>
+           <p>
+            This property corresponds to the current value displayed by the LCDNumber.
+           </p>
+           <p>
+            If the displayed value is not a number, the property has a value of 0.
+           </p>
+           <p>
+            By default, this property contains a value of 0.
+           </p>
+          </dd>
+         </dl>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearer">
+    </div>
+   </div>
+   <div class="footer">
+    <a href="http://www.indt.org.br">
+     <img alt="Indt" border="0" src="../../_static/logo_indt.jpg"/>
+    </a>
+    <a href="http://www.openbossa.org">
+     <img alt="Openbossa" border="0" src="../../_static/logo_openbossa.png"/>
+    </a>
+    <a href="http://qt.nokia.com/">
+     <img alt="Qt" border="0" src="../../_static/logo_qt.png"/>
+    </a>
+    <a href="http://www.python.org">
+     <img alt="Python" border="0" src="../../_static/logo_python.jpg"/>
+    </a>
+   </div>
+  </div>
+ </body>
+</html>
