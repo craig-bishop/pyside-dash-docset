@@ -8,4 +8,4 @@ Simply add PySide.docset in Dash preferences.
 
 Licensed under LGPL 2.1 - see LICENSE file
 
-## [Get it Now](dash-feed://github.com/craig-bishop/pyside-dash-docset/raw/master/feed/PySide.xml)
+## [Get it Now](http://craigjb.com/dash/pyside_feed_redirect.html)
